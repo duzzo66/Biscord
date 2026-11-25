@@ -1,8 +1,8 @@
 # PowerShell / android/build.ps1 / JDK 17 + Android SDK / signed test APK
 $ErrorActionPreference='Stop'
 $projectRoot=Split-Path $PSScriptRoot -Parent
-$sdkRoot=Join-Path $projectRoot '.android-tools/sdk'
-$javaRoot=(Get-ChildItem (Join-Path $projectRoot '.android-tools/java') -Directory | Select-Object -First 1).FullName
+$sdkRoot=if($env:ANDROID_SDK_ROOT){$env:ANDROID_SDK_ROOT}elseif($env:ANDROID_HOME){$env:ANDROID_HOME}else{Join-Path $projectRoot '.android-tools/sdk'}
+$javaRoot=if($env:JAVA_HOME){$env:JAVA_HOME}else{(Get-ChildItem (Join-Path $projectRoot '.android-tools/java') -Directory -ErrorAction SilentlyContinue | Select-Object -First 1).FullName}
 if(-not $javaRoot){throw 'JDK 17 não encontrado em .android-tools/java'}
 $env:JAVA_HOME=$javaRoot
 $buildTools=Join-Path $sdkRoot 'build-tools/35.0.0'
@@ -19,9 +19,12 @@ Copy-Item -LiteralPath (Join-Path $buildDir 'resources.apk') -Destination (Join-
 Push-Location (Join-Path $buildDir 'dex')
 try{& (Join-Path $buildTools 'aapt.exe') add (Join-Path $buildDir 'unsigned.apk') classes.dex;CheckExit}finally{Pop-Location}
 & (Join-Path $buildTools 'zipalign.exe') -f 4 (Join-Path $buildDir 'unsigned.apk') (Join-Path $buildDir 'aligned.apk');CheckExit
+New-Item -ItemType Directory -Force -Path (Join-Path $projectRoot '.android-tools') | Out-Null
 $key=Join-Path $projectRoot '.android-tools/biscord-test.keystore'
 if(-not (Test-Path -LiteralPath $key)){& (Join-Path $javaRoot 'bin/keytool.exe') -genkeypair -keystore $key -storepass android -keypass android -alias biscord-test -keyalg RSA -keysize 2048 -validity 3650 -dname 'CN=Vulpi Test, O=Vulpi, C=BR';CheckExit}
-$apk=Join-Path $outDir 'Vulpi-1.0.2-Android.apk'
+[xml]$manifest=Get-Content (Join-Path $PSScriptRoot 'AndroidManifest.xml')
+$version=$manifest.manifest.GetAttribute('versionName','http://schemas.android.com/apk/res/android')
+$apk=Join-Path $outDir "Vulpi-$version-Android.apk"
 & (Join-Path $buildTools 'apksigner.bat') sign --ks $key --ks-key-alias biscord-test --ks-pass pass:android --key-pass pass:android --out $apk (Join-Path $buildDir 'aligned.apk');CheckExit
 & (Join-Path $buildTools 'apksigner.bat') verify --verbose $apk;CheckExit
 & (Join-Path $buildTools 'aapt.exe') dump badging $apk;CheckExit

@@ -6,9 +6,11 @@ import {createHash} from 'node:crypto';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const index=JSON.parse(await fs.readFile(path.join(root,'asset-cache.json'),'utf8'));
 const verify=process.argv.includes('--verify'),check=process.argv.includes('--check');
+const concurrency=Number(process.env.BISCORD_ASSET_CONCURRENCY||6);
+if(!Number.isInteger(concurrency)||concurrency<1||concurrency>64)throw Error('BISCORD_ASSET_CONCURRENCY must be an integer between 1 and 64');
 let cursor=0,present=0,restored=0,failed=[];
 async function valid(item,file){try{const stat=await fs.stat(file);if(stat.size!==item.bytes)return false;if(verify&&item.sha256){const hash=createHash('sha256').update(await fs.readFile(file)).digest('hex');return hash===item.sha256;}return true;}catch(e){if(e.code==='ENOENT')return false;throw e;}}
-await Promise.all(Array.from({length:6},async()=>{for(;;){const item=index.assets[cursor++];if(!item)return;
+await Promise.all(Array.from({length:concurrency},async()=>{for(;;){const item=index.assets[cursor++];if(!item)return;
  const file=path.resolve(root,item.file);
  if(!file.startsWith(root+path.sep))throw Error('Asset path outside repository');
  if(await valid(item,file)){present++;continue;}

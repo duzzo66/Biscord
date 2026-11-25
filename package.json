@@ -9,23 +9,32 @@
     "start": "node --env-file-if-exists=.env server.mjs",
     "mirror": "node sync.mjs",
     "verify": "node verify-site.mjs",
-    "test": "node --test backend.test.mjs boosts.test.mjs sounds.test.mjs profile-editor.test.mjs icons.test.mjs cosmetics.test.mjs badges.test.mjs themes.test.mjs branding.test.mjs database.test.mjs",
+    "test": "node --test *.test.mjs",
     "build:brand": "node build-brand.mjs",
     "assets:restore": "node restore-assets.mjs",
     "assets:check": "node restore-assets.mjs --check",
     "supabase:setup": "node --env-file=.env supabase-setup.mjs",
-    "supabase:test-social": "node --env-file=.env supabase-social-check.mjs"
+    "supabase:test-social": "node --env-file=.env supabase-social-check.mjs",
+    "android:build": "powershell -NoProfile -ExecutionPolicy Bypass -File android/build.ps1"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
     "acorn": "^8.19.0",
     "cheerio": "^1.2.0",
-    "electron": "^45.4.1",
-    "electron-builder": "^26.18.0",
-    "qrcode": "^1.5.4"
+    "electron": "^45.5.0",
+    "electron-builder": "^26.18.0"
   },
   "dependencies": {
-    "nodemailer": "^10.5.0",
-    "pg": "^8.23.1"
+    "nodemailer": "^10.6.1",
+    "pg": "^8.23.1",
+    "qrcode": "^1.5.4"
+  },
+  "version": "1.0.5",
+  "description": "Vulpi: chat web, Windows e Android",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "overrides": {
+    "minimatch@>=7.0.0 <11.0.1": "^11.0.9"
   }
 }

@@ -1,6 +1,6 @@
-# Biscord
+# Vulpi (Biscord)
 
-Site e aplicação de chat com identidade própria, mascote de raposa, contas locais, perfis, configurações, temas e interface de servidores. Backend em Node.js com SQLite ou PostgreSQL/Supabase; frontend em JavaScript, HTML e CSS.
+Aplicação Vulpi de chat com identidade própria, mascote de raposa, contas locais, perfis, configurações, temas e interface de servidores. Backend em Node.js com SQLite ou PostgreSQL/Supabase; frontend em JavaScript, HTML e CSS.
 
 ## Executar
 
@@ -45,3 +45,14 @@ Cadastro e login próprios, sessões, TOTP, recuperação por SMTP opcional, per
 Algumas páginas e mídias de referência foram obtidas de fontes públicas do Discord e de catálogos públicos. A identidade visual própria usa Biscord e a raposa. Os arquivos de origem e metadados técnicos preservam referências necessárias para reproduzir o cache. Downloads externos e links presentes em páginas arquivadas continuam sujeitos à disponibilidade de suas origens.
 
 Detalhes: [backend](BACKEND.md), [marca e arte](BRANDING.md), [impulsos](BOOSTS.md), [insígnias](BADGES.md), [cosméticos](COSMETICS.md).
+
+## Builds 1.0.5
+
+- Web: `npm run build` e `npm run verify`.
+- Windows x64 portátil: `npm run desktop:build`; saída `desktop-release-vulpi/Vulpi-1.0.5-Windows.exe`.
+- Android: `npm run android:build`; saída `android-release/Vulpi-1.0.5-Android.apk`.
+
+`npm test` executa todos os arquivos `*.test.mjs`, incluindo chamadas, servidores, status e navegação desktop.
+Para acelerar a restauração, configure `BISCORD_ASSET_CONCURRENCY` entre 1 e 64 (padrão 6).
+
+O build mantém a URL externa original de mídias públicas arquivadas que não puderem ser restauradas. A lista fica em `dist/unavailable-assets.json`; esses recursos dependem da disponibilidade externa. `assets:check` continua sinalizando qualquer ausência no cache completo.

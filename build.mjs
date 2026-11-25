@@ -6,7 +6,7 @@ import {spawnSync} from 'node:child_process';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const dist=path.join(root,'dist');
 const manifest=JSON.parse((await fs.readFile(path.join(root,'manifest.json'),'utf8')).replace(/^\uFEFF/,''));
-const assets=manifest.assets.filter(a=>a.status==='downloaded');
+const assets=manifest.assets.filter(a=>a.status==='downloaded'&&!new URL(a.url).hostname.endsWith('localizeapi.com'));
 const homepage=assets.find(a=>a.url.endsWith('/homepageRefreshLatest.js'));
 const homepageSource=await fs.readFile(path.join(root,homepage.file),'utf8');
 for(const match of homepageSource.matchAll(/pt:"(https:[^"]+\.mp4)"/g)){
@@ -48,5 +48,7 @@ html=html.replace('</body>',`<script src="${urls.get(homepage.url)}" defer></scr
 await fs.writeFile(path.join(dist,'index.html'),html);
 for(const file of ['local.css','localize.js','interactions.js'])await fs.copyFile(path.join(root,file),path.join(dist,file));
 console.log(`Built home page with ${assets.length} local assets: ${dist}`);
-try{await fs.access(path.join(root,'mirror-manifest.json'));const result=spawnSync(process.execPath,[path.join(root,'render-mirror.mjs')],{cwd:root,stdio:'inherit'});if(result.status)process.exitCode=result.status;}catch(e){if(e.code!=='ENOENT')throw e;}
+let mirrorAvailable=false;
+try{await fs.access(path.join(root,'mirror-manifest.json'));mirrorAvailable=true;}catch(e){if(e.code!=='ENOENT')throw e;}
+if(mirrorAvailable)await import('./render-mirror.mjs');
 await import('./build-auth.mjs');

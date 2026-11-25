@@ -1,5 +1,6 @@
 // JavaScript / render-mirror.mjs / Node.js 22+ / build all archived public pages
 import fs from 'node:fs/promises';
+import {existsSync} from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {load} from 'cheerio';
@@ -9,6 +10,12 @@ const state=JSON.parse(await fs.readFile(path.join(root,'mirror-manifest.json'),
 try{const docs=JSON.parse(await fs.readFile(path.join(root,'docs-manifest.json'),'utf8'));state.pages.push(...docs.pages);state.assets=mergeAssets(state.assets,docs.assets);}catch{}
 try{const captured=JSON.parse(await fs.readFile(path.join(root,'captures-manifest.json'),'utf8'));state.pages=[...new Map([...state.pages,...captured.pages].map(p=>[p.url,p])).values()];state.assets=mergeAssets(state.assets,captured.assets);}catch{}
 try{const sdk=JSON.parse(await fs.readFile(path.join(root,'sdk-manifest.json'),'utf8'));state.pages=[...new Map([...state.pages,...sdk.pages].map(p=>[p.url,p])).values()];state.assets=mergeAssets(state.assets,sdk.assets);}catch{}
+// Keep original remote URLs when an archived public asset is unavailable locally.
+const unavailable=state.assets.filter(a=>a.status==='downloaded'&&!existsSync(path.join(root,a.file)));
+state.assets=state.assets.filter(a=>a.status!=='downloaded'||existsSync(path.join(root,a.file)));
+await fs.mkdir(dist,{recursive:true});
+await fs.writeFile(path.join(dist,'unavailable-assets.json'),JSON.stringify(unavailable.map(({url,file})=>({url,file})),null,2));
+if(unavailable.length)console.warn(unavailable.length+' archived assets unavailable; original remote URLs retained (see unavailable-assets.json).');
 // App-only shells require a signed-in service and are outside the public-page archive.
 const appOnly=/^https:\/\/discord\.com\/(?:developers\/home|feature\/|settings\/|redeem(?:\/|$)|report(?:\/|$))/;
 const excludedShells=state.pages.filter(p=>p.status==='downloaded'&&appOnly.test(p.url));
@@ -26,7 +33,7 @@ function link(raw,base){try{if(!raw||raw.startsWith('#')||/^(?:mailto|tel|javasc
 function css(text,base){return text.replace(/url\(\s*(?:"([^"]*)"|'([^']*)'|((?:\\.|[^)\s])+))\s*\)/g,(m,double,single,bare)=>{const u=(double??single??bare).replace(/\\([0-9a-f]{1,6})\s?|\\(.)/gi,(_,hex,char)=>hex?String.fromCodePoint(parseInt(hex,16)):char);return u.startsWith('data:')||u.startsWith('#')?m:`url("${localAsset(u,base).replaceAll('"','%22')}")`;}).replace(/(@import\s+["'])([^"']+)/g,(m,p,u)=>p+localAsset(u,base));}
 await fs.mkdir(path.join(dist,'_pages'),{recursive:true});
 let copied=0;
-const renderAssets=state.assets.filter(a=>a.status==='downloaded'&&(!a.existing||/\.css(?:\?|$)/.test(a.url)));let assetCursor=0;
+const renderAssets=state.assets.filter(a=>a.status==='downloaded'&&!new URL(a.url).hostname.endsWith('localizeapi.com')&&(!a.existing||/\.css(?:\?|$)/.test(a.url)));let assetCursor=0;
 await Promise.all(Array.from({length:12},async()=>{while(assetCursor<renderAssets.length){const a=renderAssets[assetCursor++];
  const dest=path.join(dist,a.file);await fs.mkdir(path.dirname(dest),{recursive:true});
  if(a.contentType?.includes('css')||/\.css(?:\?|$)/.test(a.url))await fs.writeFile(dest,css(await fs.readFile(path.join(root,a.file),'utf8'),a.url));

@@ -3,9 +3,9 @@ const {app,BrowserWindow,shell,dialog,desktopCapturer,ipcMain}=require('electron
 const path=require('node:path');
 const config=require('./server.json');
 let window;
-const base=new URL(process.env.BISCORD_DESKTOP_URL||config.url);
-if(base.protocol!=='https:'&&!(base.protocol==='http:'&&['localhost','127.0.0.1'].includes(base.hostname)))throw Error('Servidor inválido');
-function internal(url){try{const u=new URL(url);return u.origin===base.origin&&/^\/(channels(?:\/|$)|login(?:\/|$)|register(?:\/|$)|reset-password(?:\/|$)|app$)/.test(u.pathname);}catch{return false;}}
+const {serverURL,internalURL}=require('./navigation.cjs');
+const base=serverURL(process.env.BISCORD_DESKTOP_URL||config.url);
+const internal=url=>internalURL(url,base);
 function external(url){try{if(['https:','http:'].includes(new URL(url).protocol))shell.openExternal(url);}catch{}}
 function create(){
  window=new BrowserWindow({width:1280,height:800,minWidth:900,minHeight:600,title:'Vulpi',backgroundColor:'#232428',show:false,autoHideMenuBar:true,frame:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,backgroundThrottling:true,partition:'persist:biscord'}});

@@ -8,11 +8,11 @@
     "desktop/main.cjs",
     "desktop/preload.cjs",
     "desktop/server.json",
-    "package.json"
+    "package.json",
+    "desktop/navigation.cjs"
   ],
   "extraMetadata": {
     "main": "desktop/main.cjs",
-    "version": "1.0.4",
     "name": "biscord"
   },
   "win": {
