@@ -32,3 +32,5 @@ reference-client/*
 
 desktop-release-*/
 preview-video/
+
+.vercel-stage-local/

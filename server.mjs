@@ -13,6 +13,8 @@ Object.assign(types,{'.pdf':'application/pdf','.txt':'text/plain; charset=utf-8'
 const server=http.createServer(async(req,res)=>{
  try{
   if(await backend.handle(req,res))return;
+  if(req.url==='/healthz'&&req.method==='GET'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'}).end(JSON.stringify({ok:true,storage:backend.storage}));return;}
+  if(process.env.BISCORD_API_ONLY==='true'){res.writeHead(404).end('Not found');return;}
   const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
   const requested=new URL(req.url,'http://localhost');
   const normalized=pathname.replace(/\/+$/,'')||'/';

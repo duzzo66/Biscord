@@ -15,7 +15,9 @@
     "assets:check": "node restore-assets.mjs --check",
     "supabase:setup": "node --env-file=.env supabase-setup.mjs",
     "supabase:test-social": "node --env-file=.env supabase-social-check.mjs",
-    "android:build": "powershell -NoProfile -ExecutionPolicy Bypass -File android/build.ps1"
+    "android:build": "powershell -NoProfile -ExecutionPolicy Bypass -File android/build.ps1",
+    "start:local-internet": "node --env-file-if-exists=.env local-internet.mjs",
+    "vercel:prepare": "node --env-file-if-exists=.env vercel-prepare.mjs"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
