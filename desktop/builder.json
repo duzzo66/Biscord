@@ -1,0 +1,27 @@
+{
+  "appId": "com.biscord.desktop",
+  "productName": "Vulpi",
+  "directories": {
+    "output": "desktop-release-vulpi"
+  },
+  "files": [
+    "desktop/main.cjs",
+    "desktop/preload.cjs",
+    "desktop/server.json",
+    "package.json"
+  ],
+  "extraMetadata": {
+    "main": "desktop/main.cjs",
+    "version": "1.0.4",
+    "name": "biscord"
+  },
+  "win": {
+    "target": [
+      "portable"
+    ],
+    "signAndEditExecutable": false
+  },
+  "portable": {
+    "artifactName": "Vulpi-${version}-Windows.exe"
+  }
+}

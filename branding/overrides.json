@@ -1,0 +1,591 @@
+[
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/665786b8a93285bff36e194e_discord-mark-white%202.webp",
+    "size": [
+      55,
+      42
+    ],
+    "animated": false,
+    "pose": "brand-mark"
+  },
+  {
+    "file": "assets/mirror/169159d0edf479af39df-6abebf7f52f1f8c8f11e613c_Homepage_Hero__9_.webp",
+    "size": [
+      2392,
+      1690
+    ],
+    "animated": false,
+    "pose": "branded-home-hero"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4c12dbf6be5d792aa920_Clyde%20Cube.webp",
+    "size": [
+      286,
+      286
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/662630272724e61320fb7ee2_WUMPUS.webp",
+    "size": [
+      245,
+      192
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/66263062e1fb458b0803dbe6_WUMPUS-pl.webp",
+    "size": [
+      253,
+      46
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6641da5484ffb72b9ad73f01_Clyde.webp",
+    "size": [
+      139,
+      156
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6641da60031c61b5df8ff50b_Clyde-Shadow.webp",
+    "size": [
+      139,
+      5
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/664f241c29359dccfb0ff0c5_Party%20Wumpus.webp",
+    "size": [
+      258,
+      168
+    ],
+    "animated": false,
+    "pose": "party"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6620ec7544fa3849c3cb27fc_party_wumpus.gif",
+    "size": [
+      314,
+      200
+    ],
+    "animated": true,
+    "pose": "party",
+    "poster": "/brand/posters/9f124422c2c1d76b.png"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6729d594f586de43b73bfdf9_Clyde%20Cube.webp",
+    "size": [
+      436,
+      445
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6a91dd676cf1144bc52e78bf_Wumpus_Pose_02_Sitting.webp",
+    "size": [
+      818,
+      1046
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6a91dd676cf1144bc52e78bf_Wumpus_Pose_02_Sitting-p-500.webp",
+    "size": [
+      500,
+      639
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6729dcb95107159dc7e52855_Wumpus.webp",
+    "size": [
+      688,
+      201
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6729dcb95107159dc7e52855_Wumpus-p-500.webp",
+    "size": [
+      500,
+      146
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/678a4aae3ee9f2e87506de82_Clyde%20(1).webp",
+    "size": [
+      381,
+      381
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/dc952f11a49971c484d2-6a9147353d1907a23b2fbfd3_Clyde_Pose02_Point-Left.webp",
+    "size": [
+      519,
+      519
+    ],
+    "animated": false,
+    "pose": "left"
+  },
+  {
+    "file": "assets/mirror/fd5f056ae5cf46a08b04-6a9147353d1907a23b2fbfd3_Clyde_Pose02_Point-Left-p-500.webp",
+    "size": [
+      500,
+      500
+    ],
+    "animated": false,
+    "pose": "left"
+  },
+  {
+    "file": "assets/mirror/a38a1cdeb7c5c5f57a47-6a91b56007b07b1100448f85_Wumpus_Pose_03_Pointing-Right.webp",
+    "size": [
+      994,
+      1208
+    ],
+    "animated": false,
+    "pose": "right"
+  },
+  {
+    "file": "assets/mirror/a3fd8b284a283ede0bed-6a91b56007b07b1100448f85_Wumpus_Pose_03_Pointing-Right-p-500.webp",
+    "size": [
+      500,
+      608
+    ],
+    "animated": false,
+    "pose": "right"
+  },
+  {
+    "file": "assets/mirror/ba06b4f3dfb88e7b1487-6a91b56007b07b1100448f85_Wumpus_Pose_03_Pointing-Right-p-800.webp",
+    "size": [
+      800,
+      972
+    ],
+    "animated": false,
+    "pose": "right"
+  },
+  {
+    "file": "assets/mirror/f42117e7ee0c36484da6-69df891255f0f6d5f4e65d14_Clyde_Headset_1.png",
+    "size": [
+      1338,
+      892
+    ],
+    "animated": false,
+    "pose": "gaming"
+  },
+  {
+    "file": "assets/mirror/fe38c3d9d7f190a4ad68-69df891255f0f6d5f4e65d14_Clyde_Headset_1-p-500.webp",
+    "size": [
+      500,
+      333
+    ],
+    "animated": false,
+    "pose": "gaming"
+  },
+  {
+    "file": "assets/mirror/f54098aaee361fbd0637-69df891255f0f6d5f4e65d14_Clyde_Headset_1-p-800.webp",
+    "size": [
+      800,
+      533
+    ],
+    "animated": false,
+    "pose": "gaming"
+  },
+  {
+    "file": "assets/mirror/a068e0ea41258eeb8382-675fe172b7439ef922a87fea_Clyde_Cube.webp",
+    "size": [
+      316,
+      316
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/60c4513f817c10f6a9ad-67b8818c18e313e47323d581_Clyde_Cube.webp",
+    "size": [
+      286,
+      286
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/94241f6f619bc9f343eb-67b8818c18e313e47323d57e_Clyde__1_.webp",
+    "size": [
+      381,
+      381
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/d72b471c42b25dd28492-66ebe91825c953334f391e0f_Clyde.png",
+    "size": [
+      400,
+      400
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/535c8554b573a63fb6e1-69ce49c6379549e68dcad62f_Clyde.webp",
+    "size": [
+      500,
+      500
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/060ebfa8273e16ffdf3a-697a04facb1e0ab479d7fd04_Clyde_Cube.png",
+    "size": [
+      145,
+      145
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/237097d9d8e902b298cc-66acb7e6117ecd802d94c61b_CLYDE.png",
+    "size": [
+      304,
+      358
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/bc32600f49366cbdbd5e-66ab9f4548e976999793bb90_WUMPUS_SIT.webp",
+    "size": [
+      735,
+      735
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/d3c3977791c79ce5df00-66ab9f4548e976999793bb90_WUMPUS_SIT-p-500.webp",
+    "size": [
+      500,
+      500
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/fe569eca29bda27c4ac8-66ac9e2d682a005becdb6093_WUMPUS.webp",
+    "size": [
+      301,
+      291
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/688bab5691251a6f7a8a-67a205a88b99ea4a03eabeeb_Clyde.webp",
+    "size": [
+      430,
+      430
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/3e1d95acec4797df28dd-67090b78328ad893ef6f1280_Wumpus_Pose_04_2.webp",
+    "size": [
+      236,
+      106
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/302ce0af73d0eb1838f4-67090b7a148a04dac02d4aa3_wumpus-pose.webp",
+    "size": [
+      544,
+      646
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/41617ac44f75a6c9dff8-67090b7a148a04dac02d4aa3_wumpus-pose-p-500.webp",
+    "size": [
+      500,
+      594
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/3514b3492423605bcaf3-67a4d7b9ddb8f70479500e53_4c74f967510e9480b8118b05964a3039_Clyde_Cube.webp",
+    "size": [
+      286,
+      286
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/20ba3e66c019c3c65a3f-67a4d7b9ddb8f70479500e56_0e84da058e5f250e47f9418ec9d928ef_Clyde__1_.webp",
+    "size": [
+      381,
+      381
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/94ad8ea79babfebf7ad3-69ce45e991cd1743e0dd0e60_Clyde_Clippboard_2.webp",
+    "size": [
+      580,
+      636
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/1fc04c26967b198129a1-69ce45e991cd1743e0dd0e60_Clyde_Clippboard_2-p-500.webp",
+    "size": [
+      500,
+      548
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/10f0bf3b0ca2ce62da89-6a9159dd4300d3aef484b81f_Wumpus_Pose_05_Jumping__1___1_.webp",
+    "size": [
+      586,
+      900
+    ],
+    "animated": false,
+    "pose": "party"
+  },
+  {
+    "file": "assets/mirror/e95c6727deeab84db850-6a9159dd4300d3aef484b81f_Wumpus_Pose_05_Jumping__1___1_-p-500.webp",
+    "size": [
+      500,
+      768
+    ],
+    "animated": false,
+    "pose": "party"
+  },
+  {
+    "file": "assets/mirror/a12d5cfb9ae9ffa1a805-670cca72618a1ca7284ffddf_Clyde_Cube.webp",
+    "size": [
+      535,
+      535
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/f137fd09e7c38aea400e-670cca72618a1ca7284ffddf_Clyde_Cube-p-500.webp",
+    "size": [
+      500,
+      500
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/7d9edfb2c56b48220bff-670e0d80cdd7ceb531a8a3f2_clyde_pose_02_1.webp",
+    "size": [
+      762,
+      818
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/28c2acc8d39f068749ce-670e0d80cdd7ceb531a8a3f2_clyde_pose_02_1-p-500.webp",
+    "size": [
+      500,
+      537
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/cc7ed2000d6be99fd83b-67f590e4da83da3a383fbd3c_Clyde_Blog_Icon.png",
+    "size": [
+      357,
+      357
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/b9883a8819f7b2c83648-619442eb8b3fab3eda4c29eb_Author-Wumpus-Webflow.png",
+    "size": [
+      250,
+      250
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/0e1d53808e40ee03dcea-66999bb9e8b4c041fa6164c4_Omen_Wumpus.png",
+    "size": [
+      253,
+      253
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/6290ab892dbb2d555e49-67ae318574afdd19cfe1d8ab_Clyde.webp",
+    "size": [
+      680,
+      680
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/369239b21ed625611991-67ae318574afdd19cfe1d8ab_Clyde-p-500.webp",
+    "size": [
+      500,
+      500
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/441701f50b35b1a21625-697cb57ca95a05116dbbb58c_Wumpus_Pose_04_1.webp",
+    "size": [
+      442,
+      588
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/123ec2a8c9ab5f261dfa-6853a8a8edcb278de1455f95_Clyde_Pose02_Point-Left.webp",
+    "size": [
+      624,
+      624
+    ],
+    "animated": false,
+    "pose": "left"
+  },
+  {
+    "file": "assets/mirror/fd344a75f8f122bf470e-6853a8a8edcb278de1455f95_Clyde_Pose02_Point-Left-p-500.webp",
+    "size": [
+      500,
+      500
+    ],
+    "animated": false,
+    "pose": "left"
+  },
+  {
+    "file": "assets/mirror/a4ef57a22bcc823e2cd3-6853a8d07174ae82b3cd9b9c_Wumpus_Pose_04_Running.webp",
+    "size": [
+      571,
+      974
+    ],
+    "animated": false,
+    "pose": "run"
+  },
+  {
+    "file": "assets/mirror/53ba31fd82e3c74dd2d8-6853a8d07174ae82b3cd9b9c_Wumpus_Pose_04_Running-p-500.webp",
+    "size": [
+      500,
+      853
+    ],
+    "animated": false,
+    "pose": "run"
+  },
+  {
+    "file": "assets/mirror/60902d114fa43455e8e4-67b199ace10ecbb577401b2c_clyde_pose_01_1.webp",
+    "size": [
+      617,
+      839
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "assets/mirror/493f5d837b4b7bdbde4b-67b199ace10ecbb577401b2c_clyde_pose_01_1-p-500.webp",
+    "size": [
+      500,
+      680
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "client/assets/boosts/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
+    "size": [
+      500,
+      250
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "client/assets/boosts/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
+    "size": [
+      500,
+      250
+    ],
+    "animated": true,
+    "pose": "sit",
+    "poster": "/brand/posters/ca5e4d9d7472518b.png"
+  },
+  {
+    "file": "client/assets/collectibles/media/71f119a55e4d5218cdbdf2087109.png",
+    "size": [
+      288,
+      288
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "client/assets/collectibles/media/c5d51a54e313793ac1844b8c67fb.png",
+    "size": [
+      288,
+      288
+    ],
+    "animated": true,
+    "pose": "sit",
+    "poster": "/brand/posters/f6a01cc19c91cb6a.png"
+  },
+  {
+    "file": "client/assets/collectibles/media/e798f2c34ea56b5ac024265f9e27.png",
+    "size": [
+      288,
+      288
+    ],
+    "animated": false,
+    "pose": "sit"
+  },
+  {
+    "file": "client/assets/collectibles/media/7cdbe7a2dfe0edf0517ebb506ad4.png",
+    "size": [
+      288,
+      288
+    ],
+    "animated": true,
+    "pose": "sit",
+    "poster": "/brand/posters/c15cb23cb01bfcb2.png"
+  }
+]

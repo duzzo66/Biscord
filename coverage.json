@@ -1,0 +1,1095 @@
+{
+  "scope": "Institutional pages, articles and documentation; directory landing pages only",
+  "pages": 1165,
+  "failedPages": [
+    {
+      "url": "https://discord.com/nitrorewards",
+      "status": "failed",
+      "file": "pages/3b5b6289affbe25b8821e01fb3278120c6032fe5cf45d16ee51f916af3ff907f.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/safety/parents-guide",
+      "status": "failed",
+      "file": "pages/1e599ac440f85a3fce07ee2523fb8e84433267b17b8815536b53fd781aaa9361.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://discord.com/safety/360044149591-Answering-parents'-and-educators'-top-questions",
+      "status": "failed",
+      "file": "pages/d94f1a37d17e61db85f4e7c286bc4f755381da27a2c2e59394e13c8bf54cfcfc.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://discord.com/developers/docs/policies-and-agreements/developer-terms-of-service",
+      "status": "failed",
+      "file": "pages/dbf20b8c8517076e5be564076981eabd43b2ddebd11463ddefe730cad81b7eb7.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/developers/docs/policies-and-agreements/developer-policy",
+      "status": "failed",
+      "file": "pages/23516d367a1460065d38986b03c6796e195c39bfb4acc7ab19545f1df43da88d.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/developers/docs/legal",
+      "status": "failed",
+      "file": "pages/bdda2467af43aee9514c026fef40f8df7593383ba42223150ce38a7471714613.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/developers/docs/policy",
+      "status": "failed",
+      "file": "pages/53215a29967b6b51712e619238dc365ea23f5ee1e2e39e7a4a8726b71ee61116.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/college",
+      "status": "failed",
+      "file": "pages/468bffc697c2a166c37b8ae8c78d88e2f336933d17430d42792dac01da09668a.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://discord.com/safety/how-you-can-appeal-our-actions",
+      "status": "failed",
+      "file": "pages/8d91b98f18bfb7574ab06472acea44a049d7faf5823f43bf1163a315b3e9b941.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://discord.com/partners",
+      "status": "failed",
+      "file": "pages/247a889546dd5d19b51cf8045f08b80db438feae01b2c1c97690adda7635bfeb.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/developers/docs/policies-and-agreements/terms-of-service",
+      "status": "failed",
+      "file": "pages/8fced2b58a64db282042cfe519dcb7172f7e7a275f8bb9208486b546ce26f332.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://discord.com/wip-private/developer-newsletter-old-2026",
+      "status": "failed",
+      "file": "pages/27ceea1524ae6717ed7af4887db5d6c0fc69f5af0ed2a6473d68cbf835aeed8e.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://discord.com/Unknown",
+      "status": "failed",
+      "file": "pages/1eee3033ef61355198dc1ff8e8621f7e0e9172c35d5759098dd6e8d93c4a6e99.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://docs.discord.com/developers/policies/developer-policy",
+      "status": "failed",
+      "file": "pages/d842b0f97ba7f91ec74ea14106f9af677a824665bced917107c9f24901a8c2bd.html",
+      "error": "HTTP 403"
+    }
+  ],
+  "excludedAppShells": [
+    "https://discord.com/developers/home",
+    "https://discord.com/feature/family-center",
+    "https://discord.com/feature/store",
+    "https://discord.com/settings/premium",
+    "https://discord.com/redeem",
+    "https://discord.com/report",
+    "https://discord.com/feature/connections",
+    "https://discord.com/settings/data-and-privacy",
+    "https://discord.com/feature/gift",
+    "https://discord.com/feature/badges",
+    "https://discord.com/settings/account-status",
+    "https://discord.com/feature/open-shop",
+    "https://discord.com/settings/lootboxes"
+  ],
+  "externalRedirects": [
+    {
+      "url": "https://discord.com/developers/docs/intro",
+      "status": "external",
+      "file": "pages/a2ba5e3726374205a2d790f576b2f01bffb11f1f5e821bfeb9c8afa8242062aa.html",
+      "redirect": "https://docs.discord.com/developers/intro"
+    },
+    {
+      "url": "https://discord.com/developers/docs/resources/channel",
+      "status": "external",
+      "file": "pages/aa9613d48f9bc2cf0b463de21c1cc6fa4d6690fe8e0670cc59341b1f70169a21.html",
+      "redirect": "https://docs.discord.com/developers/resources/channel"
+    },
+    {
+      "url": "https://discord.com/developers/docs/activities/overview",
+      "status": "external",
+      "file": "pages/bd4a7e7999fa104f9707fa9de188cc4deb4f9b6f1c4d5e50cc85ad37db6b5ec9.html",
+      "redirect": "https://docs.discord.com/developers/activities/overview"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/getting-started",
+      "status": "external",
+      "file": "pages/0de61aab719e9c80f3f13e8bc71fbd864af2f9897292c50765cf2c2f7826992c.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/getting-started"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/core-concepts/communication-features",
+      "status": "external",
+      "file": "pages/d9dcdeb783c1381a7a1c5dfa47f04d46068f00b48711c3b3b53d0322b7a03126.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/core-concepts/communication-features"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/core-concepts/platform-compatibility",
+      "status": "external",
+      "file": "pages/c4004e592eacf937ce5a20e6f042096a7efa4febf660ded2d731e0908f0e8757.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/core-concepts/platform-compatibility"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/development-guides/setting-rich-presence",
+      "status": "external",
+      "file": "pages/4c23437d60595ff59af9e6687b9bc6665d198c1c107773b41ca0062fc0686297.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/development-guides/setting-rich-presence"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/development-guides/managing-game-invites",
+      "status": "external",
+      "file": "pages/f134e2a52355f2ba74bdc31e7454f63e713a24219cf6b7bf9dc1c875da5c1d57.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/development-guides/managing-game-invites"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/development-guides/integrating-moderation",
+      "status": "external",
+      "file": "pages/b450fa373c3b92702c2399489ed66063447dcb785ba6d32a46d236418054ffd4.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/how-to/integrate-moderation"
+    },
+    {
+      "url": "https://discord.com/developers/docs/topics/voice-connections",
+      "status": "external",
+      "file": "pages/8ecdd354c32cbec2f8f7fff42bff6e463a6cde84f71e39bf93444af046a1cdc2.html",
+      "redirect": "https://docs.discord.com/developers/topics/voice-connections"
+    },
+    {
+      "url": "https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html",
+      "status": "external",
+      "file": "pages/26f697edb421283de96f03c73e58b504bfefcd862944e1c47e2099c488173c11.html",
+      "redirect": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be"
+    },
+    {
+      "url": "https://discord.com/developers/docs/quick-start/getting-started",
+      "status": "external",
+      "file": "pages/84e652142d37caba213293bd8726702f270b71c07f37a71454273fdde66becfd.html",
+      "redirect": "https://docs.discord.com/developers/quick-start/getting-started"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/development-guides/managing-voice-chat",
+      "status": "external",
+      "file": "pages/ac21568820aca16e8bf32d74f342f18f7fbdc276c24f895de86f1e356e25b249.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/development-guides/managing-voice-chat"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/development-guides/managing-lobbies",
+      "status": "external",
+      "file": "pages/b812aa4985a892af3f5b7af7476cf71fdc61ba721e2c6d84c57f5fc8f02bf85a.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/development-guides/managing-lobbies"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/design-guidelines/chat-history",
+      "status": "external",
+      "file": "pages/812a793aac132384ed951eebf3b6a860b9fc69c5b4c992a69f73495f992a3717.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/design-guidelines/chat-history"
+    },
+    {
+      "url": "https://discord.com/developers/docs/rich-presence/overview",
+      "status": "external",
+      "file": "pages/e74eefebfb69f5c093fed1e906219cc6525af1251ddc9425fdc1175ea7699d5f.html",
+      "redirect": "https://docs.discord.com/developers/platform/rich-presence"
+    },
+    {
+      "url": "https://discord.com/developers/docs/reference",
+      "status": "external",
+      "file": "pages/37b07a803e27f5df1ca1c1836a100fc63e6774ce26b74609a49ce28ac9f53fc5.html",
+      "redirect": "https://docs.discord.com/developers/reference"
+    },
+    {
+      "url": "https://discord.com/developers/docs/topics/opcodes-and-status-codes",
+      "status": "external",
+      "file": "pages/7f38d7135517079c5bf0de6041df1a76e710f7e37ff5b016a64157c3d66ddc18.html",
+      "redirect": "https://docs.discord.com/developers/topics/opcodes-and-status-codes"
+    },
+    {
+      "url": "https://discord.com/developers/docs/monetization/overview",
+      "status": "external",
+      "file": "pages/0fe82f3607b51a34b77260a21b1f1bde275467efceee1441ec6f0bc63a0c1c63.html",
+      "redirect": "https://docs.discord.com/developers/monetization/overview"
+    },
+    {
+      "url": "https://discord.com/developers/docs/change-log",
+      "status": "external",
+      "file": "pages/727bb4f07815692e4d73c9007f5eeffc8229d78cdd68165ca483b1631492c0af.html",
+      "redirect": "https://docs.discord.com/developers/change-log"
+    },
+    {
+      "url": "https://discord.com/developers/docs/resources/auto-moderation",
+      "status": "external",
+      "file": "pages/43ce321f384c706622767fe162a5486eba9c28ec32e9ca45e54fc2a186d6af79.html",
+      "redirect": "https://docs.discord.com/developers/resources/auto-moderation"
+    },
+    {
+      "url": "https://discord.com/developers/docs/components/reference",
+      "status": "external",
+      "file": "pages/5844029e6c7c586f40607e13cb50c6b30f93170baccacdf72dd25f22d7278746.html",
+      "redirect": "https://docs.discord.com/developers/components/reference"
+    },
+    {
+      "url": "https://discord.com/developers/docs/topics/rate-limits",
+      "status": "external",
+      "file": "pages/cccf4a911f1b41f4672712574021b52ad165111777670a3453dcb3d3c5b00c2e.html",
+      "redirect": "https://docs.discord.com/developers/topics/rate-limits"
+    },
+    {
+      "url": "https://discord.com/developers/docs/developer-tools/embedded-app-sdk",
+      "status": "external",
+      "file": "pages/c869edbd647dcb1a3bd960ed0c7ec43162b7425e80d62bb30b7e5b68dd6da51e.html",
+      "redirect": "https://docs.discord.com/developers/developer-tools/embedded-app-sdk"
+    },
+    {
+      "url": "https://discord.com/developers/docs/interactions/application-commands",
+      "status": "external",
+      "file": "pages/731c9cca2b62e3a75a7363007f76422464d357902a24fef9f0d425189c3dd7a4.html",
+      "redirect": "https://docs.discord.com/developers/interactions/application-commands"
+    },
+    {
+      "url": "https://discord.com/developers/docs/getting-started",
+      "status": "external",
+      "file": "pages/bb1ff60113575549cc70eaecd3674fff2355328b9cd9d5ea82b565e094483bdb.html",
+      "redirect": "https://docs.discord.com/developers/quick-start/getting-started"
+    },
+    {
+      "url": "https://discord.com/developers/docs/events/webhook-events",
+      "status": "external",
+      "file": "pages/4ac3769092fb1ca46c7781323096042086e6d5906013533af3c07f4e0db7b550.html",
+      "redirect": "https://docs.discord.com/developers/events/webhook-events"
+    },
+    {
+      "url": "https://discord.com/developers/docs/monetization/managing-your-store",
+      "status": "external",
+      "file": "pages/06cd9a7ad13d89a2efaa6f06403336faf47fc141898ed8f1c54eae1661c40ae4.html",
+      "redirect": "https://docs.discord.com/developers/monetization/managing-skus"
+    },
+    {
+      "url": "https://discord.com/developers/docs/monetization/one-time-purchases",
+      "status": "external",
+      "file": "pages/26f2dc8b4d0cd414a4e739998b9514284616ecdfdc8e6ff192084652ac51f76d.html",
+      "redirect": "https://docs.discord.com/developers/monetization/implementing-one-time-purchases"
+    },
+    {
+      "url": "https://discord.com/developers/docs/discord-social-sdk/overview",
+      "status": "external",
+      "file": "pages/8e4bba3a252d5bbf03554994a5a9ec3e332cb29655057435f768407ff1e807d0.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/overview"
+    },
+    {
+      "url": "https://discord.com/developers/docs/resources/application-role-connection-metadata",
+      "status": "external",
+      "file": "pages/fd075cd3809d5256d907057c8632f12dd98d9e963eed210a41497092e24f90bd.html",
+      "redirect": "https://docs.discord.com/developers/resources/application-role-connection-metadata"
+    },
+    {
+      "url": "https://discord.com/developers/docs/tutorials/configuring-app-metadata-for-linked-roles",
+      "status": "external",
+      "file": "pages/99ee1a2ffd1af6885205ca389a13355148fcce442d4149243779e503870b2580.html",
+      "redirect": "https://docs.discord.com/developers/tutorials/configuring-app-metadata-for-linked-roles"
+    },
+    {
+      "url": "https://discord.com/developers/docs/topics/threads",
+      "status": "external",
+      "file": "pages/a4e1897dbd6e376a9f5f5bdc9a9dc3ae0f6aeaee2ec1910e4bff2d7391492849.html",
+      "redirect": "https://docs.discord.com/developers/topics/threads"
+    },
+    {
+      "url": "https://discord.com/developers/docs/interactions/slash-commands",
+      "status": "external",
+      "file": "pages/ce246d095eb6473a89f8096920855b264d2ff76e11a940bb301f25b8b3f7ef06.html",
+      "redirect": "https://docs.discord.com/developers/interactions/application-commands"
+    },
+    {
+      "url": "https://discord.com/developers/docs/tutorials/upgrading-to-application-commands",
+      "status": "external",
+      "file": "pages/883f88bebfd4e9b47ae0abd8f3299fbb3b9a1e949196343dbffb79040439713c.html",
+      "redirect": "https://docs.discord.com/developers/interactions/application-commands"
+    },
+    {
+      "url": "https://docs.discord.com/developers/discord-social-sdk/social-sdk-reference",
+      "status": "external",
+      "file": "pages/17136d4bf015c2c36bf4cf434f298e281ffe968defdaa39ea78f7a4e8143dcf7.html",
+      "redirect": "https://discord.com/developers/docs/social-sdk/index.html"
+    },
+    {
+      "url": "https://discord.com/developers/docs/social-sdk/getting_started.html",
+      "status": "external",
+      "file": "pages/de217481f59ec4ba8a8584870bcbcec2842914e36741e30de6569e68fd0bc91d.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/getting-started"
+    },
+    {
+      "url": "https://discord.com/developers/docs/social-sdk/friends.html",
+      "status": "external",
+      "file": "pages/98f4f5c4e9bbef60184a751f00543e52f7b0115e6081c09bcde53621cb441603.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/development-guides/creating-a-unified-friends-list"
+    },
+    {
+      "url": "https://discord.com/developers/docs/social-sdk/authentication.html",
+      "status": "external",
+      "file": "pages/ad384607a72669322adf8647ea4d755797c14ee9139c242134ea54fda36d8344.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/development-guides/account-linking-with-discord"
+    },
+    {
+      "url": "https://discord.com/developers/docs/social-sdk/installation.html",
+      "status": "external",
+      "file": "pages/a635b123efef4f929a287ecb5808d77e8d6ca448cbe9e3188f771f9a88be07fb.html",
+      "redirect": "https://docs.discord.com/developers/discord-social-sdk/getting-started"
+    }
+  ],
+  "assets": 10044,
+  "failedAssets": [
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3",
+      "file": "assets/mirror/6138c04fd49dd1af890b-62d01c2078d11b68a1633276_Rectangle_1__3",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://digitalwellnesslab.org/wp-content/uploads/Family-Digital-Wellness-Guide-2021.pdf",
+      "file": "assets/mirror/d4b4dde47ad596e9d175-Family-Digital-Wellness-Guide-2021.pdf",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://www.datasociety.net/pubs/oh/Online_Harassment_2016.pdf",
+      "file": "assets/mirror/083c0b73e6bfa8a9c7c4-Online_Harassment_2016.pdf",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/guardians-guide/discord_guardians_guide_gb_au.pdf",
+      "file": "assets/mirror/d561322aa1d307baa3e0-discord_guardians_guide_gb_au.pdf",
+      "status": "failed",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/guardians-guide/discord_guardians_guide_es.pdf",
+      "file": "assets/mirror/317a46ba73e7b389c955-discord_guardians_guide_es.pdf",
+      "status": "failed",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/guardians-guide/discord_guardians_guide_br-2.pdf",
+      "file": "assets/mirror/88f7917334d730bb0336-discord_guardians_guide_br-2.pdf",
+      "status": "failed",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/guardians-guide/discord_guardians_guide_fr.pdf",
+      "file": "assets/mirror/ce970dec1c3b475d8fbb-discord_guardians_guide_fr.pdf",
+      "status": "failed",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg",
+      "file": "assets/mirror/1286633eac08723029b1-placeholder.60f9b1840c.svg",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://ecnl.org/sites/default/files/2023-03/Final%20Version%20FME%20with%20Copyright%20%282%29.pdf",
+      "file": "assets/mirror/ffba79710d2280307f17-Final_Version_FME_with_Copyright__2_.pdf",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6238e97f6441e30a13a52345/6332e0f7f9ddbfd4727be59e_62d01c2078d11b68a1633276_Rectangle%201%20(3",
+      "file": "assets/mirror/80ef33024d698a8b2fd3-6332e0f7f9ddbfd4727be59e_62d01c2078d11b68a1633276_Rectangle_1__3",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://github.com/peterolson/BigInteger.js",
+      "file": "assets/mirror/edd8ee781388b75b23c0-BigInteger.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/gka/chroma.js",
+      "file": "assets/mirror/ee5e0abcfeb58dcc9262-chroma.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/LeaVerou/color.js",
+      "file": "assets/mirror/dd8ffa267eac500ec192-color.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/MikeMcl/decimal.js",
+      "file": "assets/mirror/9d8d845640730b2a256d-decimal.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/ejci/favico.js",
+      "file": "assets/mirror/7814bb5391959979a543-favico.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/eligrey/FileSaver.js",
+      "file": "assets/mirror/00dee89c19b48c25c771-FileSaver.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/highlightjs/highlight.js",
+      "file": "assets/mirror/2ca212dd3b1aef3b2442-highlight.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/video-dev/hls.js",
+      "file": "assets/mirror/1301d9b056cc52e950a6-hls.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/andyearnshaw/Intl.js",
+      "file": "assets/mirror/009f6aad7cc7a8baac16-Intl.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/gpac/mp4box.js",
+      "file": "assets/mirror/8d80d6118f5a27e2511a-mp4box.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/brion/ogv.js",
+      "file": "assets/mirror/ea24db335f7cb3bbd03c-ogv.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/bestiejs/platform.js",
+      "file": "assets/mirror/18c5d4786d007663615c-platform.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/bestiejs/punycode.js",
+      "file": "assets/mirror/a65bdb253b4b9e9e9d1a-punycode.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/shtylman/qr.js",
+      "file": "assets/mirror/6b1fe39266621306a0c7-qr.js",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://github.com/photopea/UPNG.js",
+      "file": "assets/mirror/1fe181fc3d7a0201711d-UPNG.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/SlexAxton/messageformat.js",
+      "file": "assets/mirror/13c18bf61380e2ff8566-messageformat.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/trailofbits/publications/blob/master/reviews/2024-08-discord-dave-protocol-designreview.pdf",
+      "file": "assets/mirror/5c45ff3a6c2af62b4f07-2024-08-discord-dave-protocol-designreview.pdf",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/trailofbits/publications/blob/master/reviews/2024-09-discord-dave-protocol-codereview.pdf",
+      "file": "assets/mirror/c7c25c6582dc83162d31-2024-09-discord-dave-protocol-codereview.pdf",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://efron.ckirby.su.domains/papers/2021EB-concepts-methods.pdf",
+      "file": "assets/mirror/134a47e754fe094c8e7f-2021EB-concepts-methods.pdf",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://github.com/trailofbits/publications/blob/master/reviews/2025-06-discord-e2eewebassembly-securityreview.pdf",
+      "file": "assets/mirror/882ef79ae7d75159066b-2025-06-discord-e2eewebassembly-securityreview.pdf",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45409.pdf",
+      "file": "assets/mirror/26cfe5dd97b0ffbc56af-45409.pdf",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/6a1427cddd742f137616de75_DiscordBlog_CompanyAnnoucements-6%20(1",
+      "file": "assets/mirror/76f009ee14296db178c2-6a1427cddd742f137616de75_DiscordBlog_CompanyAnnoucements-6__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/6a1426a6bb084731fe36aae5_Creator%20to%20Server%20Admin%20101%20%2B%20201%20(1",
+      "file": "assets/mirror/8016fcd0e66336605a5c-6a1426a6bb084731fe36aae5_Creator_to_Server_Admin_101___201__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/6a142738117bd9c5fd3a5902_5%20Must%20Read%20Articles%20for%20Beginners%20Header%20-%20Option%201%20(1",
+      "file": "assets/mirror/9f1a00cfc8ef0432af62-6a142738117bd9c5fd3a5902_5_Must_Read_Articles_for_Beginners_Header_-_Option_1__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/6a142776452be5be06a1c458_Audience%20Vs%20Community%20Header%20(1",
+      "file": "assets/mirror/92f342b6b42a80b0e151-6a142776452be5be06a1c458_Audience_Vs_Community_Header__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/6a14280efce823d859173d3a_Fitting%20Community%20In%20Your%20Strategy%20Header%20(1",
+      "file": "assets/mirror/e0b2d1c324fab9ba4d0e-6a14280efce823d859173d3a_Fitting_Community_In_Your_Strategy_Header__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://github.com/TooTallNate/ansi.js",
+      "file": "assets/mirror/3c9b6656b8abb8d1bfb2-ansi.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/indutny/asn1.js",
+      "file": "assets/mirror/94a3be050d5f428dc6d6-asn1.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/MikeMcl/big.js",
+      "file": "assets/mirror/1a6cd5b5292998b952e3-big.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/indutny/bn.js",
+      "file": "assets/mirror/714b4d1592baa8cb4928-bn.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/visionmedia/bytes.js",
+      "file": "assets/mirror/1044f75f31991585165e-bytes.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "http://github.com/Marak/colors.js",
+      "file": "assets/mirror/3c004c002b4058c72726-colors.js",
+      "status": "failed",
+      "error": "fetch failed"
+    },
+    {
+      "url": "https://github.com/tj/commander.js",
+      "file": "assets/mirror/c5e99007201b421feae9-commander.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/indutny/des.js",
+      "file": "assets/mirror/ed1833e4dcd531ecee2d-des.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/wycats/handlebars.js",
+      "file": "assets/mirror/513d264dbc3450223cd8-handlebars.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/indutny/hash.js",
+      "file": "assets/mirror/7c9068dd690683d1a717-hash.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/indutny/hpack.js",
+      "file": "assets/mirror/21918226120fe494b58b-hpack.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/SBoudrias/Inquirer.js",
+      "file": "assets/mirror/2a86bfec45015e1e86f4-Inquirer.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/whitequark/ipaddr.js",
+      "file": "assets/mirror/676a861c0a605733e643-ipaddr.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/crypto-browserify/md5.js",
+      "file": "assets/mirror/fd01e1d841967af30d88-md5.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/guille/ms.js",
+      "file": "assets/mirror/638e2072210052a0f0b4-ms.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/einaros/options.js",
+      "file": "assets/mirror/24d2e6f180cf635f06d0-options.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/FezVrasta/popper.js",
+      "file": "assets/mirror/920dd72729fd41dc61e7-popper.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/crypto-browserify/sha.js",
+      "file": "assets/mirror/0200b6692b2208d203df-sha.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/Sebmaster/tr46.js",
+      "file": "assets/mirror/2a6bcb049d609e627e01-tr46.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/mathiasbynens/wtf-8.js",
+      "file": "assets/mirror/8440cebdecc90e339f66-wtf-8.js",
+      "status": "failed",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://github.com/less/less.js",
+      "file": "assets/mirror/e0ab2acc39f741595709-less.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/kemitchell/spdx-correct.js",
+      "file": "assets/mirror/ca17431feed0b3175a31-spdx-correct.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/kemitchell/validate-npm-package-license.js",
+      "file": "assets/mirror/b8151711a0da3dacb7e0-validate-npm-package-license.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/avoidwork/filesize.js",
+      "file": "assets/mirror/14639ba2263747a4c0e8-filesize.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/isagalaev/highlight.js",
+      "file": "assets/mirror/c0901f4fbae4292564d3-highlight.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/alexei/sprintf.js",
+      "file": "assets/mirror/60fe651268a7bd763633-sprintf.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/kemitchell/spdx-expression-parse.js",
+      "file": "assets/mirror/fcab2a696e68423e7a38-spdx-expression-parse.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67b85eb3e1054bdc41ce787e_icon%20/(1/",
+      "file": "assets/mirror/8d6f810b5ff46ce23afb-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/625d1ae0948f3b0a9a8f4644_Vector%206%20/(1/",
+      "file": "assets/mirror/f10325b3486c481a9a11-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/62600988b649451e2c86068f_c0faca543f786ba5a07525d1c7cfb59a%20/(1/",
+      "file": "assets/mirror/c18d496e17ed550beb0d-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/63f34a1a85872a326ba67489_ArrowButton%20/(1/",
+      "file": "assets/mirror/35e83df209d5e183b77b-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/633bec68cadad3f933adfcc1_Vector%20/(17/",
+      "file": "assets/mirror/b5a20dfd0089cbc95ac3-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/63856d7e59cf12270087fba8_Final%20-%20Creator%20Portal%20BG_Discord%20Creator%20Academy%20/(2/",
+      "file": "assets/mirror/77b31c0c7faae98303ed-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/63856dd53a187c59e6173f70_FINAL%20-%20Creator%20Portal%20BG_Learn%20From%20Creators%20/(1/",
+      "file": "assets/mirror/b62ec5ad8d25b5fdda6e-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6635301de1db6d3bbfeef14e_background-art%20/(3/",
+      "file": "assets/mirror/22a030de7419c51cea95-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66abb2f91fbe166075434606_background-art%20mini%20/(1/",
+      "file": "assets/mirror/c9ae32eb10e4dd336173-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/645a12c8fc955edcdce91767_Group%20626810%20/(1/",
+      "file": "assets/mirror/7f9a40de3f06e8e6932b-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/645b33f640e38a1a64f51fc3_Group%20626812%20/(1/",
+      "file": "assets/mirror/e6607ee5619c6d59d4db-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6464aa73b411a231096d2dea_Group%20626809%20/(2/",
+      "file": "assets/mirror/7d85479ad160cf91ccff-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/648b2725187619f2fe618e61_Group%20626811%20/(5/",
+      "file": "assets/mirror/3b674f343455baf5386f-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6481980398ae2153036082b6_valorant%20/(1/",
+      "file": "assets/mirror/6714332577b203a56c2c-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6502c7188a028e14686ccf9f_Ellipse%20/(1/",
+      "file": "assets/mirror/69674706c3b0b7cf79e9-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65d376ab1e41f078b3e7898a_Group%20/(1/",
+      "file": "assets/mirror/3160e0839d6048f5dc79-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65df224a5e3bbeeadb42a1af_form%20/(1/",
+      "file": "assets/mirror/8124207e1c1be473d046-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/65e195dd52279a59619b5ea5_bg-player%20/(1/",
+      "file": "assets/mirror/dba0da9ec6b9c1063907-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6729ca637f6587d3dc83f73e_line%20/(1/",
+      "file": "assets/mirror/574a0de5f1d544a8d9da-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6627cb1b1de9adacf45f8b91_Texture%201%20/(1/",
+      "file": "assets/mirror/23e399bba3bd91f63678-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/664f467c82fcb9d0bc039a7f_CHARACTERS%20FULL%20/(1/",
+      "file": "assets/mirror/45ee6da6a31f912b7dfc-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6abebf7f52f1f8c8f11e613c_Homepage%20Hero%20/(9/",
+      "file": "assets/mirror/3006f771f0f861bc72e1-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66ffb8739863899e99dbaf83_Background%20/(3/",
+      "file": "assets/mirror/6b69e8cc90d6b52c3596-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6aaa8ccce8d751351bc90218_Background%20(3",
+      "file": "assets/mirror/6d7f13a32fd4849c738e-6aaa8ccce8d751351bc90218_Background__3",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e81acc13851156119e04de_1%20/(1/",
+      "file": "assets/mirror/f7565e8522053fd77298-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e81b24cd6e3d815027f1d6_2%20/(1/",
+      "file": "assets/mirror/39ba7fd4db9e11e4479b-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66e81b70db63cce8a629ab26_3%20/(1/",
+      "file": "assets/mirror/a63a3f271579746778e6-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66f1276fb47c9be620595c0f_Ellipse%20/(1/",
+      "file": "assets/mirror/ce9ecf0521461d0a7bfe-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6704f69815a35786673e1947_UI%20/(4/",
+      "file": "assets/mirror/c5230ea7c568fb74f515-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66f123f23f5e56dc8c1bdad9_quest-hero-bg%20/(1/",
+      "file": "assets/mirror/e79f08bd9ebd33bd563e-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/685d0ae92b1096b3b159ee52_1-BG%20/(1/",
+      "file": "assets/mirror/c216fdd9ee5b10a9feea-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66ea8c7ed0d1a3eeedde846b_Background-brand%20/(1/",
+      "file": "assets/mirror/0bf05dbddaa110d8cfec-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/672dba937ef2cd95fc095691_Gradient%20(3",
+      "file": "assets/mirror/0a885af111980c8a22a7-672dba937ef2cd95fc095691_Gradient__3",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6aaa8df0c1f4b2d8d45505df_Background%20(3",
+      "file": "assets/mirror/0d8602815282e949116a-6aaa8df0c1f4b2d8d45505df_Background__3",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67a1d370c05d6aeb54af93af_Radial%20Gradient%20(1",
+      "file": "assets/mirror/309c77354bcd0304c921-67a1d370c05d6aeb54af93af_Radial_Gradient__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/670688ac7d8c68b86761673a_gradient%20/(1/",
+      "file": "assets/mirror/39ec9a0d7cc936cf9075-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6364a908c5fb42bcea8a0759_Illustrations%20/(1/",
+      "file": "assets/mirror/72ae9bbf72ad2eaa63f1-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6634ed9eb47d844e019e7025_Backgorund%20/(3/",
+      "file": "assets/mirror/106e2cfed00d28ab9f9e-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/632c233c74d0ef0d597f6b7d_Frame%20/(1/",
+      "file": "assets/mirror/78c132aa78a5261a113e-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/632c2e2026040b8010010087_Frame%20/(3/",
+      "file": "assets/mirror/569262014a5693801542-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6564afd1413e28bb87e7ec49_Banner%20/(mobile/",
+      "file": "assets/mirror/164f3a3e87dfc42c7140-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6458ce2e22d8d726aa76203b_Group%20626809%20/(1/",
+      "file": "assets/mirror/73ff40113d356839a856-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6634f6011ff99af5f9247b7b_Backgorund%20/(5/",
+      "file": "assets/mirror/1561584ded717162db8b-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/66a8f2fe4263907efd6c118a_background-art%20/(4/",
+      "file": "assets/mirror/697117e2a0663028bb27-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6464afdc51fa1678318a9f68_Group%20626810%20/(2/",
+      "file": "assets/mirror/f4e7cefb02f2b17cf7d0-resource",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/5f8dd67f8fdd6f51f0b50904/62d6778cca41697270f2dd07_Frame%20145%20(1",
+      "file": "assets/mirror/756b7912207a6b8a6212-62d6778cca41697270f2dd07_Frame_145__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/5f8dd67f8fdd6f51f0b50904/683ff3f1dd62d8476a518b2c_66ffb8739863899e99dbaf83_Background%20(3",
+      "file": "assets/mirror/395714ddba386aaf2394-683ff3f1dd62d8476a518b2c_66ffb8739863899e99dbaf83_Background__3",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6238e97f6441e30a13a52345/64369f991d68257110c303fd_Vector%206%20(1",
+      "file": "assets/mirror/226a15494f751b05ae9a-64369f991d68257110c303fd_Vector_6__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6238e97f6441e30a13a52345/67a4d58a818864e4e543afc3_Background%20(1",
+      "file": "assets/mirror/6052210816e7c77a4b16-67a4d58a818864e4e543afc3_Background__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/6238e97f6441e30a13a52345/6436bfbb77823f27e70db5ce_Group%20482199%20(1",
+      "file": "assets/mirror/670fe74251e8cc9df705-6436bfbb77823f27e70db5ce_Group_482199__1",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://www.loc.gov/standards/datetime/iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16.pdf",
+      "file": "assets/mirror/77f765af7442e62cbbea-iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16.pdf",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://github.com/discordjs/discord.js",
+      "file": "assets/mirror/e5c432d9d9c2e4540f1d-discord.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://12345678.discordsays.com/foo/bar.jpg",
+      "file": "assets/mirror/67f186de2f00c00a0849-bar.jpg",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://d3gk2c5xim1je2.cloudfront.net/fontawesome/v7.2.0/regular/view.svg",
+      "file": "assets/mirror/cbc4c0cc001c8e70ff5c-view.svg",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://d3gk2c5xim1je2.cloudfront.net/fontawesome/v7.2.0/regular/appsicon.svg",
+      "file": "assets/mirror/b73aa036860b34700d4f-appsicon.svg",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "http://expressjs.com/en/5x/api.html",
+      "file": "assets/mirror/6af5141e36aa274951e0-api.html",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/discord/linked-roles-sample/blob/main/src/register.js",
+      "file": "assets/mirror/d80f812f8711b852a015-register.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://github.com/discord/linked-roles-sample/blob/main/src/storage.js",
+      "file": "assets/mirror/a8412449703b111587c3-storage.js",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "http://my-site.com/goofy.jpg",
+      "file": "assets/mirror/e168ae959617fb417833-goofy.jpg",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://discord.com/developers/plus.svg",
+      "file": "assets/mirror/b7fb8b48e6b586260d41-plus.svg",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    },
+    {
+      "url": "https://discord.com/developers/minus.svg",
+      "file": "assets/mirror/f7255a74903a9050324f-minus.svg",
+      "status": "failed",
+      "error": "HTML returned for asset"
+    }
+  ],
+  "updatedAt": "2026-11-14T06:23:36.297Z"
+}

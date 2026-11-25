@@ -1,0 +1,31 @@
+{
+  "name": "biscord-homepage",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "desktop": "node --env-file-if-exists=.env desktop/prepare.mjs && electron desktop/main.cjs",
+    "desktop:build": "node --env-file-if-exists=.env desktop/prepare.mjs && electron-builder --config desktop/builder.json --win portable --x64",
+    "build": "node build.mjs",
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "mirror": "node sync.mjs",
+    "verify": "node verify-site.mjs",
+    "test": "node --test backend.test.mjs boosts.test.mjs sounds.test.mjs profile-editor.test.mjs icons.test.mjs cosmetics.test.mjs badges.test.mjs themes.test.mjs branding.test.mjs database.test.mjs",
+    "build:brand": "node build-brand.mjs",
+    "assets:restore": "node restore-assets.mjs",
+    "assets:check": "node restore-assets.mjs --check",
+    "supabase:setup": "node --env-file=.env supabase-setup.mjs",
+    "supabase:test-social": "node --env-file=.env supabase-social-check.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "acorn": "^8.19.0",
+    "cheerio": "^1.2.0",
+    "electron": "^45.4.1",
+    "electron-builder": "^26.18.0",
+    "qrcode": "^1.5.4"
+  },
+  "dependencies": {
+    "nodemailer": "^10.5.0",
+    "pg": "^8.23.1"
+  }
+}

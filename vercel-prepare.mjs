@@ -1,0 +1,21 @@
+// JavaScript / vercel-prepare.mjs / Node 24 / isolated cloud source, no credentials
+import fs from 'node:fs';import path from 'node:path';
+const out='.vercel-stage';fs.mkdirSync(out,{recursive:true});const copy=(a,b)=>{fs.mkdirSync(path.dirname(b),{recursive:true});fs.copyFileSync(a,b);};
+for(const f of ['server-voice.mjs','backend.mjs','database.mjs','server-memberships.mjs','cloud-realtime.mjs','boost-policy.mjs','badge-policy.mjs'])copy(f,out+'/'+f);
+fs.cpSync('api',out+'/api',{recursive:true});fs.cpSync('certs',out+'/certs',{recursive:true});
+for(const f of ['client/assets/themes/catalog.json','client/assets/badges/catalog.json','client/assets/collectibles/catalog.json'])copy(f,out+'/'+f);
+const skip=['assets','downloads'];for(const e of fs.readdirSync('dist',{withFileTypes:true})){if(skip.includes(e.name))continue;fs.cpSync('dist/'+e.name,out+'/public/'+e.name,{recursive:true,filter:p=>!p.replaceAll('\\','/').includes('/collectibles/media/')&&!p.replaceAll('\\','/').endsWith('/collectibles/media')});}
+for(const x of JSON.parse(fs.readFileSync('branding/overrides.json','utf8')))copy('branding/overrides/'+x.file,out+'/public/'+x.file);
+for(const name of ['Vulpi-Android.apk','Biscord-Android.apk'])if(fs.existsSync('dist/downloads/'+name))copy('dist/downloads/'+name,out+'/public/downloads/'+name);
+const map={};const add=(file,url)=>{if(file&&url&&/^https:\/\//.test(url)){map['/'+file.replace(/^\//,'')]=url;map['/'+file.replace(/^\//,'').split(/[\\/]/).map(encodeURIComponent).join('/')]=url;}};
+const cache=JSON.parse(fs.readFileSync('asset-cache.json','utf8'));for(const a of (Array.isArray(cache)?cache:cache.assets||cache.items||[]))add(a.file,a.url);
+for(const a of JSON.parse(fs.readFileSync('manifest.json','utf8').replace(/^\uFEFF/,'' )).assets)add(a.file,a.url);
+for(const a of JSON.parse(fs.readFileSync('client/assets/collectibles/downloads.json','utf8')))add(a.local,a.url);
+fs.writeFileSync(out+'/media-map.json',JSON.stringify(map));
+const routeMap=JSON.parse(fs.readFileSync('dist/route-map.json','utf8'));const rewrites=[{source:'/api/:path*',destination:'/api/index'},{source:'/channels/:path*',destination:'/client/index.html'},{source:'/channels',destination:'/client/index.html'},{source:'/invite/:code',destination:'/client/index.html'},{source:'/login',destination:'/auth/index.html'},{source:'/register',destination:'/auth/index.html'},{source:'/reset-password',destination:'/auth/index.html'},{source:'/assets/:path*',destination:'/api/media?path=/assets/:path*'},{source:'/client/assets/collectibles/media/:path*',destination:'/api/media?path=/client/assets/collectibles/media/:path*'}];
+// Place catalog redirect endpoints before the catch-all API route.
+rewrites.splice(0,0,{source:'/api/media',destination:'/api/media'});
+const redirects=Object.entries(routeMap).filter(([url,file])=>/^[a-zA-Z0-9/_.%~-]+$/.test(url)&&!url.includes('?')&&!['/login','/register'].includes(url)&&!url.startsWith('/channels')&&file!== 'index.html').map(([source,file])=>({source,destination:'/'+file}));
+fs.writeFileSync(out+'/vercel.json',JSON.stringify({version:2,framework:null,buildCommand:'',outputDirectory:'public',functions:{'api/index.mjs':{maxDuration:60,includeFiles:'{client/assets/**/catalog.json,certs/**}'},'api/media.mjs':{includeFiles:'media-map.json'}},rewrites:[...rewrites,...redirects].slice(0,2000)},null,2));
+fs.writeFileSync(out+'/package.json',JSON.stringify({name:'biscord-cloud',version:'1.0.0',private:true,type:'module',engines:{node:'24.x'},dependencies:{pg:'^8.23.1',nodemailer:'^10.5.0',qrcode:'^1.5.4'}},null,2));
+console.log('Cloud package prepared with '+Object.keys(map).length+' catalog paths; credentials excluded.');

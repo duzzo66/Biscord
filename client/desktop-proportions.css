@@ -1,0 +1,15 @@
+/* CSS / desktop-proportions.css / desktop browsers / proportions checked against Vulpi */
+@font-face{font-family:Client;src:url('/client/assets/fonts/gg-sans-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Client;src:url('/client/assets/fonts/gg-sans-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Client;src:url('/client/assets/fonts/gg-sans-600.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Client;src:url('/client/assets/fonts/gg-sans-700.woff2') format('woff2');font-weight:700 900;font-style:normal;font-display:swap}
+@media(min-width:761px){
+ .client{--sidebar-width:295px;grid-template-columns:80px var(--sidebar-width) minmax(0,1fr)}
+ .server-rail{gap:8px;padding:0 0 16px}.server-button{width:40px;height:40px;border-radius:12px;padding:0}.server-button:hover,.server-button.selected{border-radius:12px}.server-button.home .icon{width:28px;height:28px}.server-button .icon,.server-button.utility .icon{width:24px;height:24px}.server-button:before{left:-20px}.server-button.selected:before{height:36px}.server-glyph{font-size:18px}
+ .sidebar-top{padding:0 10px}.sidebar-scroll{padding:8px}.side-link{height:40px;margin-bottom:0;font-size:16px;gap:12px;padding:0 12px}.side-link .icon{width:24px;height:24px;flex-basis:24px}
+ .list-heading{padding:18px 12px 12px;font-size:12px;line-height:16px;font-weight:500;text-transform:none}
+ .dm-row{height:50px;min-height:50px;padding:8px;gap:12px}.dm-row>.avatar{width:32px;height:32px;flex-basis:32px}.dm-row .name{font-size:16px;line-height:20px}.dm-row small{font-size:12px;line-height:16px}
+ .friend-list{padding:16px 24px}.friends-search{height:40px;border:1px solid var(--border);border-radius:8px;background:transparent;padding:0 12px;gap:8px}.friends-search input{font-size:16px}.friends-search .icon{width:20px;height:20px}.friends-count{font-size:14px;font-weight:500;line-height:20px;letter-spacing:0;text-transform:none;margin:20px 0 14px}
+ .friend-row{min-height:62px;gap:12px;padding:10px 0;margin:0;border-radius:8px}.friend-row:hover{padding-left:10px;padding-right:10px;margin-left:-10px;margin-right:-10px}.friend-row>.avatar{width:32px;height:32px;flex-basis:32px;font-size:14px}.friend-copy strong{font-size:16px;line-height:20px;font-weight:600}.friend-copy small{font-size:14px;line-height:18px}.friend-row-actions{gap:12px}.friend-row-actions .circle-action{width:36px;height:36px;background:transparent}.friend-row-actions .circle-action:hover{background:var(--hover)}.friend-row-actions .circle-action .icon{width:20px;height:20px}
+ .account-dock{width:calc(var(--sidebar-width) + 60px)}
+}

@@ -1,0 +1,35 @@
+// JavaScript / download-badge-art.mjs / Node.js 24 / official Discord badge illustrations
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const file='client/assets/badges/catalog.json';
+const data=JSON.parse(await fs.readFile(file,'utf8'));
+const official=JSON.parse(await fs.readFile('reference-client/badge-art-catalog.json','utf8')).badges;
+const families={'nitro':1,'boost':12,'account-age':18,'streaming':19,'game-time':20,'game-variety':21,'gifting':17};
+const singles={'discord-staff':22,'discord-partner':2,'discord-mod':3,'hype-squad-events':4,'hype-squad-bravery':5,'hype-squad-brilliance':6,'hype-squad-balance':7,'discord-bug-hunter-green':8,'discord-bug-hunter-gold':9,'discord-bot-dev':10,'discord-early-supporter':11,'username':13,'quest':14,'last-meadow':15,'orb':16};
+await fs.mkdir('client/assets/badges/previews',{recursive:true});
+let next=0,complex=0;
+await Promise.all(Array.from({length:5},async()=>{for(;;){
+ const b=data.items[next++];if(!b)return;
+ const source=official.find(x=>x.badge_id===(singles[b.id]||families[b.family]));
+ if(!source)throw Error('Missing official badge: '+b.id);
+ const art=source.tiers.length?source.tiers[b.level]:source;
+ if(!art)throw Error('Missing official tier: '+b.id);
+ const url=art.complex_icon_static_url||source.complex_icon_static_url||art.simple_icon_url||source.simple_icon_url;
+ if(!url?.startsWith('https://cdn.discordapp.com/'))throw Error('Invalid art URL: '+b.id);
+ const response=await fetch(url,{signal:AbortSignal.timeout(30000)});
+ if(!response.ok)throw Error(url+' '+response.status);
+ const bytes=Buffer.from(await response.arrayBuffer()),ext=new URL(url).pathname.endsWith('.svg')?'.svg':'.png';
+ if(ext==='.svg'&&(!bytes.toString().includes('<svg')||/<script|<foreignObject|\bon\w+\s*=/i.test(bytes.toString())))throw Error('Invalid SVG '+b.id);
+ if(ext==='.png'&&bytes.subarray(1,4).toString()!=='PNG')throw Error('Invalid PNG '+b.id);
+ const local='/client/assets/badges/previews/'+b.id+ext;
+ await fs.writeFile('.'+local,bytes);
+ b.previewImage=local;b.previewSource=url;b.previewSha256=createHash('sha256').update(bytes).digest('hex');
+ b.previewBytes=bytes.length;b.previewKind=art.complex_icon_static_url||source.complex_icon_static_url?'complex':'simple';
+ b.officialBadgeId=source.badge_id;b.officialTierKey=art.key||null;
+ b.tierName=art.name;b.familyName=source.name;
+ b.previewTitle=source.tiers.length&&(b.level>0||b.family==='nitro')?source.name+' '+art.name:source.name;
+ if(b.previewKind==='complex')complex++;
+}}));
+data.artSource='Discord public badge artwork metadata, captured from the official badge directory';
+await fs.writeFile(file,JSON.stringify(data,null,2));
+console.log('Official preview art:',data.items.length,'badges;',complex,'complex illustrations; compact profile icons preserved.');

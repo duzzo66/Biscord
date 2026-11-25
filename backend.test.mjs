@@ -1,0 +1,117 @@
+// JavaScript / backend.test.mjs / Node.js 24+ / isolated API integration checks
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import http from 'node:http';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {createBackend,totp} from './backend.mjs';
+test('account lifecycle, isolation, sessions, synchronization, MFA and persistence',async t=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'biscord-api-test-'));
+ let backend=createBackend({dataDir:dir});const server=http.createServer((req,res)=>backend.handle(req,res));await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const base='http://127.0.0.1:'+server.address().port;
+ t.after(async()=>{backend.close();await new Promise(resolve=>server.close(resolve));});
+ function client(){return {cookie:'',csrf:'',async call(route,method='GET',body,extra={}){const res=await fetch(base+'/api'+route,{method,headers:{'Content-Type':'application/json',Origin:base,Cookie:this.cookie,'X-CSRF-Token':this.csrf,...extra},...(body===undefined?{}:{body:JSON.stringify(body)})});const cookie=res.headers.get('set-cookie');if(cookie)this.cookie=cookie.split(';')[0];const data=await res.json();if(data.csrf)this.csrf=data.csrf;return {status:res.status,data,headers:res.headers};}};}
+ const a=client(),b=client(),a2=client(),outsider=client();
+ assert.equal((await outsider.call('/session')).status,401);
+ const payload={username:'account_a',displayName:'Conta A',email:'account-a@example.test',password:'Long-test-password-123',acceptTerms:true};
+ const created=await a.call('/register','POST',payload);assert.equal(created.status,201);assert.match(created.headers.get('set-cookie'),/HttpOnly.*SameSite=Strict/);assert.ok(!('password_hash' in created.data.user));
+ assert.equal((await b.call('/register','POST',{...payload,username:'account_b',email:'account-b@example.test'})).status,201);
+ assert.equal((await a2.call('/login','POST',{email:payload.email,password:'incorrect'})).status,401);
+ assert.equal((await a2.call('/login','POST',payload)).status,200);
+ assert.equal((await a.call('/preferences','PATCH',{theme:'onyx'},{Origin:'https://unrelated.invalid'})).status,403);
+ assert.equal((await a.call('/preferences','PATCH',{theme:'onyx'},{'X-CSRF-Token':'wrong'})).status,403);
+ assert.equal((await a.call('/preferences','PATCH',{theme:'onyx',fontSize:18})).status,200);
+ assert.equal((await a2.call('/session')).data.preferences.theme,'onyx');
+ assert.equal((await b.call('/session')).data.preferences.theme,'dark');
+ const eventsController=new AbortController();const stream=await fetch(base+'/api/events',{headers:{Cookie:a2.cookie},signal:eventsController.signal});const reader=stream.body.getReader();await reader.read();await a.call('/preferences','PATCH',{messageSpacing:20});const change=await reader.read();assert.match(new TextDecoder().decode(change.value),/event: change/);eventsController.abort();
+
+ assert.equal((await a.call('/preferences','PATCH',{fontSize:-3})).status,400);
+ assert.equal((await a.call('/preferences','PATCH',{soundVolume:101})).status,400);
+ assert.equal((await a.call('/preferences','PATCH',{notificationTone:'unknown'})).status,400);
+ assert.equal((await a.call('/preferences','PATCH',{soundVolume:45,notificationTone:'lofi_message1',soundsEnabled:false})).status,200);
+ assert.equal((await a2.call('/session')).data.preferences.soundVolume,45);
+
+ assert.equal((await a.call('/profile','PATCH',{displayName:'Nome sincronizado',about:'Meu perfil'})).status,200);
+ assert.equal((await a2.call('/session')).data.user.displayName,'Nome sincronizado');
+ const pixel='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jN1sAAAAASUVORK5CYII=';
+ assert.equal((await a.call('/profile','PATCH',{banner:pixel,avatar:pixel,accentColor:'#123456',bannerColor:'#654321',pronouns:'ela/dela'})).status,200);
+ const profileSync=(await a2.call('/session')).data.user;assert.equal(profileSync.banner,pixel);assert.equal(profileSync.accentColor,'#123456');assert.equal(profileSync.pronouns,'ela/dela');
+ assert.equal((await a.call('/profile','PATCH',{banner:'https://not-a-local-image.invalid/image.png'})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{accentColor:'red;display:none'})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{favoriteGame:'1402418696126992445',gamesILike:'1384276457596911676,1344368447928401961',note:'Nota privada',nameStyle:'glow',nameColor:'#aabbcc',customStatus:'Construindo'})).status,200);
+ assert.equal((await a2.call('/session')).data.user.favoriteGame,'1402418696126992445');
+ const cosmetics=JSON.parse(fs.readFileSync(new URL('./client/assets/collectibles/catalog.json',import.meta.url))).items;const cosmeticProfile=Object.fromEntries([['decorationId','decoration'],['effectId','effect'],['frameId','frame'],['nameplateId','nameplate']].map(([key,kind])=>[key,cosmetics.find(x=>x.kind===kind).id]));
+ assert.equal((await a.call('/profile','PATCH',cosmeticProfile)).status,200);
+ const syncedCosmetics=(await a2.call('/session')).data.user;for(const [key,value] of Object.entries(cosmeticProfile))assert.equal(syncedCosmetics[key],value);
+ assert.equal((await a.call('/profile','PATCH',{decorationId:cosmeticProfile.frameId})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{effectId:'not-a-catalog-item'})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{nameplateId:cosmeticProfile.frameId})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{decorationId:'',effectId:'',frameId:'',nameplateId:''})).status,200);
+ const badgeCatalog=JSON.parse(fs.readFileSync(new URL('./client/assets/badges/catalog.json',import.meta.url))).items;const uniqueBadges=[...new Map(badgeCatalog.map(b=>[b.family,b])).values()].slice(0,7).map(b=>b.id),badgeValue=uniqueBadges.slice(0,6).join(',');
+ assert.equal((await a.call('/profile','PATCH',{badges:badgeValue})).status,200);assert.equal((await a2.call('/session')).data.user.badges,badgeValue);
+ assert.equal((await a.call('/profile','PATCH',{badges:uniqueBadges.join(',')})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{badges:'not-a-badge'})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{badges:[uniqueBadges[0]]})).status,400);
+ const sameFamily=badgeCatalog.filter(b=>b.family==='game-time').slice(0,2).map(b=>b.id).join(',');assert.equal((await a.call('/profile','PATCH',{badges:sameFamily})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{badges:uniqueBadges.slice(0,2).reverse().join(',')})).status,200);assert.equal((await a2.call('/session')).data.user.badges,uniqueBadges.slice(0,2).reverse().join(','));
+ assert.equal((await a.call('/profile','PATCH',{badges:''})).status,200);
+ assert.equal((await a.call('/profile','PATCH',{nameStyle:'invalid'})).status,400);
+ assert.equal((await a.call('/profile','PATCH',{favoriteGame:'unknown'})).status,400);
+
+
+ assert.equal((await a.call('/preferences','PATCH',{inputProfile:'studio',inputSensitivity:65})).status,200);assert.equal((await a2.call('/session')).data.preferences.inputProfile,'studio');assert.equal((await a.call('/preferences','PATCH',{inputProfile:'invalid'})).status,400);assert.equal((await a.call('/preferences','PATCH',{inputSensitivity:101})).status,400);
+ assert.equal((await a.call('/preferences','PATCH',{theme:'custom',customThemeStart:'#123456',customThemeEnd:'#abcdef'})).status,200);assert.equal((await a2.call('/session')).data.preferences.customThemeStart,'#123456');assert.equal((await a.call('/preferences','PATCH',{customThemeEnd:'red;display:none'})).status,400);
+ const state=(await a.call('/workspace')).data;state.data.servers.push({id:'private',name:'Privado',channels:[]});
+ assert.equal((await a.call('/workspace','PUT',state)).status,200);
+ assert.equal((await a2.call('/workspace','PUT',state)).status,409);
+ assert.equal((await a2.call('/workspace')).data.data.servers[0].name,'Privado');
+ assert.equal((await b.call('/workspace')).data.data.servers.length,0);
+ const devices=(await a.call('/sessions')).data.sessions;assert.equal(devices.length,2);const foreign=(await b.call('/sessions')).data.sessions[0];
+ await a.call('/sessions/'+foreign.id,'DELETE',{});assert.equal((await b.call('/session')).status,200);
+ const other=devices.find(s=>!s.current);await a.call('/sessions/'+other.id,'DELETE',{});assert.equal((await a2.call('/session')).status,401);
+ const mfa=await a.call('/mfa/setup','POST',{password:payload.password});assert.equal(mfa.status,200);assert.match(mfa.data.qr,/^data:image\/png/);
+ const enabled=await a.call('/mfa/confirm','POST',{code:totp(mfa.data.secret)});assert.equal(enabled.status,200);assert.equal(enabled.data.codes.length,8);
+ assert.equal((await a2.call('/login','POST',payload)).data.mfaRequired,true);
+ assert.equal((await a2.call('/login','POST',{...payload,code:enabled.data.codes[0]})).status,200);
+ assert.equal((await outsider.call('/login','POST',{...payload,code:enabled.data.codes[0]})).status,401);
+ assert.equal((await a.call('/password','POST',{password:payload.password,newPassword:'A-new-test-password-456',code:totp(mfa.data.secret)})).status,200);
+ assert.equal((await a2.call('/session')).status,401);
+ const exported=await a.call('/export');assert.equal(exported.status,200);assert.equal(exported.data.user.displayName,'Nome sincronizado');assert.ok(!JSON.stringify(exported.data).includes('password_hash'));
+ backend.close();backend=createBackend({dataDir:dir});assert.equal((await a.call('/session')).data.preferences.fontSize,18);
+ // Real social requests obey the recipient's preferences and account boundaries.
+ await b.call('/preferences','PATCH',{friendRequests:'none',allowDMs:false});
+ assert.equal((await a.call('/friends/request','POST',{username:'account_b'})).status,403);
+ assert.equal((await a.call('/dm/'+(await b.call('/session')).data.user.id,'POST',{text:'Denied'})).status,403);
+ await b.call('/preferences','PATCH',{friendRequests:'everyone'});
+ assert.equal((await a.call('/friends/request','POST',{username:'account_b'})).status,201);
+ const incoming=(await b.call('/workspace')).data.data.pending[0];assert.equal(incoming.direction,'incoming');
+ assert.equal((await b.call('/friends/'+created.data.user.id,'POST',{action:'accept'})).status,200);
+ const friend=(await a.call('/workspace')).data.data.people[0];assert.equal(friend.username,'account_b');
+ const presenceAbort=new AbortController();
+ const presenceStream=await fetch(base+'/api/events',{headers:{Cookie:b.cookie},signal:AbortSignal.any([presenceAbort.signal,AbortSignal.timeout(5000)])});
+ const presenceReader=presenceStream.body.getReader();await presenceReader.read();
+ try{for(const status of ['idle','dnd','offline','online']){
+  assert.equal((await a.call('/preferences','PATCH',{status})).status,200);
+  assert.match(new TextDecoder().decode((await presenceReader.read()).value),/"type":"presence"/);
+  assert.equal((await a.call('/session')).data.preferences.status,status);
+  assert.equal((await b.call('/workspace')).data.data.people.find(p=>p.id===created.data.user.id).status,status);
+ }}finally{presenceAbort.abort();}
+ assert.equal((await a.call('/preferences','PATCH',{status:'hidden'})).status,400);
+ const clientId='1181d1eb-30c7-4ae4-8074-3dad91281a04';const sent=await a.call('/dm/'+friend.id,'POST',{text:'Mensagem sincronizada',clientId});assert.equal(sent.status,201);assert.equal(sent.data.message.id,clientId);
+ const retried=await a.call('/dm/'+friend.id,'POST',{text:'Mensagem sincronizada',clientId});assert.equal(retried.status,200);assert.equal(retried.data.message.id,clientId);assert.equal((await b.call('/workspace')).data.data.messages['dm:'+created.data.user.id].length,1);
+ const dm=(await b.call('/workspace')).data.data.messages['dm:'+created.data.user.id][0];assert.equal(dm.text,'Mensagem sincronizada');
+ assert.equal((await outsider.call('/dm/'+dm.id,'DELETE',{})).status,401);
+ assert.equal((await b.call('/dm/'+dm.id,'DELETE',{})).status,404);
+ assert.equal((await b.call('/dm/'+dm.id,'PATCH',{action:'reaction',emoji:'👍'})).status,200);
+ assert.equal((await a.call('/workspace')).data.data.messages['dm:'+friend.id][0].reactions[0].count,1);
+ await b.call('/friends/'+created.data.user.id,'POST',{action:'block'});
+ assert.equal((await a.call('/dm/'+friend.id,'POST',{text:'Bloqueado'})).status,403);
+ assert.equal((await a.call('/workspace')).data.data.people.length,0);
+ const password='A-new-test-password-456';assert.equal((await a.call('/account/disable','POST',{password,code:totp(mfa.data.secret)})).status,200);
+ assert.equal((await a.call('/login','POST',{...payload,password})).data.reactivation,true);
+ assert.equal((await a.call('/reactivate','POST',{...payload,password,code:totp(mfa.data.secret)})).status,200);
+ assert.equal((await a.call('/account','DELETE',{password,code:totp(mfa.data.secret),confirm:'wrong'})).status,400);
+ assert.equal((await a.call('/account','DELETE',{password,code:totp(mfa.data.secret),confirm:payload.username})).status,200);
+ assert.equal((await a.call('/session')).status,401);
+ assert.equal((await b.call('/session')).status,200);
+});

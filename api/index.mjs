@@ -1,0 +1,4 @@
+// JavaScript / api/index.mjs / Vercel Node 24 / Biscord API
+import {createBackend} from '../backend.mjs';
+let backend;
+export default async function handler(req,res){try{if(!process.env.DATABASE_URL||!process.env.BISCORD_ENCRYPTION_KEY)throw Error('Cloud environment missing');backend??=createBackend({dataDir:'/tmp/biscord',databaseUrl:process.env.DATABASE_URL,projectRef:process.env.SUPABASE_PROJECT_REF,sslRootCert:new URL('../certs/supabase-ca.crt',import.meta.url).pathname,publicOrigin:process.env.PUBLIC_ORIGIN||'',secure:true});await backend.ready;if(!await backend.handle(req,res))res.writeHead(404).end();}catch(error){if(backend){const failed=backend;backend=undefined;try{await failed.close();}catch{}}console.error('Cloud API:',error.code||error.name);if(!res.headersSent){res.writeHead(503,{'Content-Type':'application/json'});res.end(JSON.stringify({error:'Serviço temporariamente indisponível.'}));}}}

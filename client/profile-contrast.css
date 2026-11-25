@@ -1,0 +1,39 @@
+/* CSS / client/profile-contrast.css / modern browsers / automatic profile foregrounds */
+body :is(.pc-profile-card,.uf-card)[data-profile-contrast]{color:var(--profile-text)}
+body [data-profile-contrast] :is(h1,h2,h3,strong,.pc-inline-name input,.pc-username-row,.pc-username-row input,.pc-bio-content,.pc-profile-detail p,.pc-profile-detail input,.uf-info p,.uf-info textarea,.uf-identity){color:var(--profile-text)!important}
+body [data-profile-contrast] :is(.pc-profile-detail h2,.pc-profile-detail label,.pc-profile-detail input::placeholder,.pc-username-row input::placeholder,.uf-info h2,.uf-info label,.uf-note-status){color:var(--profile-muted)!important}
+body [data-profile-contrast=light] :is(.pc-inline-name input,.pc-username-row input,.uf-info textarea):focus{background:#ffffff80!important;color:#111214!important}
+body [data-profile-contrast=light] .pc-server-tag{background:#00000012;color:#34353c!important}
+body [data-profile-contrast] .pc-inline-name input:hover{background:var(--profile-hover)}
+body .pc-content[data-profile-contrast],body .user-full-dialog[data-profile-contrast]{background:linear-gradient(180deg,var(--profile-primary),var(--profile-accent))!important;color:var(--profile-text)!important;--heading:var(--profile-text);--text:var(--profile-text);--muted:var(--profile-muted);--border:var(--profile-border);--hover:var(--profile-hover)}
+body [data-profile-contrast] :is(.pc-board,.uf-detail,.pc-widgets-panel,.uf-tab-content){background:transparent!important;color:var(--profile-text)!important}
+body [data-profile-contrast] :is(.pc-board-tabs>button,.uf-detail [role=tab]){color:var(--profile-muted)!important}
+body [data-profile-contrast] :is(.pc-board-tabs>button.selected,.uf-detail [aria-selected=true]){color:var(--profile-text)!important;border-bottom-color:var(--profile-text)!important}
+body [data-profile-contrast] :is(.pc-board-tabs,.uf-detail nav,.pc-profile-card,.uf-card){border-color:var(--profile-border)!important}
+body [data-profile-contrast] :is(.pc-board-empty p,.uf-empty p,.uf-mutual-person small){color:var(--profile-muted)!important}
+body [data-profile-contrast] :is(.pc-widget-option,.pc-browse-widgets,.uf-empty .button){color:var(--profile-text)!important;background-color:var(--profile-hover)!important;border-color:var(--profile-border)!important}
+/* Cards with their own surfaces need a matching foreground, not inherited text alone. */
+body [data-profile-contrast] .pc-widget-tile{background:#383a43!important;color:#f2f3f5!important}
+body [data-profile-contrast] .pc-widget-tile>strong{color:#f2f3f5!important;text-shadow:0 1px 3px #0008}
+body [data-profile-contrast=light] .pc-widget-tile{background:#f1f2f4!important;color:#111214!important}
+body [data-profile-contrast=light] .pc-widget-tile>strong{color:#111214!important;text-shadow:none}
+body [data-profile-contrast=light] .pc-widget-symbol:not(.pc-plus){color:#34353c!important}
+body [data-profile-contrast=light] .pc-widget-skeleton>i{background:#d0d1d6}
+body [data-profile-contrast=light] .pc-widget-cover,body [data-profile-contrast=light] .pc-game-collage{opacity:.22}
+body [data-profile-contrast=light] .pc-status-bubble{background:#f5f5f6!important;color:#45464e!important;box-shadow:0 1px 4px #0002;border:1px solid #e3e3e8}
+body [data-profile-contrast=light] .pc-status-bubble:before,body [data-profile-contrast=light] .pc-status-bubble:after{background:#f5f5f6!important}
+body [data-profile-contrast=light] .pc-status-bubble em{color:#45464e!important}
+body [data-profile-contrast] .pc-profile-detail input::placeholder,body [data-profile-contrast] .pc-username-row input::placeholder,body [data-profile-contrast] .uf-info textarea::placeholder{color:var(--profile-muted)!important;opacity:1}
+body [data-profile-contrast] .pc-add-connection{color:var(--profile-muted)!important}
+body [data-profile-contrast=light] :is(.pc-square-button,.pc-close){background:#f1f2f4!important;color:#34353c!important;border:1px solid #00000018}
+body [data-profile-contrast=dark]{--profile-text:#f2f3f5;--profile-muted:#c5c6ca;color:#f2f3f5!important}
+body [data-profile-contrast=dark] :is(.pc-board-empty,.pc-empty-tab,.uf-empty,.pc-profile-body,.uf-info){color:#f2f3f5!important}
+body [data-profile-contrast=dark] :is(.pc-inline-name input,.pc-username-row input,.pc-profile-detail input,.uf-info textarea)::placeholder{color:#c5c6ca!important;opacity:1}
+body :is(.self-profile-popout,.user-mini-profile,.dm-profile-card)[data-profile-contrast]{background:linear-gradient(180deg,var(--profile-primary),var(--profile-accent))!important;color:var(--profile-text)!important;--heading:var(--profile-text);--text:var(--profile-text);--muted:var(--profile-muted);--border:var(--profile-border)}
+body [data-profile-contrast] :is(.self-profile-body,.mini-body,.dm-profile-info){background:transparent!important;color:var(--profile-text)!important}
+body [data-profile-contrast] :is(.self-profile-body h2,.self-profile-username,.self-profile-pronouns,.self-profile-bio,.mini-body h2,.mini-identity,.mini-bio,.mini-pronouns,.mini-status,.mini-since p,.dm-profile-info h2){color:var(--profile-text)!important}
+body [data-profile-contrast] :is(.mini-since h3,.self-profile-actions>button){color:var(--profile-muted)!important}
+body [data-profile-contrast] :is(.self-profile-actions,.mini-message,.dm-profile-full){background:var(--profile-hover)!important;color:var(--profile-text)!important;border-color:var(--profile-border)!important}
+body [data-profile-contrast] .mini-message input{color:var(--profile-text)!important}
+body [data-profile-contrast] .mini-message input::placeholder{color:var(--profile-muted)!important;opacity:1}
+body [data-profile-contrast] .self-profile-status-bubble{background:color-mix(in srgb,var(--profile-primary) 88%,var(--profile-text))!important;color:var(--profile-muted)!important}

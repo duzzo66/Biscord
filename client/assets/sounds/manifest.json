@@ -1,0 +1,657 @@
+{
+  "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+  "downloadedAt": "2026-11-14T14:30:58.984Z",
+  "files": [
+    {
+      "name": "activity_end.mp3",
+      "url": "https://discord.com/assets/878f7e7f2b3bf972.mp3",
+      "status": "downloaded",
+      "bytes": 31597,
+      "sha256": "08fc43428189ef12225b0de236327a40d2250fd36061d0ea61b7718832fbf1f2"
+    },
+    {
+      "name": "activity_launch.mp3",
+      "url": "https://discord.com/assets/a71f183dc4de32a3.mp3",
+      "status": "downloaded",
+      "bytes": 37866,
+      "sha256": "c19d79f19983fbd1bb1c8e7e14c98bb3b3f8605c13edae66976037358e4be1dc"
+    },
+    {
+      "name": "activity_user_join.mp3",
+      "url": "https://discord.com/assets/31d2551c00b7c91e.mp3",
+      "status": "downloaded",
+      "bytes": 25327,
+      "sha256": "cf369e5d94ca6e951f7375f3b284eac38e09d66f9d3e30f9d3227cca512c8bb5"
+    },
+    {
+      "name": "activity_user_left.mp3",
+      "url": "https://discord.com/assets/9f34f40112215f5e.mp3",
+      "status": "downloaded",
+      "bytes": 28255,
+      "sha256": "116c39ac986433cd6760d1cd3d14d18772c2a49185f07f06c973ca5b5dd9034d"
+    },
+    {
+      "name": "asmr_message1.mp3",
+      "url": "https://discord.com/assets/7abbc45d8e7b179a.mp3",
+      "status": "downloaded",
+      "bytes": 22027,
+      "sha256": "dd0d311d43786814e7ffa464b01521c2338b2a608d5db080246710a0587bcefb"
+    },
+    {
+      "name": "bit_message1.mp3",
+      "url": "https://discord.com/assets/795109c70fe6ea7b.mp3",
+      "status": "downloaded",
+      "bytes": 16482,
+      "sha256": "17d5fa3c5f63f677cd59f38bf66e05a6306665f76470fcd982c3888c0a5c1058"
+    },
+    {
+      "name": "bop_message1.mp3",
+      "url": "https://discord.com/assets/909464bf55b13935.mp3",
+      "status": "downloaded",
+      "bytes": 9578,
+      "sha256": "059f3c091ad9ba5e902e64e16fa9df9e76d311252226db5f9e355f3fa6b17294"
+    },
+    {
+      "name": "call_calling.mp3",
+      "url": "https://discord.com/assets/5146737af413d88e.mp3",
+      "status": "downloaded",
+      "bytes": 100465,
+      "sha256": "c3999dbbbea7fca113d6f396b81d6054dd2dd6df79f442b62dfb74afddd36934"
+    },
+    {
+      "name": "call_ringing_beat.mp3",
+      "url": "https://discord.com/assets/574220f72e718dad.mp3",
+      "status": "downloaded",
+      "bytes": 363459,
+      "sha256": "fddbb81ab3e28bdc3a3f75b67ba005a4a6836c7afea82fa635cf528355b306ae"
+    },
+    {
+      "name": "call_ringing_snow_halation.mp3",
+      "url": "https://discord.com/assets/82954088613583bc.mp3",
+      "status": "downloaded",
+      "bytes": 1415892,
+      "sha256": "599054c400bd679d4974c933fdd10c9e25837a671fbd46e17993f36bda6e915f"
+    },
+    {
+      "name": "call_ringing_snowsgiving.mp3",
+      "url": "https://discord.com/assets/4261355196740dab.mp3",
+      "status": "downloaded",
+      "bytes": 855462,
+      "sha256": "49005f6fa78ac586ac05134c37ed081594799b0c1985b319355c63e935d11a2a"
+    },
+    {
+      "name": "call_ringing.mp3",
+      "url": "https://discord.com/assets/c2a7111bb44b8da0.mp3",
+      "status": "downloaded",
+      "bytes": 130785,
+      "sha256": "a2365a04f839099538271d06889147475ceef0845f8cc010425618f5dc412880"
+    },
+    {
+      "name": "camera_off.mp3",
+      "url": "https://discord.com/assets/b1dd204729fe78b4.mp3",
+      "status": "downloaded",
+      "bytes": 84668,
+      "sha256": "fe81a2ab7b0581736108c5fc79ab7884ab2e5211a50b69f56badde08d41e7bfb"
+    },
+    {
+      "name": "camera_on.mp3",
+      "url": "https://discord.com/assets/855607d0932ea396.mp3",
+      "status": "downloaded",
+      "bytes": 41831,
+      "sha256": "faeb721a072575c96d1e140aaecd469bf3f7278347596968dddf22fdb65005bf"
+    },
+    {
+      "name": "clip_error.mp3",
+      "url": "https://discord.com/assets/a95d4944eee85a14.mp3",
+      "status": "downloaded",
+      "bytes": 42342,
+      "sha256": "26a6fa32f26bc88cd5576a6bba696afd45ae4ed2b5147d09330f50b511366099"
+    },
+    {
+      "name": "clip_save.mp3",
+      "url": "https://discord.com/assets/fece0a7646748c01.mp3",
+      "status": "downloaded",
+      "bytes": 42342,
+      "sha256": "a09d426b21a8b09db15c4e27ef0bebaa72fdc1ac0f2ee7c54fabec4f0296a755"
+    },
+    {
+      "name": "ddr-down.mp3",
+      "url": "https://discord.com/assets/c51fe62d8439bbb5.mp3",
+      "status": "downloaded",
+      "bytes": 58496,
+      "sha256": "0c6f35e975a8d4ce328af28bbb2367abb0eae1e6fbd44423cd705962ca0c0694"
+    },
+    {
+      "name": "ddr-left.mp3",
+      "url": "https://discord.com/assets/585effa1b1c0adb6.mp3",
+      "status": "downloaded",
+      "bytes": 55936,
+      "sha256": "b947023952622648aec7f0241bfb13c93c378bd6a8df15facbb9423fcba63720"
+    },
+    {
+      "name": "ddr-right.mp3",
+      "url": "https://discord.com/assets/812a423084f53b4e.mp3",
+      "status": "downloaded",
+      "bytes": 55936,
+      "sha256": "80fa470fb330236282b9de5052966c859840d5239897937bc52c75bede6e4a4c"
+    },
+    {
+      "name": "ddr-up.mp3",
+      "url": "https://discord.com/assets/7d9fdcf720530f49.mp3",
+      "status": "downloaded",
+      "bytes": 56448,
+      "sha256": "db687862e9322f32eae3e0ee8356e778f6c5683fe45ea6719d04bf9406e1a4fa"
+    },
+    {
+      "name": "deafen.mp3",
+      "url": "https://discord.com/assets/529ff198eac567af.mp3",
+      "status": "downloaded",
+      "bytes": 32551,
+      "sha256": "dee4468bbafb321b159dcab42f52d1fbfb1d01358437e0a3088c3345979211b8"
+    },
+    {
+      "name": "discodo.mp3",
+      "url": "https://discord.com/assets/cb85be48267eb1b4.mp3",
+      "status": "downloaded",
+      "bytes": 19688,
+      "sha256": "1e7f6ea1298758403297e8f9049b072db59dceb3518186164ffc16550c5c5ac3"
+    },
+    {
+      "name": "disconnect.mp3",
+      "url": "https://discord.com/assets/dd0911025fe00b2e.mp3",
+      "status": "downloaded",
+      "bytes": 41951,
+      "sha256": "c06c7e58099969eacc5f8eb925fb381f445250b9f37acf959b11df72aabb44ca"
+    },
+    {
+      "name": "doggo_bark.mp3",
+      "url": "https://discord.com/assets/e692934b5721e2f4.mp3",
+      "status": "downloaded",
+      "bytes": 7567,
+      "sha256": "20f95746b767657d2d75ff81ac5ab781175b46103a38085685e3e44200c1689e"
+    },
+    {
+      "name": "doggo_cat_hurt.mp3",
+      "url": "https://discord.com/assets/0d0e5a71d7cdfcb1.mp3",
+      "status": "downloaded",
+      "bytes": 13632,
+      "sha256": "a735d71290be0d49e2aac6029085107b983f700422f54c730e2a484f3703fb00"
+    },
+    {
+      "name": "doggo_cat.mp3",
+      "url": "https://discord.com/assets/2a8fc918410f139d.mp3",
+      "status": "downloaded",
+      "bytes": 12259,
+      "sha256": "f8a74ae726388314ab452eaa791d12960e277abd14fbe125b728c22ec35c3143"
+    },
+    {
+      "name": "doggo_death.mp3",
+      "url": "https://discord.com/assets/c55e2628bba98a03.mp3",
+      "status": "downloaded",
+      "bytes": 14624,
+      "sha256": "348a32691973d68293bc4a81dae6a704124869e151c6725e4955dbdf4dd6f442"
+    },
+    {
+      "name": "doggo_dog_death.mp3",
+      "url": "https://discord.com/assets/76d25c608009a255.mp3",
+      "status": "downloaded",
+      "bytes": 24703,
+      "sha256": "35c345adf64ab7c3526f279caed99ee179b164edababff7a67838b3800855614"
+    },
+    {
+      "name": "doggo_dog_hurt.mp3",
+      "url": "https://discord.com/assets/93efbbc082ecbea8.mp3",
+      "status": "downloaded",
+      "bytes": 7752,
+      "sha256": "1cb4c1b24e7268e8819cf934d4924fb83a8fd0f8c16681af6289fc11f5909729"
+    },
+    {
+      "name": "doggo_human_hit.mp3",
+      "url": "https://discord.com/assets/ee0371f4f3747ef4.mp3",
+      "status": "downloaded",
+      "bytes": 5165,
+      "sha256": "cf1e2fd24868b15c6b60ce60cf5ecd760901ff29b36e778550893416817769fe"
+    },
+    {
+      "name": "doggo_music.mp3",
+      "url": "https://discord.com/assets/b76542545f68b644.mp3",
+      "status": "downloaded",
+      "bytes": 971799,
+      "sha256": "51d1fb64924d0254504f95e9080f58bb415613564b2bdb41df3e8aab105aaf8c"
+    },
+    {
+      "name": "doggo_rat_hit.mp3",
+      "url": "https://discord.com/assets/9b1f59a879cc2b9c.mp3",
+      "status": "downloaded",
+      "bytes": 18384,
+      "sha256": "f49f0fe727d201753ad6c5f37f3c19dda627eb1db7652e0a3f31480eb6f9acae"
+    },
+    {
+      "name": "doggo_rat.mp3",
+      "url": "https://discord.com/assets/e3c2784c5e48d890.mp3",
+      "status": "downloaded",
+      "bytes": 10776,
+      "sha256": "13144fa93c9f478fe65b5b00a2c3be2df500b967488cb70491425cfecce4fed3"
+    },
+    {
+      "name": "doggo_skeleton_die.mp3",
+      "url": "https://discord.com/assets/d0bc5c2deff53a23.mp3",
+      "status": "downloaded",
+      "bytes": 6744,
+      "sha256": "05f4463ba34dc3cc2344305cd9c39f1160a634c71a9405b6d3e921af22d18228"
+    },
+    {
+      "name": "doggo_skeleton_hit.mp3",
+      "url": "https://discord.com/assets/5a6a6325e363c734.mp3",
+      "status": "downloaded",
+      "bytes": 6456,
+      "sha256": "5d4d6bdae20a5cf6c9ebcbdc51f080540d8306cd1b6d1f21f5bfbaf2714e066a"
+    },
+    {
+      "name": "doggo_skeleton.mp3",
+      "url": "https://discord.com/assets/84078aa3f23823e6.mp3",
+      "status": "downloaded",
+      "bytes": 13104,
+      "sha256": "a68e3b98923b6eb9f39f605f044729a790b7d529c6e678f744619cf6a390ac3e"
+    },
+    {
+      "name": "doggo_slash.mp3",
+      "url": "https://discord.com/assets/168441ffecdf124f.mp3",
+      "status": "downloaded",
+      "bytes": 5477,
+      "sha256": "9fa2470d00ed82dcc38dfda31d82e106a2a00c7d6b25b42a748c478d94d2ebd2"
+    },
+    {
+      "name": "doggo_zombie_hit.mp3",
+      "url": "https://discord.com/assets/5ede61a621f3041f.mp3",
+      "status": "downloaded",
+      "bytes": 8136,
+      "sha256": "48db45ad5884699938e18b6b355be06ca9eca6607e0581e2a4fb1cae3954dd1c"
+    },
+    {
+      "name": "doggo_zombie.mp3",
+      "url": "https://discord.com/assets/9ba3d6476257f26c.mp3",
+      "status": "downloaded",
+      "bytes": 5421,
+      "sha256": "8fcecefeaecdada094930d8f98110300c1ac9ce03478fdf9c56954f2ae6f8680"
+    },
+    {
+      "name": "ducky_message1.mp3",
+      "url": "https://discord.com/assets/7d8709c9f90d5d1e.mp3",
+      "status": "downloaded",
+      "bytes": 9579,
+      "sha256": "dda7376e649a544b8fab535d8a9794eb1975b98844bb2e7376851b8b01d3247e"
+    },
+    {
+      "name": "halloween_call_calling.mp3",
+      "url": "https://discord.com/assets/ef24e229a3413c8a.mp3",
+      "status": "downloaded",
+      "bytes": 176643,
+      "sha256": "8e1034cae9069ed6bfbeef79291af5c7e56f62853468411be203448a996fa14d"
+    },
+    {
+      "name": "halloween_call_ringing.mp3",
+      "url": "https://discord.com/assets/7a287e2f88531f25.mp3",
+      "status": "downloaded",
+      "bytes": 142522,
+      "sha256": "8c130bccbcf29095e1aae5aa054d62b8297aab341efd89c204a93802608e7d79"
+    },
+    {
+      "name": "halloween_deafen.mp3",
+      "url": "https://discord.com/assets/514663b657bc4c7d.mp3",
+      "status": "downloaded",
+      "bytes": 83647,
+      "sha256": "94c99546543fc02c6f50cf88f242b50a752ee409c19ef8a35bbec26bbcd701b0"
+    },
+    {
+      "name": "halloween_defean.mp3",
+      "url": "https://discord.com/assets/514663b657bc4c7d.mp3",
+      "status": "downloaded",
+      "bytes": 83647,
+      "sha256": "94c99546543fc02c6f50cf88f242b50a752ee409c19ef8a35bbec26bbcd701b0"
+    },
+    {
+      "name": "halloween_disconnect.mp3",
+      "url": "https://discord.com/assets/9b8ef0a59d731dd6.mp3",
+      "status": "downloaded",
+      "bytes": 102456,
+      "sha256": "0f07495ffcdfacbb4ba88d160697623bfeb51960f31d5d1b61ddb0af7155e4c6"
+    },
+    {
+      "name": "halloween_message1.mp3",
+      "url": "https://discord.com/assets/c269de500ca3cb7b.mp3",
+      "status": "downloaded",
+      "bytes": 41852,
+      "sha256": "81886f9df5b1b0415fb28be2d280a463e57ebfdd685be5f67b03d0109285acfa"
+    },
+    {
+      "name": "halloween_mute.mp3",
+      "url": "https://discord.com/assets/d5e69d2c2aac0a27.mp3",
+      "status": "downloaded",
+      "bytes": 55435,
+      "sha256": "9210a7e3727ecddf442f79d9842e46691c97fdf34ccd4cc2753329f25c6441c3"
+    },
+    {
+      "name": "halloween_undeafen.mp3",
+      "url": "https://discord.com/assets/4dfa756a71484219.mp3",
+      "status": "downloaded",
+      "bytes": 81558,
+      "sha256": "013c46343877ca972c74ee280100e460141411bb5ca95fe46adc53de55d0285f"
+    },
+    {
+      "name": "halloween_undefean.mp3",
+      "url": "https://discord.com/assets/ad4d1c97cf7b8726.mp3",
+      "status": "downloaded",
+      "bytes": 81558,
+      "sha256": "68daa82c4afd72038a53b2e8b2797de9680a9aa84b7709617fbc19e0df5bba90"
+    },
+    {
+      "name": "halloween_unmute.mp3",
+      "url": "https://discord.com/assets/6f0d538ed066a1a6.mp3",
+      "status": "downloaded",
+      "bytes": 69019,
+      "sha256": "0fe5134d1495f670ae351a06ec37662e66f7aaeb60a14f97b3ac524064906bac"
+    },
+    {
+      "name": "halloween_user_join.mp3",
+      "url": "https://discord.com/assets/00b48ea9fc787786.mp3",
+      "status": "downloaded",
+      "bytes": 71109,
+      "sha256": "b2e68b1642f04e2aab3dc6c81898bf7b30ddd0431e232f6cd423c309c6b6291f"
+    },
+    {
+      "name": "halloween_user_leave.mp3",
+      "url": "https://discord.com/assets/c9b6b9d1ef992f1b.mp3",
+      "status": "downloaded",
+      "bytes": 101411,
+      "sha256": "e1a26f210ec2f1b2bb9e7d61d99358debd5e1bc988122d8096b9ccdb194b6a42"
+    },
+    {
+      "name": "hang_status_select.mp3",
+      "url": "https://discord.com/assets/c27233e99b338a12.mp3",
+      "status": "downloaded",
+      "bytes": 81602,
+      "sha256": "0536123154fb7455e5bcbe5201b5d87f47329d433f26956562df24cfe011db8b"
+    },
+    {
+      "name": "human_man.mp3",
+      "url": "https://discord.com/assets/e1a50e2d7925ce98.mp3",
+      "status": "downloaded",
+      "bytes": 96378,
+      "sha256": "2fe79b85e23a76f5f24f554598788d034fa1b41493d06c1b6781f24b1b988fac"
+    },
+    {
+      "name": "lofi_message1.mp3",
+      "url": "https://discord.com/assets/5aa5ffdc82cb3c74.mp3",
+      "status": "downloaded",
+      "bytes": 20522,
+      "sha256": "1180c1598d459899c85d6f9c514ce5c5223ec4bbaa5748d2cdec43af628e49bd"
+    },
+    {
+      "name": "mention1.mp3",
+      "url": "https://discord.com/assets/3baf62fc7aebb0a3.mp3",
+      "status": "downloaded",
+      "bytes": 23146,
+      "sha256": "c97c6fe3f633b55e158b1a8d3b6cf44c0ee7f1adfadc26e90416e6e4efd893b7"
+    },
+    {
+      "name": "mention2.mp3",
+      "url": "https://discord.com/assets/e0a0235d2fa32496.mp3",
+      "status": "downloaded",
+      "bytes": 15832,
+      "sha256": "f414906a215f059675fcc3ec8dba7af9d71ab900e704fca04a8140b63db4d56c"
+    },
+    {
+      "name": "mention3.mp3",
+      "url": "https://discord.com/assets/260dfacf63b6cb13.mp3",
+      "status": "downloaded",
+      "bytes": 23146,
+      "sha256": "86e6a802ab36011f026d85ff84ab46e1f7e85fa90e910964f0cec27f4549299c"
+    },
+    {
+      "name": "message1.mp3",
+      "url": "https://discord.com/assets/3ed22d14f3c30bc4.mp3",
+      "status": "downloaded",
+      "bytes": 17922,
+      "sha256": "31ad0482eee7770597b8aa723a80fd041ade0b076679b12293664f1f1777211b"
+    },
+    {
+      "name": "message2.mp3",
+      "url": "https://discord.com/assets/91f9f6fa8cc9ea5c.mp3",
+      "status": "downloaded",
+      "bytes": 29416,
+      "sha256": "5ecc0325b1ae87a55fecb33647af2535de26546d291afd47a6da263a14a0e72c"
+    },
+    {
+      "name": "message3.mp3",
+      "url": "https://discord.com/assets/4f53c2f31ea0cdd8.mp3",
+      "status": "downloaded",
+      "bytes": 30461,
+      "sha256": "295dccacbdb0728ffbb8b220a278a9f3384f5966fe9b1428f33518ffa2998505"
+    },
+    {
+      "name": "mute.mp3",
+      "url": "https://discord.com/assets/2d3b4ba32c34c862.mp3",
+      "status": "downloaded",
+      "bytes": 22102,
+      "sha256": "f6194168829b0701e8b40817d5173afed4b3b1e0b5074ab82ca31d97e4cb65c1"
+    },
+    {
+      "name": "overlayunlock.mp3",
+      "url": "https://discord.com/assets/1d05544763057d17.mp3",
+      "status": "downloaded",
+      "bytes": 85836,
+      "sha256": "ea35b124e021f406801be4c6142330b56b6ae03e822d44c37b35c80930ab2dab"
+    },
+    {
+      "name": "poggermode_achievement_unlock.mp3",
+      "url": "https://discord.com/assets/46354b113608483f.mp3",
+      "status": "downloaded",
+      "bytes": 89912,
+      "sha256": "e6057855a8952771bb8a43dd550e3474239163919c960580bc072acffdbbd130"
+    },
+    {
+      "name": "poggermode_applause.mp3",
+      "url": "https://discord.com/assets/16d261c6a0cb8080.mp3",
+      "status": "downloaded",
+      "bytes": 1054606,
+      "sha256": "66c648dd540e225cab37623b1ebcb4036d0cbaa0ce20e8ddb002caab93df5d55"
+    },
+    {
+      "name": "poggermode_enabled.mp3",
+      "url": "https://discord.com/assets/4b5c35a2c125196f.mp3",
+      "status": "downloaded",
+      "bytes": 99308,
+      "sha256": "f9f1804c5c446822c737be7607ce631466e804b93dbd6638db7a1530a7c9f8f5"
+    },
+    {
+      "name": "poggermode_message_send.mp3",
+      "url": "https://discord.com/assets/97f3552e8c519595.mp3",
+      "status": "downloaded",
+      "bytes": 60680,
+      "sha256": "efdc6be86c5c23734ec8d060c2d56cb9eade7b394f1f5d9586fcad768336b87a"
+    },
+    {
+      "name": "ptt_start.mp3",
+      "url": "https://discord.com/assets/f5c8ec31889c5317.mp3",
+      "status": "downloaded",
+      "bytes": 1686,
+      "sha256": "9a06714cbc4fffe5c181be5499d08a3de31bcd21bfd0678c1a42764c0db4c99a"
+    },
+    {
+      "name": "ptt_stop.mp3",
+      "url": "https://discord.com/assets/34b5969be3a063ba.mp3",
+      "status": "downloaded",
+      "bytes": 1633,
+      "sha256": "e470a8a450681b6ef92251c974fc295b598445faf1749697765a9b293f50c0e7"
+    },
+    {
+      "name": "reconnect.mp3",
+      "url": "https://discord.com/assets/7dfc49b36dea3a6c.mp3",
+      "status": "downloaded",
+      "bytes": 48224,
+      "sha256": "9a76b49638c4e1cfc60743d889c714ab0f5271c34746e92c97f1e5142a50cd35"
+    },
+    {
+      "name": "robot_man.mp3",
+      "url": "https://discord.com/assets/b5b16d9754a8782e.mp3",
+      "status": "downloaded",
+      "bytes": 115250,
+      "sha256": "1c0404f1492a1bd25962b6cb565ef15688e29c1166b7a8e1fa267c00f8ee4f90"
+    },
+    {
+      "name": "stage_waiting.mp3",
+      "url": "https://discord.com/assets/7458c5c3bc415b01.mp3",
+      "status": "downloaded",
+      "bytes": 1110626,
+      "sha256": "bc494fd6cda3f8f6472e9ce9e18bf8610b3318be283635dcae10dc5d341366b4"
+    },
+    {
+      "name": "stream_ended.mp3",
+      "url": "https://discord.com/assets/cbff07b5a83e0321.mp3",
+      "status": "downloaded",
+      "bytes": 67539,
+      "sha256": "a724e183167405783122b997def6b3e6f53020957031224b27c434d6df8ef75f"
+    },
+    {
+      "name": "stream_started.mp3",
+      "url": "https://discord.com/assets/abe52a3c92953edb.mp3",
+      "status": "downloaded",
+      "bytes": 72832,
+      "sha256": "b5cb29d5d5cc0e8e22fa014bac4a1c2d601f6890ae6db1c18d4b6310283a3271"
+    },
+    {
+      "name": "stream_user_joined.mp3",
+      "url": "https://discord.com/assets/3d2af2764581bb2e.mp3",
+      "status": "downloaded",
+      "bytes": 67537,
+      "sha256": "3b51208e7559fc5b16a297cd8d882648fa7534adf706dfbd529c39266d132213"
+    },
+    {
+      "name": "stream_user_left.mp3",
+      "url": "https://discord.com/assets/24ae9dc0184bd570.mp3",
+      "status": "downloaded",
+      "bytes": 67537,
+      "sha256": "be2f1374b1ec8137eaa7e11357aafe12a3f3e09c0ed759b5d11043e723992061"
+    },
+    {
+      "name": "success.mp3",
+      "url": "https://discord.com/assets/90241c95e51f9261.mp3",
+      "status": "downloaded",
+      "bytes": 17598,
+      "sha256": "e57da6797dfb6362906aa0e2765e7e621411401e877185ccbba4e2cc756c345a"
+    },
+    {
+      "name": "undeafen.mp3",
+      "url": "https://discord.com/assets/b150f03c89944403.mp3",
+      "status": "downloaded",
+      "bytes": 35685,
+      "sha256": "690b64977594baa41c7978d76259224f67799ba337df2d1045dce970ef82b243"
+    },
+    {
+      "name": "unmute.mp3",
+      "url": "https://discord.com/assets/e74c4a06134a20e4.mp3",
+      "status": "downloaded",
+      "bytes": 22102,
+      "sha256": "1572881f90703c1e0cd138fe7486d2e53c0ac5d8509cade32029fb31650b9304"
+    },
+    {
+      "name": "user_join.mp3",
+      "url": "https://discord.com/assets/b135ff6c8e091b43.mp3",
+      "status": "downloaded",
+      "bytes": 47179,
+      "sha256": "d30746caf3e4675ae0d822d51461a9ad24832afa1e20179c3c2fc7b50b911a26"
+    },
+    {
+      "name": "user_leave.mp3",
+      "url": "https://discord.com/assets/7b9a183742515fc2.mp3",
+      "status": "downloaded",
+      "bytes": 41955,
+      "sha256": "9fd71c2d8112c82a7fb316602bb1645bc65f5edfa260110bbaae80090fbe9df0"
+    },
+    {
+      "name": "user_moved.mp3",
+      "url": "https://discord.com/assets/4003230e4086b680.mp3",
+      "status": "downloaded",
+      "bytes": 59476,
+      "sha256": "af782dabdba6ff3b9c90b0be29274cf964167e6d6125db1e4c9e235bee8eed51"
+    },
+    {
+      "name": "vibing_wumpus.mp3",
+      "url": "https://discord.com/assets/f4b4eb5a3dd2dbff.mp3",
+      "status": "downloaded",
+      "bytes": 614922,
+      "sha256": "e86c8d93727cb2a9595e9746856bab2911e71f0a95c9b04283b2877a3ee30cc4"
+    },
+    {
+      "name": "voice_message_recording_stopped.mp3",
+      "url": "https://discord.com/assets/17e98c85a3d66341.mp3",
+      "status": "downloaded",
+      "bytes": 37484,
+      "sha256": "ef6ea1a085e80df567ddcf3d39d578b822708727d21ef8924ab7fbb4916aab09"
+    },
+    {
+      "name": "winter_call_calling.mp3",
+      "url": "https://discord.com/assets/a07935fe464c324c.mp3",
+      "status": "downloaded",
+      "bytes": 209035,
+      "sha256": "7e02324b34f4e2c185dffa3fd948ea50d05da2775a796711fa26f3e0f2bda5d5"
+    },
+    {
+      "name": "winter_call_ringing.mp3",
+      "url": "https://discord.com/assets/daf6c21d9f92979a.mp3",
+      "status": "downloaded",
+      "bytes": 341996,
+      "sha256": "5cc34604964b18a6acda5d2247f9e1635d8295ffff86a58672991c8c6165dade"
+    },
+    {
+      "name": "winter_deafen.mp3",
+      "url": "https://discord.com/assets/70fe5e248588bb13.mp3",
+      "status": "downloaded",
+      "bytes": 88872,
+      "sha256": "33ac4c4e0de1f5b7a10644aac17e316f65954342961e6c4b3d619f009f678aae"
+    },
+    {
+      "name": "winter_disconnect.mp3",
+      "url": "https://discord.com/assets/600991ad4560f288.mp3",
+      "status": "downloaded",
+      "bytes": 88872,
+      "sha256": "18bacc1a4d4afe36619b8c8a404f5d99a251c95f83e32f4fb5c911e08dcb3b0c"
+    },
+    {
+      "name": "winter_mute.mp3",
+      "url": "https://discord.com/assets/81034fa14558e50f.mp3",
+      "status": "downloaded",
+      "bytes": 88872,
+      "sha256": "3eaaf7b99ebba933da0a3962665a96a966db8e100f3bddd5279968677553b673"
+    },
+    {
+      "name": "winter_undeafen.mp3",
+      "url": "https://discord.com/assets/5b518eba0a73ec4a.mp3",
+      "status": "downloaded",
+      "bytes": 95141,
+      "sha256": "ccbea4dc912978a4365407465755fe6d04ebca8a1d01b6c2cbe797cac270692a"
+    },
+    {
+      "name": "winter_unmute.mp3",
+      "url": "https://discord.com/assets/b2c49178b1a4e3d9.mp3",
+      "status": "downloaded",
+      "bytes": 88872,
+      "sha256": "4a0e191c21b45390446f1f24e1f2a33979e272f6aa293c0bd1890b6444262861"
+    },
+    {
+      "name": "winter_user_join.mp3",
+      "url": "https://discord.com/assets/b766ee70384a56ce.mp3",
+      "status": "downloaded",
+      "bytes": 88872,
+      "sha256": "fa68d5418f58faf0ea142303ee7ec752e67c1596b0bfb188b97703e09af607e8"
+    },
+    {
+      "name": "winter_user_leave.mp3",
+      "url": "https://discord.com/assets/cf2c36fde50eb05d.mp3",
+      "status": "downloaded",
+      "bytes": 88872,
+      "sha256": "282ed9e5cc6414cefca93bbcbde421669dde9cf07b5d783044eb9de26ad8261d"
+    }
+  ]
+}

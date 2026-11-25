@@ -1,0 +1,26 @@
+/* CSS / branding/assets/branding.css / browsers / stable navigation brand */
+.nav_brand:not(.is-burger){display:flex;align-items:center;justify-content:center;width:160px!important;height:44px!important;padding:8px 12px;background:transparent!important;border:0!important;border-radius:12px;box-sizing:border-box;transition:background-color 180ms ease,box-shadow 180ms ease}
+.nav_brand .nav_brand_main-black-logo{display:none!important;opacity:0!important;pointer-events:none!important}
+.nav_brand:not(.is-burger) .nav_brand_main-logo{display:block!important;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important;filter:none!important;width:100%!important;height:28px!important;margin:0!important;object-fit:contain;background:transparent!important;transition:filter 180ms ease}
+.bc-nav-scrolled .nav_brand:not(.is-burger){background:#fff!important;box-shadow:0 2px 8px #00000012}
+.bc-nav-scrolled .nav_brand:not(.is-burger) .nav_brand_main-logo{filter:brightness(0)!important}
+.nav_brand:focus-visible{outline:2px solid #b3b9ff;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.nav_brand,.nav_brand_main-logo{transition:none!important}}
+/* Public pages: constrain media and preserve usable navigation on small screens. */
+@media(max-width:767px){html{overflow-x:clip}body{overflow-wrap:break-word}main img,main video,footer img{max-width:100%}.nav_brand:not(.is-burger){max-width:160px}footer{overflow:hidden}footer img[src*="vulpi-wordmark"]{display:block;width:100%;height:auto}input,textarea,select{font-size:16px}}
+/* Fox silhouettes need their own bounds; legacy Wumpus layers overlap the footer. */
+.wumpus-footer-home-contain.smaller.is_2025{position:absolute!important;inset:auto 0 0!important;height:clamp(170px,20vw,300px)!important;min-height:0!important;margin:0!important;overflow:hidden!important;pointer-events:none;display:flex!important;align-items:center!important;justify-content:flex-end!important;isolation:isolate}
+.wumpus-footer-home-contain.smaller.is_2025>img.wumpus-footer-home{position:absolute!important;inset:auto auto 0 50%!important;transform:translateX(-50%)!important;margin:0!important;width:auto!important;height:100%!important;max-width:44%!important;object-fit:contain!important;object-position:center bottom!important}
+.wumpus-footer-home-contain.smaller.is_2025>div.wumpus-footer-home{display:none!important}
+img.home_wumpus-pl{display:none!important}
+img.home_wumpus{object-fit:contain;object-position:center bottom}
+.chats_top.is_2025{object-fit:contain;object-position:center bottom}
+@media(max-width:767px){.wumpus-footer-home-contain.smaller.is_2025{position:relative!important;inset:auto!important;height:210px!important;margin:24px auto 0!important;width:100%!important}.wumpus-footer-home-contain.smaller.is_2025>img.wumpus-footer-home{max-width:70%!important;height:100%!important}}
+/* Larger chat mascot, anchored to the card instead of negative top offsets. */
+.chats_top.is_2025{width:clamp(160px,13vw,220px)!important;max-width:none!important;height:auto!important;top:auto!important;bottom:calc(100% - 13px)!important;right:clamp(24px,7vw,128px)!important;left:auto!important;margin:0!important;object-fit:contain;image-rendering:auto;transform-origin:50% 100%;backface-visibility:hidden}
+@keyframes bc-fox-idle{0%,100%{transform:translateY(0) rotate(-.5deg)}50%{transform:translateY(-3px) rotate(.5deg)}}
+@media(prefers-reduced-motion:no-preference){.chats_top.is_2025:not([data-brand-motion-source]){animation:bc-fox-idle 3.2s ease-in-out infinite}}
+@media(max-width:767px){.chats_top.is_2025{width:150px!important;right:24px!important;bottom:calc(100% - 10px)!important}}
+@media(max-width:479px){.chats_top.is_2025{width:128px!important;right:20px!important;bottom:calc(100% - 9px)!important}}
+@media(prefers-reduced-motion:reduce){.chats_top.is_2025{animation:none!important;transform:none!important}}
+body.reduce-motion .chats_top.is_2025{animation:none!important;transform:none!important}

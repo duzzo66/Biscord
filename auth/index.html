@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5865f2">
+  <title>Entrar · Vulpi</title>
+  <link rel="stylesheet" href="/auth/style.css">
+  <script src="/auth/auth.js" defer></script>
+</head>
+<body>
+  <a href="/" class="brand" aria-label="Vulpi — início"><img src="/auth/assets/131c318dd45b7aa4.svg" width="124" height="24" alt="Vulpi"></a>
+  <span class="preview-label">Vulpi · contas deste servidor</span>
+  <div class="background" aria-hidden="true"></div>
+  <main class="shell" id="auth-shell">
+    <section class="auth-card" aria-labelledby="page-title">
+      <div class="form-panel">
+        <header class="form-header"><h1 id="page-title">Boas-vindas de volta!</h1><p id="page-subtitle">Estamos muito animados em te ver novamente!</p></header>
+        <form id="login-form" class="auth-form" novalidate>
+          <div class="field"><label for="login-email">E-mail ou nome de usuário <span aria-hidden="true">*</span></label><input id="login-email" name="email" type="text" autocomplete="username" required aria-describedby="login-email-error"><p class="field-error" id="login-email-error"></p></div>
+          <div class="field"><label for="login-password">Senha <span aria-hidden="true">*</span></label><div class="password-wrap"><input id="login-password" name="password" type="password" autocomplete="current-password" required aria-describedby="login-password-error"><button class="password-toggle" type="button" data-toggle="login-password" aria-label="Ver senha" aria-pressed="false"></button></div><p class="field-error" id="login-password-error"></p></div>
+          <a class="small-link forgot-link" href="/forgot-password">Esqueceu sua senha?</a>
+          <button class="primary-button" type="submit">Entrar</button>
+          <p class="switch-copy">Precisando de uma conta? <a href="/register">Registre-se</a></p>
+        </form>
+        <form id="register-form" class="auth-form" novalidate hidden>
+          <div class="field"><label for="register-email">E-mail <span aria-hidden="true">*</span></label><input id="register-email" name="email" type="email" autocomplete="email" required aria-describedby="register-email-error"><p class="field-error" id="register-email-error"></p></div>
+          <div class="field"><label for="register-name">Nome exibido</label><input id="register-name" name="displayName" autocomplete="nickname" maxlength="32" aria-describedby="register-name-error"><p class="field-error" id="register-name-error"></p></div>
+          <div class="field"><label for="register-username">Nome de usuário <span aria-hidden="true">*</span></label><input id="register-username" name="username" autocomplete="username" maxlength="32" required aria-describedby="register-username-error"><p class="field-error" id="register-username-error"></p></div>
+          <div class="field"><label for="register-password">Senha <span aria-hidden="true">*</span></label><div class="password-wrap"><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" required aria-describedby="register-password-error"><button class="password-toggle" type="button" data-toggle="register-password" aria-label="Ver senha" aria-pressed="false"></button></div><p class="field-error" id="register-password-error"></p></div>
+          <fieldset class="birthday"><legend>Data de nascimento <span aria-hidden="true">*</span></legend><div class="birthday-fields"><select id="birth-day" name="day" aria-label="Dia de nascimento" required><option value="">Dia</option></select><select id="birth-month" name="month" aria-label="Mês de nascimento" required><option value="">Mês</option></select><select id="birth-year" name="year" aria-label="Ano de nascimento" required><option value="">Ano</option></select></div><p class="field-error" id="birth-error" role="status"></p></fieldset>
+          <label class="checkbox-label optional-news"><input id="register-news" type="checkbox"><span>(Opcional) Tudo bem me mandar e-mails com atualizações, dicas e ofertas especiais do Vulpi. Posso mudar isso a qualquer momento.</span></label>
+          <div class="terms-field"><label class="checkbox-label"><input id="register-terms" type="checkbox" required aria-describedby="terms-error"><span>Li e concordo com os <a href="/local-terms.html" target="_blank" rel="noopener">termos do Vulpi</a> e a <a href="/local-privacy.html" target="_blank" rel="noopener">privacidade do Vulpi</a>.</span></label><p class="field-error" id="terms-error"></p></div>
+          <button class="primary-button" type="submit">Criar conta</button>
+          <p class="switch-copy"><a href="/login">Já tem uma conta? Entre aqui</a></p>
+        </form>
+        <form id="recovery-form" class="auth-form" novalidate hidden>
+          <div class="field"><label for="recovery-email">E-mail <span aria-hidden="true">*</span></label><input id="recovery-email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required aria-describedby="recovery-email-error"><p class="field-error" id="recovery-email-error"></p></div>
+          <button class="primary-button" type="submit">Recuperar acesso <span aria-hidden="true">→</span></button>
+          <p class="switch-copy"><a href="/login">← Voltar para entrar</a></p>
+        </form>
+      </div>
+      <aside class="qr-panel" aria-label="Prévia visual do acesso por código QR">
+        <div class="qr-code"><img class="qr-image" src="/auth/assets/preview-qr.svg" width="160" height="160" alt="Código QR demonstrativo, sem autenticação"><img class="qr-center" src="/brand/fox-mark-white.svg" width="40" height="40" alt=""></div>
+        <h2>Entrar com código QR</h2><p>Prévia visual do acesso pelo app.<br><strong>Este QR é demonstrativo</strong><br>e não autentica contas.</p>
+        <button type="button" class="text-button passkey" id="passkey-button">Ou entre com uma passkey</button>
+      </aside>
+    </section>
+  </main>
+  <dialog id="preview-dialog" aria-labelledby="dialog-title"><div class="dialog-icon" aria-hidden="true">✓</div><h2 id="dialog-title">Campos validados</h2><p id="dialog-copy"></p><button class="primary-button" id="close-dialog" type="button">Entendi</button></dialog>
+</body>
+</html>

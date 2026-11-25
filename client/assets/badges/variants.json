@@ -1,0 +1,42 @@
+[
+  {
+    "id": "subscriptions-bronze",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/bronze.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/bronze.svg"
+  },
+  {
+    "id": "subscriptions-diamond",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/diamond.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/diamond.svg"
+  },
+  {
+    "id": "subscriptions-emerald",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/emerald.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/emerald.svg"
+  },
+  {
+    "id": "subscriptions-gold",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/gold.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/gold.svg"
+  },
+  {
+    "id": "subscriptions-opal",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/opal.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/opal.svg"
+  },
+  {
+    "id": "subscriptions-platinum",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/platinum.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/platinum.svg"
+  },
+  {
+    "id": "subscriptions-ruby",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/ruby.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/ruby.svg"
+  },
+  {
+    "id": "subscriptions-silver",
+    "icon": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/badges/silver.png",
+    "preview": "https://raw.githubusercontent.com/mezotv/discord-badges/main/assets/subscriptions/silver.svg"
+  }
+]

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e1f22">
+  <title>Amigos · Vulpi</title>
+  <link rel="stylesheet" href="/client/loading.css">
+  <script src="/client/loading.js" defer></script>
+  <link rel="stylesheet" href="/client/style.css">
+  <link rel="stylesheet" href="/client/settings.css">
+  <link rel="stylesheet" href="/client/profile-editor.css">
+  <link rel="stylesheet" href="/client/profile-full.css">
+  <script src="/client/api.js" defer></script>
+  <link rel="stylesheet" href="/client/custom-status.css"><script src="/client/custom-status.js" defer></script>
+  <script src="/client/sounds.js" defer></script>
+  <link rel="stylesheet" href="/client/cosmetics.css">
+  <script src="/client/cosmetics.js" defer></script>
+  <link rel="stylesheet" href="/client/badges.css">
+  <script src="/client/badges.js" defer></script>
+  <script src="/client/profile-layout.js" defer></script>
+  <script src="/client/profile-editor.js" defer></script>
+  <script src="/client/settings.js" defer></script>
+  
+<link rel="stylesheet" href="/client/themes.css"><script src="/client/themes.js" defer></script>
+<link rel="stylesheet" href="/client/server-settings.css"><script src="/client/server-settings.js" defer></script>
+<link rel="stylesheet" href="/client/server-boosts.css"><script src="/client/server-boosts.js" defer></script>
+<link rel="stylesheet" href="/client/calls.css"><script src="/client/call-stage.js" defer></script><script src="/client/calls.js" defer></script><script src="/client/server-call.js" defer></script>
+<script src="/client/client.js" defer></script>
+<link rel="stylesheet" href="/client/server-connect.css"><script src="/client/server-connect.js" defer></script>
+<link rel="stylesheet" href="/client/full-profile.css"><script src="/client/full-profile.js" defer></script>
+<link rel="stylesheet" href="/client/voice.css">
+<link rel="stylesheet" href="/client/responsive.css">
+<link rel="stylesheet" href="/client/desktop-proportions.css">
+<link rel="stylesheet" href="/client/scrollbars.css">
+<link rel="stylesheet" href="/client/call-stage.css">
+<link rel="stylesheet" href="/client/profile-contrast.css"><script src="/client/profile-contrast.js" defer></script>
+</head>
+<body>
+  <div id="biscord-loading" class="biscord-loading" role="status" aria-live="polite" aria-label="Carregando Vulpi"><img class="biscord-loading-mark" src="/brand/fox-mark-white.svg" alt="" width="76" height="76"><div class="biscord-loading-copy"><strong>VULPI</strong><p>Conectando ao seu mundo.</p><button type="button" hidden>Tentar novamente</button></div></div>
+  <div id="client" class="client">
+    <header class="app-bar"><span class="app-mark" data-icon="friends"></span><span id="window-title">Amigos</span><span class="local-badge">VULPI</span><div class="app-bar-actions"><button class="icon-button" data-action="inbox" aria-label="Caixa de entrada" data-icon="inbox"></button><button class="icon-button" data-action="help" aria-label="Ajuda" data-icon="help"></button></div></header>
+    <nav class="server-rail" id="server-rail" aria-label="Servidores"></nav>
+    <aside class="sidebar" id="sidebar" aria-label="Navegação"></aside>
+    <main class="workspace" id="workspace" tabindex="-1"></main>
+    <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div class="modal-heading"><h2 id="modal-title"></h2><button class="icon-button" data-action="close-modal" aria-label="Fechar janela" data-icon="close"></button></div><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

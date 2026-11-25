@@ -1,0 +1,149 @@
+{
+  "source": "Discord public web client, boost marketing presentation",
+  "items": [
+    {
+      "url": "https://cdn.discordapp.com/assets/content/21a8558f1bce9743f99774ee1247a18908a35222409835448accf90a8b4e2fd8.png",
+      "local": "/client/assets/boosts/21a8558f1bce9743f99774ee1247a18908a35222409835448accf90a8b4e2fd8.png",
+      "bytes": 249466,
+      "sha256": "21a8558f1bce9743f99774ee1247a18908a35222409835448accf90a8b4e2fd8"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/2b844e74bd90a5e0ccb408b039a4915f295d8b9c192c823a4afc69c1fc3604a2.png",
+      "local": "/client/assets/boosts/2b844e74bd90a5e0ccb408b039a4915f295d8b9c192c823a4afc69c1fc3604a2.png",
+      "bytes": 65903,
+      "sha256": "2b844e74bd90a5e0ccb408b039a4915f295d8b9c192c823a4afc69c1fc3604a2"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/7b8d6c9c9f8bc8092089a2f55081695d40f7f303f053fcc6f944bf4b38403573.png",
+      "local": "/client/assets/boosts/7b8d6c9c9f8bc8092089a2f55081695d40f7f303f053fcc6f944bf4b38403573.png",
+      "bytes": 1268225,
+      "sha256": "7b8d6c9c9f8bc8092089a2f55081695d40f7f303f053fcc6f944bf4b38403573"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/aedb1f458fe4c95624bfe88e0486722d0b6ccc8dfcf0e9878f04d8431252be44.webm",
+      "local": "/client/assets/boosts/aedb1f458fe4c95624bfe88e0486722d0b6ccc8dfcf0e9878f04d8431252be44.webm",
+      "bytes": 5125566,
+      "sha256": "aedb1f458fe4c95624bfe88e0486722d0b6ccc8dfcf0e9878f04d8431252be44"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/efb7e2ce9b9536e7e9fffdc31d66f89a6035f8f6168afa555fa3fccc34b1977d.webm",
+      "local": "/client/assets/boosts/efb7e2ce9b9536e7e9fffdc31d66f89a6035f8f6168afa555fa3fccc34b1977d.webm",
+      "bytes": 6569999,
+      "sha256": "efb7e2ce9b9536e7e9fffdc31d66f89a6035f8f6168afa555fa3fccc34b1977d"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/f91111a24ca4c59e87a462e8a3523938628e03e3723c31e5681991a07b0acf48.png",
+      "local": "/client/assets/boosts/f91111a24ca4c59e87a462e8a3523938628e03e3723c31e5681991a07b0acf48.png",
+      "bytes": 157610,
+      "sha256": "f91111a24ca4c59e87a462e8a3523938628e03e3723c31e5681991a07b0acf48"
+    },
+    {
+      "component": "SoundboardIcon",
+      "url": "https://discord.com/assets/95dfe4141fb0ec5d.js",
+      "local": "/client/assets/boosts/soundboard.svg",
+      "sha256": "bf609823e5d80ceb9eee8c0401c80f4be4722fcc2e87de95c709ba0aeba95c5e"
+    },
+    {
+      "component": "UploadIcon",
+      "url": "https://discord.com/assets/87ff9c8564c106aa.js",
+      "local": "/client/assets/boosts/upload.svg",
+      "sha256": "15b1862c4ee519c8bd9341b46df757bd848081812c39eaf25d8b95380dac34d9"
+    },
+    {
+      "component": "ScreenIcon",
+      "url": "https://discord.com/assets/e0d066b1481736e2.js",
+      "local": "/client/assets/boosts/stream.svg",
+      "sha256": "55538a16d59e1ec56b29278c9556467cda38450534881dcde7d320adbf6f989c"
+    },
+    {
+      "component": "ImageIcon",
+      "url": "https://discord.com/assets/089b4009534f17f5.js",
+      "local": "/client/assets/boosts/banner.svg",
+      "sha256": "5385d9a448e621683b448347bd7de57ca446e6d74d10d076d9d533c4f32833d7"
+    },
+    {
+      "component": "LinkIcon",
+      "url": "https://discord.com/assets/web.25de09cac6a6078d.js",
+      "local": "/client/assets/boosts/invite.svg",
+      "sha256": "9fa7cc6732abf85a6c52b13015152bd56e7151b06d9e1f2e275b8dec1245e20c"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/cb869ee40a8ed5d6210e69a02cebbf03025be47006b310ec2564f74f6ad1dff8.svg",
+      "local": "/client/assets/boosts/level-3.svg",
+      "bytes": 1847,
+      "sha256": "cb869ee40a8ed5d6210e69a02cebbf03025be47006b310ec2564f74f6ad1dff8"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/3bc18204c2bf43975ded85a602c7816d032bc07cf9b1d5589e52404f9bc1d687.svg",
+      "local": "/client/assets/boosts/level-2.svg",
+      "bytes": 1410,
+      "sha256": "3bc18204c2bf43975ded85a602c7816d032bc07cf9b1d5589e52404f9bc1d687"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/33e98755a49cf85d07b8189a0001926c17d91599d53662a39999329f5253254f.svg",
+      "local": "/client/assets/boosts/level-1.svg",
+      "bytes": 1043,
+      "sha256": "33e98755a49cf85d07b8189a0001926c17d91599d53662a39999329f5253254f"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png",
+      "local": "/client/assets/boosts/478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79.png",
+      "bytes": 52227,
+      "sha256": "478ce7fb9a64e4d6c4792c82d93f724c2aa0444ac2dfc3e2dfdf43dd11a39c79"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png",
+      "local": "/client/assets/boosts/4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642.png",
+      "bytes": 53406,
+      "sha256": "4e745042a2d8bfd0006d1040fc5a266bfb31ec9bbda28bd1651c2a48fb627642"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png",
+      "local": "/client/assets/boosts/20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc.png",
+      "bytes": 48485,
+      "sha256": "20ed9f49e889cf2f2730613ab1a0724d12e8f4b84292c821b792768f0aba0ddc"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png",
+      "local": "/client/assets/boosts/63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b.png",
+      "bytes": 48836,
+      "sha256": "63a109888f688821d3b669dc296943149605988d13311777bedf4b260b80612b"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png",
+      "local": "/client/assets/boosts/c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f.png",
+      "bytes": 3504,
+      "sha256": "c174a191a551f359311ac49f7c3c344e7349ff82dd4f6f64ed5fbd355ff2a04f"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png",
+      "local": "/client/assets/boosts/a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d.png",
+      "bytes": 63411,
+      "sha256": "a42569e97ea3ec4ce43009ea59cb9514080bc1a7191bd6db2eb4a2076964107d"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png",
+      "local": "/client/assets/boosts/a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163.png",
+      "bytes": 3653,
+      "sha256": "a586e274a51442be7a6088580bf17a03e681120c57830b702c71024535ec3163"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
+      "local": "/client/assets/boosts/93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c.png",
+      "bytes": 67319,
+      "sha256": "93c84331a5f11ba05946bce6fb4f85594d98cb52c8452e9b6869291da41cf62c"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png",
+      "local": "/client/assets/boosts/f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163.png",
+      "bytes": 409967,
+      "sha256": "f15f451050f67dd0fbb25bab5166d0ec9f1c9aa24a14a7f6652041de8c628163"
+    },
+    {
+      "url": "https://cdn.discordapp.com/assets/content/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
+      "local": "/client/assets/boosts/07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1.png",
+      "bytes": 519039,
+      "sha256": "07ad706367af930589109e947258105fd0b8e1b97d1fccc4cbf1ec9905ffb4f1"
+    }
+  ]
+}

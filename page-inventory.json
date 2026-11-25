@@ -1,0 +1,311 @@
+{
+  "pages": [
+    {
+      "url": "https://discord.com/download",
+      "label": "Download",
+      "path": "/download"
+    },
+    {
+      "url": "https://discord.com/nitro",
+      "label": "Nitro",
+      "path": "/nitro"
+    },
+    {
+      "url": "https://discord.com/servers",
+      "label": "Server Directory",
+      "path": "/servers"
+    },
+    {
+      "url": "https://discord.com/trending-games",
+      "label": "Trending Games",
+      "path": "/trending-games"
+    },
+    {
+      "url": "https://discord.com/safety",
+      "label": "Safety",
+      "path": "/safety"
+    },
+    {
+      "url": "https://discord.com/safety-family-center",
+      "label": "Family Center",
+      "path": "/safety-family-center"
+    },
+    {
+      "url": "https://discord.com/safety-library",
+      "label": "Safety Library",
+      "path": "/safety-library"
+    },
+    {
+      "url": "https://discord.com/safety-news",
+      "label": "Safety News",
+      "path": "/safety-news"
+    },
+    {
+      "url": "https://discord.com/safety-teen-charter",
+      "label": "Teen Charter",
+      "path": "/safety-teen-charter"
+    },
+    {
+      "url": "https://discord.com/safety-players-guide",
+      "label": "Discord Player's Guide",
+      "path": "/safety-players-guide"
+    },
+    {
+      "url": "https://discord.com/safety-parents",
+      "label": "Parent Hub",
+      "path": "/safety-parents"
+    },
+    {
+      "url": "https://discord.com/safety-policies",
+      "label": "Policy Hub",
+      "path": "/safety-policies"
+    },
+    {
+      "url": "https://discord.com/safety-privacy",
+      "label": "Privacy Hub",
+      "path": "/safety-privacy"
+    },
+    {
+      "url": "https://discord.com/safety-transparency",
+      "label": "Transparency Hub",
+      "path": "/safety-transparency"
+    },
+    {
+      "url": "https://discord.com/safety-wellbeing",
+      "label": "Wellbeing Hub",
+      "path": "/safety-wellbeing"
+    },
+    {
+      "url": "https://discord.com/ads/quests",
+      "label": "Quests",
+      "path": "/ads/quests"
+    },
+    {
+      "url": "https://discord.com/ads/quests-success-stories",
+      "label": "Success Stories",
+      "path": "/ads/quests-success-stories"
+    },
+    {
+      "url": "https://discord.com/ads/quests-faq",
+      "label": "Quests FAQ",
+      "path": "/ads/quests-faq"
+    },
+    {
+      "url": "https://discord.com/blog",
+      "label": "Blog",
+      "path": "/blog"
+    },
+    {
+      "url": "https://discord.com/category/community",
+      "label": "Community",
+      "path": "/category/community"
+    },
+    {
+      "url": "https://discord.com/category/company",
+      "label": "Discord HQ",
+      "path": "/category/company"
+    },
+    {
+      "url": "https://discord.com/category/engineering",
+      "label": "Engineering & Developers",
+      "path": "/category/engineering"
+    },
+    {
+      "url": "https://discord.com/category/how-to-discord",
+      "label": "How to Discord",
+      "path": "/category/how-to-discord"
+    },
+    {
+      "url": "https://discord.com/category/safety",
+      "label": "Policy & Safety",
+      "path": "/category/safety"
+    },
+    {
+      "url": "https://discord.com/category/product",
+      "label": "Product & Features",
+      "path": "/category/product"
+    },
+    {
+      "url": "https://discord.com/developers",
+      "label": "Developers",
+      "path": "/developers"
+    },
+    {
+      "url": "https://discord.com/developers/social-sdk",
+      "label": "Integration",
+      "path": "/developers/social-sdk"
+    },
+    {
+      "url": "https://discord.com/developers/social-commerce",
+      "label": "Social Commerce",
+      "path": "/developers/social-commerce"
+    },
+    {
+      "url": "https://discord.com/developers/build",
+      "label": "Apps and Activities",
+      "path": "/developers/build"
+    },
+    {
+      "url": "https://discord.com/developers/developer-newsletter",
+      "label": "Developer Newsletter",
+      "path": "/developers/developer-newsletter"
+    },
+    {
+      "url": "https://discord.com/developers/success-stories",
+      "label": "Developer Case Studies",
+      "path": "/developers/success-stories"
+    },
+    {
+      "url": "https://discord.com/community",
+      "label": "Community",
+      "path": "/community"
+    },
+    {
+      "url": "https://discord.com/developers/home",
+      "label": "Developer Portal",
+      "path": "/developers/home"
+    },
+    {
+      "url": "https://discord.com/developers/docs/intro",
+      "label": "Documentation",
+      "path": "/developers/docs/intro"
+    },
+    {
+      "url": "https://discord.com/careers",
+      "label": "Jobs",
+      "path": "/careers"
+    },
+    {
+      "url": "https://discord.com/app",
+      "label": "Log In",
+      "path": "/app"
+    },
+    {
+      "url": "https://discord.com/login",
+      "label": "Download",
+      "path": "/login"
+    },
+    {
+      "url": "https://discord.com/application-directory",
+      "label": "App Directory",
+      "path": "/application-directory"
+    },
+    {
+      "url": "https://discord.com/gift-cards",
+      "label": "Gift Cards",
+      "path": "/gift-cards"
+    },
+    {
+      "url": "https://discord.com/company",
+      "label": "About",
+      "path": "/company"
+    },
+    {
+      "url": "https://discord.com/branding",
+      "label": "Brand",
+      "path": "/branding"
+    },
+    {
+      "url": "https://discord.com/newsroom",
+      "label": "Newsroom",
+      "path": "/newsroom"
+    },
+    {
+      "url": "https://discord.com/creators",
+      "label": "Creators",
+      "path": "/creators"
+    },
+    {
+      "url": "https://discord.com/terms",
+      "label": "Terms",
+      "path": "/terms"
+    },
+    {
+      "url": "https://discord.com/privacy",
+      "label": "Privacy",
+      "path": "/privacy"
+    },
+    {
+      "url": "https://discord.com/guidelines",
+      "label": "Guidelines",
+      "path": "/guidelines"
+    },
+    {
+      "url": "https://discord.com/acknowledgements",
+      "label": "Acknowledgements",
+      "path": "/acknowledgements"
+    },
+    {
+      "url": "https://discord.com/licenses",
+      "label": "Licenses",
+      "path": "/licenses"
+    },
+    {
+      "url": "https://discord.com/company-information",
+      "label": "Company Information",
+      "path": "/company-information"
+    }
+  ],
+  "external": [
+    {
+      "url": "https://support.discord.com/hc/",
+      "label": "",
+      "path": "/hc/"
+    },
+    {
+      "url": "https://support.discord.com/hc",
+      "label": "Support",
+      "path": "/hc"
+    },
+    {
+      "url": "https://support.discord.com/hc/requests/new?brand_id=96508&ticket_form_id=34826052965399",
+      "label": "Feedback",
+      "path": "/hc/requests/new"
+    },
+    {
+      "url": "https://support.discord.com/hc/en-us/requests/new",
+      "label": "Submit a Request",
+      "path": "/hc/en-us/requests/new"
+    },
+    {
+      "url": "https://support-dev.discord.com/hc/en-us",
+      "label": "Developer Help Center",
+      "path": "/hc/en-us"
+    },
+    {
+      "url": "https://twitter.com/discord",
+      "label": "",
+      "path": "/discord"
+    },
+    {
+      "url": "https://www.instagram.com/discord/",
+      "label": "",
+      "path": "/discord/"
+    },
+    {
+      "url": "https://www.facebook.com/discord/",
+      "label": "",
+      "path": "/discord/"
+    },
+    {
+      "url": "https://www.youtube.com/discord",
+      "label": "",
+      "path": "/discord"
+    },
+    {
+      "url": "https://www.tiktok.com/@discord",
+      "label": "",
+      "path": "/@discord"
+    },
+    {
+      "url": "https://discordmerch.com/evergreenfooter",
+      "label": "Official 3rd Party Merch",
+      "path": "/evergreenfooter"
+    },
+    {
+      "url": "https://x.com/discord",
+      "label": "",
+      "path": "/discord"
+    }
+  ]
+}

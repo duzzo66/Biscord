@@ -1,0 +1,14 @@
+/* CSS / loading.css / Chromium, Firefox, WebKit / Vulpi startup */
+.biscord-loading{position:fixed;inset:0;z-index:2147483000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;background:#232428;color:#f2f3f5;opacity:1;transition:opacity .22s ease;isolation:isolate}
+.biscord-loading.is-ready{opacity:0;pointer-events:none}
+.biscord-loading-mark{width:76px;height:76px;display:block;object-fit:contain;will-change:transform,opacity;transform-origin:center;backface-visibility:visible}
+#biscord-loading .biscord-loading-mark{animation:biscord-loading-flip 1s cubic-bezier(.45,0,.2,1) infinite!important}
+.biscord-loading-copy{text-align:center;max-width:300px;padding:0 24px}
+.biscord-loading-copy strong{display:block;font:800 18px/1.4 system-ui,sans-serif;letter-spacing:.8px}
+.biscord-loading-copy p{margin:8px 0 0;font:400 14px/1.5 system-ui,sans-serif;color:#b5bac1}
+.biscord-loading button{margin-top:18px;border:0;border-radius:8px;background:#5865f2;color:#fff;padding:11px 20px;font:600 14px system-ui;cursor:pointer;transition:background .15s,transform .15s}
+.biscord-loading button:hover{background:#4752c4}.biscord-loading button:active{transform:scale(.97)}
+.biscord-loading button:focus-visible{outline:2px solid #fff;outline-offset:4px}
+#biscord-loading.has-error .biscord-loading-mark{animation:none!important;opacity:.7}
+@keyframes biscord-loading-flip{0%{transform:perspective(250px) rotateY(0) rotateZ(-8deg) scale(.96);opacity:1}25%{transform:perspective(250px) rotateY(90deg) rotateZ(0) scale(.84);opacity:.72}50%{transform:perspective(250px) rotateY(180deg) rotateZ(8deg) scale(.96);opacity:1}75%{transform:perspective(250px) rotateY(270deg) rotateZ(0) scale(.84);opacity:.72}100%{transform:perspective(250px) rotateY(360deg) rotateZ(-8deg) scale(.96);opacity:1}}
+@media(prefers-reduced-motion:reduce){.biscord-loading,.biscord-loading button{transition:none}}

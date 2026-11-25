@@ -1,0 +1,456 @@
+[
+  {
+    "key": "refresh",
+    "component": "RefreshIcon",
+    "module": "663417",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "52af24b6b798e49aaaa719b27d70c475cb24650ee5dc38ee92741a7ad10222bb"
+  },
+  {
+    "key": "settingsPrivacy",
+    "component": "PrivacyAndSafetyIcon",
+    "module": "786049",
+    "source": "https://discord.com/assets/67951e374a853bd3.js",
+    "sha256": "729ed9f4a24c93c13f19df2487e54c3d63e4ccc2ef771a407b8db78b686d319b"
+  },
+  {
+    "key": "settingsMessaging",
+    "component": "ChatShieldIcon",
+    "module": "476713",
+    "source": "https://discord.com/assets/3e3b3dacd88ddb35.js",
+    "sha256": "795d35fcc7118ab17f5199c0d70db52919098e4d7771d9eb105912b576b5b31f"
+  },
+  {
+    "key": "subscriptions",
+    "component": "SubscriptionIcon",
+    "module": "153659",
+    "source": "https://discord.com/assets/ada75af468e2fae0.js",
+    "sha256": "0a900b316a3caae66713d472c3e662496e97873577af0de28d4c06bbc41075dd"
+  },
+  {
+    "key": "apps",
+    "component": "AppsIcon",
+    "module": "323384",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "c225992307574c57230e06259061fcf1fafd922d38ef66d5b53390207f65c40f"
+  },
+  {
+    "key": "activity",
+    "component": "UserPlayIcon",
+    "module": "835723",
+    "source": "https://discord.com/assets/168e10535f129f11.js",
+    "sha256": "a5901f1a1d1ed305e025d17a1e417e8c50003fb0929864e44f401b4b033961bd"
+  },
+  {
+    "key": "developer",
+    "component": "WrenchIcon",
+    "module": "346411",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "be293fd26f267fbf0b95098dcbfa8cc90e2a37163612765ce0bfb5629801887d"
+  },
+  {
+    "key": "link",
+    "component": "LinkIcon",
+    "module": "173936",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "9fa7cc6732abf85a6c52b13015152bd56e7151b06d9e1f2e275b8dec1245e20c"
+  },
+  {
+    "key": "lock",
+    "component": "LockIcon",
+    "module": "194261",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "fb709e2b32955d97ebd0b6e8083033a898c5b17a840326022a4bd53b2708d5de"
+  },
+  {
+    "key": "doubleRight",
+    "component": "DoubleChevronSmallRightIcon",
+    "module": "890377",
+    "source": "https://discord.com/assets/9a1751426b0cab31.js",
+    "sha256": "6c7af3fe52d15c5e3a69b1654fce6366dc45ba46f0bdb4dae4248309c8984387"
+  },
+  {
+    "key": "account",
+    "component": "UserIcon",
+    "module": "950305",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "a3bde42a15717d5073f18c435ed1f191c9a49574d1b4fd0a1b5857d0cf3b8f7a"
+  },
+  {
+    "key": "privacy",
+    "component": "ShieldIcon",
+    "module": "231483",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "8d9aceed0ba37453158339d450034deca2a297fead2d464b9b30522cc2b44425"
+  },
+  {
+    "key": "accessibility",
+    "component": "AccessibilityIcon",
+    "module": "550640",
+    "source": "https://discord.com/assets/a0c18559c9916b55.js",
+    "sha256": "3759df5fab4687e26bb1cb4aaf1325f1b521966bce2d250ff9a1b60dc1c3f083"
+  },
+  {
+    "key": "system",
+    "component": "KeyboardIcon",
+    "module": "410767",
+    "source": "https://discord.com/assets/a8b8867267e0216b.js",
+    "sha256": "18dc0eb5322a81dd84370c39a503cbd538060cb29a555666614c300ee122de2c"
+  },
+  {
+    "key": "appearance",
+    "component": "PaintPaletteIcon",
+    "module": "650809",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "8d4d9176f66beb23c7a4d67314d9f0e36936a28e4fa07f8c7c8fe8bb39d2def5"
+  },
+  {
+    "key": "language",
+    "component": "LanguageIcon",
+    "module": "37646",
+    "source": "https://discord.com/assets/9144943ecf3dca40.js",
+    "sha256": "1b240786b00f7282427bff89dfe757e66345d8f43febf71a7f086452324d5633"
+  },
+  {
+    "key": "billing",
+    "component": "CreditCardIcon",
+    "module": "360669",
+    "source": "https://discord.com/assets/f7ddd12908ea1bcd.js",
+    "sha256": "a10f5cc0f438622e53b2229b07800b66e69e35b09f8a07501a22e69b73b65328"
+  },
+  {
+    "key": "discord",
+    "component": "BiscordFoxMark",
+    "source": "branding/assets/fox-mark.svg",
+    "sha256": "968b4ec9d54f0b6d9401daaf0977de166dbe5d4e12e167c1f8330350b1621912"
+  },
+  {
+    "key": "friends",
+    "component": "FriendsIcon",
+    "module": "214947",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "27b47f1857ac0819659fe7887f2c5f5338bea90e450e1e68d9d7e7399b0bec79"
+  },
+  {
+    "key": "chat",
+    "component": "ChatIcon",
+    "module": "534890",
+    "source": "https://discord.com/assets/9b8666d6d309d508.js",
+    "sha256": "f95365d96218968e49cde546b4b03c7a7c406d8070cf932e89cced34ec31df58"
+  },
+  {
+    "key": "hash",
+    "component": "HashmarkIcon",
+    "module": "955475",
+    "source": "https://discord.com/assets/03416ec61196e78f.js",
+    "sha256": "3d4e9af8b698fc00a4e751975dcc20c532a18c2dc5e723cc2b15f7c6f833e4a8"
+  },
+  {
+    "key": "star",
+    "component": "StarIcon",
+    "module": "27232",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "9040fd373872862aea5d394fa862eeb01df4174e7f4e2e0951a0d3bd028eff41"
+  },
+  {
+    "key": "quest",
+    "component": "QuestsIcon",
+    "module": "577473",
+    "source": "https://discord.com/assets/607be895724cddca.js",
+    "sha256": "74a9531d20b02cc56a5686574a92712102f37103b09fdf992092a7671713b1ae"
+  },
+  {
+    "key": "plus",
+    "component": "PlusMediumIcon",
+    "module": "499373",
+    "source": "https://discord.com/assets/56c7d5ce8b9f9fb7.js",
+    "sha256": "ecaeccdb9213d212998324b4eaeb0a8eef3d4a59b318e315df4fbcee03595cab"
+  },
+  {
+    "key": "close",
+    "component": "XSmallIcon",
+    "module": "789645",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "c9fe71117b99b23e9f3f997e972da5b3b157b219446914fd746736fea1c537ee"
+  },
+  {
+    "key": "search",
+    "component": "MagnifyingGlassIcon",
+    "module": "7689",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "7041e58617cb3d068ac2d15dcf76b87db4e264630cc5569279b9536770613a66"
+  },
+  {
+    "key": "chevron",
+    "component": "ChevronSmallDownIcon",
+    "module": "847374",
+    "source": "https://discord.com/assets/98d7942bfd844a96.js",
+    "sha256": "84919fbd3f726073341b7f565c168c554f704f4900246369bcfe7733406ed579"
+  },
+  {
+    "key": "right",
+    "component": "ChevronSmallRightIcon",
+    "module": "320448",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "d2f86743e73a2ae8566987640014715155c601b0fc113115263f190b9340b9ed"
+  },
+  {
+    "key": "mic",
+    "component": "MicrophoneIcon",
+    "module": "831544",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "ba6a503507f95bf6b05628f2ebfa954ab62c3b2fd0a690d88801ff08c1780a50"
+  },
+  {
+    "key": "micoff",
+    "component": "MicrophoneSlashIcon",
+    "module": "83107",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "d78fd1122de08bbeb41d572d1e0e974e6e1e4129c29c556efdff298c1df89005"
+  },
+  {
+    "key": "headphones",
+    "component": "HeadphonesIcon",
+    "module": "597601",
+    "source": "https://discord.com/assets/15fd9cd4d6e8e081.js",
+    "sha256": "cf32c74f2cae3549f1374df2895ff4d4e30acb290771590129762eaabeb26d95"
+  },
+  {
+    "key": "headphonesoff",
+    "component": "HeadphonesSlashIcon",
+    "module": "990836",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "610db80dc49dfc1046c061a029b4ff4afae703aafc5c88df4b509e331b49e7e8"
+  },
+  {
+    "key": "settings",
+    "component": "SettingsIcon",
+    "module": "625903",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "cf65549832f288fb823a4e320ccbe64c32085cfe16b8d8e1b2995cb3a0895608"
+  },
+  {
+    "key": "volume",
+    "component": "VoiceNormalIcon",
+    "module": "983851",
+    "source": "https://discord.com/assets/82977d6cc2b336ba.js",
+    "sha256": "692dbd7d371b70bb234ad0ffd47f2fdd547ca6732fb19f7a2e1246c10c96f38d"
+  },
+  {
+    "key": "phone",
+    "component": "PhoneCallIcon",
+    "module": "978940",
+    "source": "https://discord.com/assets/dff9defdd16df87b.js",
+    "sha256": "2432c175bca9b7fa7bafaf22a7e0db6e0c84c420e516853ce5cea5a10579c41f"
+  },
+  {
+    "key": "video",
+    "component": "VideoIcon",
+    "module": "428689",
+    "source": "https://discord.com/assets/9fb989cf9387238d.js",
+    "sha256": "0fd25bf134da9c75a4b267fcb418dc6c3b55c093cafb7715d32e15ebe7cc94db"
+  },
+  {
+    "key": "inbox",
+    "component": "InboxIcon",
+    "module": "912592",
+    "source": "https://discord.com/assets/71fedc38dffccef1.js",
+    "sha256": "20d3bf65af2016202ba70f6214a1a69a0310ce1055f3634926ce4db802f234d6"
+  },
+  {
+    "key": "help",
+    "component": "CircleQuestionIcon",
+    "module": "290136",
+    "source": "https://discord.com/assets/cd455d90f39ff527.js",
+    "sha256": "e7c480efb682bfa3b31d8c9d66332f1050ee347cc2edba8b91c0c7b85341efd3"
+  },
+  {
+    "key": "compass",
+    "component": "CompassIcon",
+    "module": "836480",
+    "source": "https://discord.com/assets/84a6d6dfb0353c3b.js",
+    "sha256": "62843c10ad583ae96a2450700b78d3713dc611295f9328ef215cdf15d925ac45"
+  },
+  {
+    "key": "gift",
+    "component": "GiftIcon",
+    "module": "597770",
+    "source": "https://discord.com/assets/55d8f4b550d154e2.js",
+    "sha256": "a22dc468641b0d9bfd9596f90ba296ab149439824e0005db8236c513c10827a7"
+  },
+  {
+    "key": "nitro",
+    "component": "NitroWheelIcon",
+    "module": "403581",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "dca615fb8327c0588df09c22d01d94777c2366a05e409de069183651f7db94c4"
+  },
+  {
+    "key": "shop",
+    "component": "ShopIcon",
+    "module": "34188",
+    "source": "https://discord.com/assets/ea285d78b19c819d.js",
+    "sha256": "9cc86882b4267d2121d82108f312f86942d321707c1cd5989783858f0ae13828"
+  },
+  {
+    "key": "more",
+    "component": "MoreHorizontalIcon",
+    "module": "365199",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "8a2114e66b1ad8e375b9d4a1ad4612ec0428cb870d9f288fad826d18cee54e43"
+  },
+  {
+    "key": "check",
+    "component": "CheckmarkLargeIcon",
+    "module": "933832",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "782e3d65ca82b7376b147eced0f00517ea1afe4333bfbc83ec141c425c9db9e9"
+  },
+  {
+    "key": "pin",
+    "component": "PinIcon",
+    "module": "366605",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "3fb5b156e850e58314d11a6548bbf501e865335d41dc837e2c1fbb198d1b4e4e"
+  },
+  {
+    "key": "bell",
+    "component": "BellIcon",
+    "module": "782603",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "1952d45ed04fc7d717a1c2936e7e3483eca826c46ad9b5ff659f7e52d8169843"
+  },
+  {
+    "key": "emoji",
+    "component": "EmojiSlightlySmilingFaceIcon",
+    "module": "756408",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "37a3f4c0b6962777e0dff926929e99893c47008233edb76c3df61d187ce1db74"
+  },
+  {
+    "key": "send",
+    "component": "SendMessageIcon",
+    "module": "559647",
+    "source": "https://discord.com/assets/665de1eb4de962da.js",
+    "sha256": "14f94578f015dbe31b8b30cae4b0ad4d3042b7ed4f08fc13c58c8847345953e5"
+  },
+  {
+    "key": "logout",
+    "component": "DoorExitIcon",
+    "module": "70688",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "48f840293ad39b483b381d53b1e3479716cb6c445167f1809009c84f376cb3c5"
+  },
+  {
+    "key": "menu",
+    "component": "MenuIcon",
+    "module": "97893",
+    "source": "https://discord.com/assets/bceaccd7892b3de1.js",
+    "sha256": "a2d9325e25435dabab38d11b8ddcd1ee9e8b9df698c35177f755671f4a2103e1"
+  },
+  {
+    "key": "download",
+    "component": "DownloadIcon",
+    "module": "32880",
+    "source": "https://discord.com/assets/74512f2cde0e6412.js",
+    "sha256": "f5f2d3d9613d0d4d00488f5b546c4556bc11a60f030c289a34e62be5d343c4f3"
+  },
+  {
+    "key": "game",
+    "component": "GameControllerIcon",
+    "module": "687966",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "60f295625688509a79a76ee097b45e71929b695ca596898f165cb3c2349334ce"
+  },
+  {
+    "key": "crown",
+    "component": "CrownIcon",
+    "module": "329177",
+    "source": "https://discord.com/assets/9d8fe9912524212a.js",
+    "sha256": "26befb8adaf47708fd85b4e48818b38b9df4db81aee0bc643f9c1b25f9326b60"
+  },
+  {
+    "key": "trash",
+    "component": "TrashIcon",
+    "module": "241326",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "87a6f74a1a42893f81c9d430fce674ae1f3e0767cf67e1342cc5ddb5b27fe9ba"
+  },
+  {
+    "key": "edit",
+    "component": "PencilIcon",
+    "module": "22231",
+    "source": "https://discord.com/assets/17d3c3b25ad1d740.js",
+    "sha256": "eae420470d1474fad8a7be2c11c60351eb883f44f678f083bf8f2826109a267d"
+  },
+  {
+    "key": "copy",
+    "component": "CopyIcon",
+    "module": "624479",
+    "source": "https://discord.com/assets/e8b1eeb09b751947.js",
+    "sha256": "c1d86b610e8e6be627a873fc2778bd8815c88a693442844853259fefc38a2fd4"
+  },
+  {
+    "key": "eyedropper",
+    "component": "EyeDropperIcon",
+    "module": "714385",
+    "source": "https://discord.com/assets/4bc7dcb82a7f8d8b.js",
+    "sha256": "933fe77e95fb6435f1839efbe6a56f1f54077aad401e0b2d3c8d8f811affa637"
+  },
+  {
+    "key": "gif",
+    "component": "GifIcon",
+    "module": "391242",
+    "source": "https://discord.com/assets/0ada193a0f70e9b9.js",
+    "sha256": "514c8459ea7b2950c0cd3e86089b1e6a93dd324fb891f61345f0582039b6dc18"
+  },
+  {
+    "key": "imagePlus",
+    "component": "ImagePlusIcon",
+    "module": "750943",
+    "source": "https://discord.com/assets/736c478489f2ba57.js",
+    "sha256": "d4b364d7f12fb4aac40df58091e130b40c2f2fc8b41adecde31a1dd899f271e8"
+  },
+  {
+    "key": "groupPlus",
+    "component": "GroupPlusIcon",
+    "module": "241541",
+    "source": "https://discord.com/assets/web.25de09cac6a6078d.js",
+    "sha256": "538c0502db67f8e10d2b7847263963ec89b0e6552eab36ce1bc4c34f5e48242f"
+  },
+  {
+    "key": "circlePlus",
+    "component": "CirclePlusIcon",
+    "module": "245604",
+    "source": "https://discord.com/assets/8a3610b233d006f7.js",
+    "sha256": "e9bf9bb502835907b74b732160acf2d8b5c1484bf2e04215da1b929136ad2bed"
+  },
+  {
+    "key": "slash",
+    "component": "DenyIcon",
+    "module": "428678",
+    "source": "https://discord.com/assets/cd366663c7bd6a0e.js",
+    "sha256": "2e59c09971c97b74cd373a780417bb408d3ede246c93402f008e6d7fa7b1d0fd"
+  },
+  {
+    "key": "boost",
+    "component": "BoostGemIcon",
+    "module": "104510",
+    "source": "https://discord.com/assets/f3df3b5531e1f628.js",
+    "sha256": "8e10d88d7f18d9cb651d05af89342da1785244d670772e0a99b99f2668dc3e25"
+  },
+  {
+    "key": "userCircle",
+    "component": "UserCircleIcon",
+    "module": "26137",
+    "source": "https://discord.com/assets/d92710f169586bfa.js",
+    "sha256": "cf1b3b281675c536cb5a0dc30503d8a67ff3a0bc9dcb2cf360775e607646f325"
+  },
+  {
+    "key": "userCheck",
+    "component": "UserCheckIcon",
+    "module": "497767",
+    "source": "https://discord.com/assets/834eed5021799a6e.js",
+    "sha256": "6c3e1b1fa062d908955b1ecccf336ebf00e668b91619a232f1476ac9bf930d23"
+  }
+]

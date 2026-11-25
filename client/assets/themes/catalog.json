@@ -1,0 +1,601 @@
+{
+  "source": "https://discord.com/assets/styles.246d39ee881a604a.css",
+  "items": [
+    {
+      "id": "light",
+      "name": "Claro",
+      "base": "light",
+      "palette": {
+        "background-base-lowest": "#f3f3f4",
+        "background-base-lower": "#fbfbfb",
+        "background-base-low": "#fbfbfb",
+        "background-surface-high": "#fff",
+        "background-surface-higher": "#fff",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#2e2e34",
+        "text-strong": "#28282d",
+        "text-muted": "#6c6d76",
+        "interactive-text-default": "#595a63",
+        "border-subtle": "rgba(151,151,159,0.2784313725490196)",
+        "channeltextarea-background": "#ebedef"
+      }
+    },
+    {
+      "id": "ash",
+      "name": "Cinza",
+      "base": "ash",
+      "palette": {
+        "background-base-lowest": "#2c2d32",
+        "background-base-lower": "#323339",
+        "background-base-low": "#36373e",
+        "background-surface-high": "#393a41",
+        "background-surface-higher": "#3c3d45",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#f3f3f4",
+        "text-strong": "#fff",
+        "text-muted": "#abacb2",
+        "interactive-text-default": "#c5c6ca",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a40"
+      }
+    },
+    {
+      "id": "dark",
+      "name": "Escuro",
+      "base": "dark",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "onyx",
+      "name": "Ônix",
+      "base": "onyx",
+      "palette": {
+        "background-base-lowest": "#000",
+        "background-base-lower": "#000",
+        "background-base-low": "#000",
+        "background-surface-high": "#0a0a0c",
+        "background-surface-higher": "#121214",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#d4d5d8",
+        "text-strong": "#dcdcdf",
+        "text-muted": "#81828a",
+        "interactive-text-default": "#96979e",
+        "border-subtle": "rgba(151,151,159,0.2)",
+        "channeltextarea-background": "#131318"
+      }
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#062053,#191fbb,#13929a,#218573,#051a81)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "blurple-twilight",
+      "name": "Blurple Twilight",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#2c3fe7,#261d83)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "chroma-glow",
+      "name": "Chroma Glow",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#0eb5bf,#4c0ce0,#a308a7,#9a53ff,#218be0)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "citrus-sherbert",
+      "name": "Citrus Sherbert",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#f3b336,#ee8558)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "cotton-candy",
+      "name": "Cotton Candy",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#f4abb8,#b1c2fc)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "crimson-moon",
+      "name": "Crimson Moon",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#950909,#000)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "desert-khaki",
+      "name": "Desert Khaki",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#e7dbd0,#dfd0b2,#e0d6a3)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "dusk",
+      "name": "Dusk",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#665069,#91a3d1)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "easter-egg",
+      "name": "Easter Egg",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#7289da,#4e5d94)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#142215,#2d4d39,#454c32,#5a7c58,#a98e4b)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "hanami",
+      "name": "Hanami",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#efaab3,#efd696,#a6daa2)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "hexagon",
+      "name": "Hexagon",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#f89a03,#ff6698,#af01f3,#4645ff)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "hexagon-promo",
+      "name": "Hexagon Promo",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#5060c3,#9a56c3,#e3809c,#e8a252)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "lofi-vibes",
+      "name": "Lofi Vibes",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#a4c0f7,#a9e4e8,#b0e2b8,#cfdfa2)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#895240,#8f4343)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "midnight-blurple",
+      "name": "Midnight Blurple",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#5348ca,#140730)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "mint-apple",
+      "name": "Mint Apple",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#56b69f,#63bc61,#9eca67)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "neon-nights",
+      "name": "Neon Nights",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#01a89e,#7d60ba,#b43898)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "retro-raincloud",
+      "name": "Retro Raincloud",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#3a7ca1,#7f7eb9)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "retro-storm",
+      "name": "Retro Storm",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#3a7ca1,#58579a)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "sepia",
+      "name": "Sepia",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#857664,#5b4421)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "strawberry-lemonade",
+      "name": "Strawberry Lemonade",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#af1a6c,#c26b20,#e7a525)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "sunrise",
+      "name": "Sunrise",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#9f4175,#c49064,#a6953d)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#48288c,#db7f4b)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "under-the-sea",
+      "name": "Under The Sea",
+      "base": "dark",
+      "gradient": "linear-gradient(135deg,#647962,#588575,#6a8482)",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      }
+    },
+    {
+      "id": "custom",
+      "name": "Tema personalizado",
+      "base": "dark",
+      "palette": {
+        "background-base-lowest": "#121214",
+        "background-base-lower": "#1a1a1e",
+        "background-base-low": "#202024",
+        "background-surface-high": "#242429",
+        "background-surface-higher": "#28282d",
+        "background-mod-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "text-default": "#efeff1",
+        "text-strong": "#fbfbfb",
+        "text-muted": "#96979e",
+        "interactive-text-default": "#abacb2",
+        "border-subtle": "rgba(151,151,159,0.12156862745098039)",
+        "channeltextarea-background": "#383a43"
+      },
+      "gradient": "linear-gradient(135deg,#5865f2,#eb459e)"
+    }
+  ]
+}
