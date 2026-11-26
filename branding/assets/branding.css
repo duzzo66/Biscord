@@ -1,4 +1,6 @@
 /* CSS / branding/assets/branding.css / browsers / stable navigation brand */
+/* Desktop uses a CSS background rather than the mobile <img>. Keep its URL versioned too. */
+.hero-wr-image.desctop-show>.home_image-static{background-image:url('/brand/hero-desktop-vulcord-v2.webp')!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important}
 .nav_brand:not(.is-burger){display:flex;align-items:center;justify-content:center;width:160px!important;height:44px!important;padding:8px 12px;background:transparent!important;border:0!important;border-radius:12px;box-sizing:border-box;transition:background-color 180ms ease,box-shadow 180ms ease}
 .nav_brand .nav_brand_main-black-logo{display:none!important;opacity:0!important;pointer-events:none!important}
 .nav_brand:not(.is-burger) .nav_brand_main-logo{display:block!important;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important;filter:none!important;width:100%!important;height:28px!important;margin:0!important;object-fit:contain;background:transparent!important;transition:filter 180ms ease}
