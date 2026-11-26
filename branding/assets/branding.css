@@ -4,8 +4,28 @@
 .nav_brand:not(.is-burger){display:flex;align-items:center;justify-content:center;width:160px!important;height:44px!important;padding:8px 12px;background:transparent!important;border:0!important;border-radius:12px;box-sizing:border-box;transition:background-color 180ms ease,box-shadow 180ms ease}
 .nav_brand .nav_brand_main-black-logo{display:none!important;opacity:0!important;pointer-events:none!important}
 .nav_brand:not(.is-burger) .nav_brand_main-logo{display:block!important;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important;filter:none!important;width:100%!important;height:28px!important;margin:0!important;object-fit:contain;background:transparent!important;transition:filter 180ms ease}
-.bc-nav-scrolled .nav_brand:not(.is-burger){background:#fff!important;box-shadow:0 2px 8px #00000012}
-.bc-nav-scrolled .nav_brand:not(.is-burger) .nav_brand_main-logo{filter:brightness(0)!important}
+.bc-nav-scrolled .nav_brand:not(.is-burger){background:transparent!important;box-shadow:none!important}
+.bc-nav-scrolled .nav_brand:not(.is-burger) .nav_brand_main-logo{filter:none!important}
+/* Centered translucent navigation, shared by the public pages. */
+header.nav{position:fixed!important;inset:0 0 auto!important;width:100%!important;padding:16px 24px!important;background:transparent!important;box-sizing:border-box;z-index:1000;pointer-events:none}
+header.nav .nav_padding{padding:0!important;background:transparent!important}
+header.nav .nav_wrapper{position:relative;display:flex;align-items:center;gap:18px;width:100%!important;max-width:1160px!important;min-height:68px;margin:0 auto!important;padding:10px 18px!important;box-sizing:border-box;background:rgba(0,0,0,.66)!important;border:1px solid rgba(255,255,255,.1);border-radius:20px;box-shadow:0 8px 28px rgba(0,0,0,.22);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);pointer-events:auto}
+header.nav .nav_brand:not(.is-burger){width:128px!important;flex-shrink:0;padding:4px!important}
+header.nav .nav_link,header.nav .nav_dd_trigger,header.nav .menu-title{color:#fff!important}
+header.nav .nav_dd_arrow-wr-white{display:block!important}
+header.nav .nav_dd_arrow-wr-black{display:none!important}
+@media(max-width:991px){header.nav{padding:10px 12px!important}header.nav .nav_wrapper{min-height:60px;padding:8px 12px!important;gap:12px;border-radius:18px}header.nav .nav_brand:not(.is-burger){width:116px!important}}
+/* The server directory uses the alternate public navigation markup. */
+[class*="wrapperDesktop__"]:has(>nav[aria-label="Main navigation"]),[class*="wrapperMobile__"]:has(>nav[aria-label="Main navigation"]){position:fixed!important;top:16px!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important;width:calc(100% - 48px)!important;max-width:1160px!important;background:transparent!important;z-index:1000}
+nav[aria-label="Main navigation"]{box-sizing:border-box;display:flex;align-items:center!important;justify-content:space-between;gap:16px;width:100%!important;max-width:100%!important;min-width:0!important;min-height:68px;padding:10px 18px!important;background:rgba(0,0,0,.66)!important;color:#fff!important;border:1px solid rgba(255,255,255,.1);border-radius:20px;box-shadow:0 8px 28px rgba(0,0,0,.22);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+nav[aria-label="Main navigation"]{position:relative!important;inset:auto!important;transform:none!important}
+nav[aria-label="Main navigation"]>[class*="logoScope__"],nav[aria-label="Main navigation"]>[class*="appButton__"],nav[aria-label="Main navigation"]>[class*="mobileButtonContainer__"]{position:static!important;inset:auto!important;transform:none!important;flex-shrink:0}
+nav[aria-label="Main navigation"]>[class*="logoScope__"]{width:128px!important}nav[aria-label="Main navigation"]>[class*="logoScope__"] img{width:128px;max-width:100%;object-fit:contain}nav[aria-label="Main navigation"]>ul{position:static!important;inset:auto!important;transform:none!important;width:auto!important;min-width:0;flex:1;justify-content:center;gap:14px!important}nav[aria-label="Main navigation"]>ul>li>a,nav[aria-label="Main navigation"]>ul>li>button,nav[aria-label="Main navigation"]>ul>li>a span,nav[aria-label="Main navigation"]>ul>li>button span{font-size:14px!important;white-space:nowrap}
+nav[aria-label="Main navigation"] [class*="topLink_"],nav[aria-label="Main navigation"]>ul>li>button{color:#fff!important}
+nav[aria-label="Main navigation"]>ul>li>a,nav[aria-label="Main navigation"]>ul>li>button{padding:8px 4px!important}
+nav[aria-label="Main navigation"]>ul>li>details>summary{padding:8px 4px!important;color:#fff!important;gap:4px!important}nav[aria-label="Main navigation"]>ul>li>details>summary,nav[aria-label="Main navigation"]>ul>li>details>summary span{font-size:14px!important;white-space:nowrap}
+@media(max-width:991px){[class*="wrapperMobile__"]:has(>nav[aria-label="Main navigation"]){top:10px!important;width:calc(100% - 24px)!important}nav[aria-label="Main navigation"]{min-height:60px;padding:8px 12px!important;border-radius:18px}}
+@media(max-width:991px){body:has(nav[aria-label="Main navigation"]) main#main-content{padding-top:72px!important}}
 .nav_brand:focus-visible{outline:2px solid #b3b9ff;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.nav_brand,.nav_brand_main-logo{transition:none!important}}
 /* Public pages: constrain media and preserve usable navigation on small screens. */
