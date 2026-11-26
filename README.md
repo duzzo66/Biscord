@@ -1,6 +1,6 @@
-# Vulpi (Biscord)
+# vulcord (Biscord)
 
-Aplicação Vulpi de chat com identidade própria, mascote de raposa, contas locais, perfis, configurações, temas e interface de servidores. Backend em Node.js com SQLite ou PostgreSQL/Supabase; frontend em JavaScript, HTML e CSS.
+Aplicação vulcord de chat com identidade própria, mascote de raposa, contas locais, perfis, configurações, temas e interface de servidores. Backend em Node.js com SQLite ou PostgreSQL/Supabase; frontend em JavaScript, HTML e CSS.
 
 ## Executar
 
@@ -49,8 +49,8 @@ Detalhes: [backend](BACKEND.md), [marca e arte](BRANDING.md), [impulsos](BOOSTS.
 ## Builds 1.0.5
 
 - Web: `npm run build` e `npm run verify`.
-- Windows x64 portátil: `npm run desktop:build`; saída `desktop-release-vulpi/Vulpi-1.0.5-Windows.exe`.
-- Android: `npm run android:build`; saída `android-release/Vulpi-1.0.5-Android.apk`.
+- Windows x64 portátil: `npm run desktop:build`; saída `desktop-release-vulcord/vulcord-1.0.5-Windows.exe`.
+- Android: `npm run android:build`; saída `android-release/vulcord-1.0.5-Android.apk`.
 
 `npm test` executa todos os arquivos `*.test.mjs`, incluindo chamadas, servidores, status e navegação desktop.
 Para acelerar a restauração, configure `BISCORD_ASSET_CONCURRENCY` entre 1 e 64 (padrão 6).

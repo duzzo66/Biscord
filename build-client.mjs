@@ -13,7 +13,7 @@ const local=file=>'/'+file.split(/[\\/]/).map(encodeURIComponent).join('/');
 await fs.mkdir(path.join(dist,'client'),{recursive:true});
 for(const asset of [...fonts,art]){await fs.mkdir(path.dirname(path.join(dist,asset.file)),{recursive:true});await fs.copyFile(path.join(root,asset.file),path.join(dist,asset.file));}
 const logoSource=await fs.readFile(path.join(root,'auth/assets/131c318dd45b7aa4.svg'),'utf8');
-const logoPath=logoSource.match(/<path\b[^>]*\bd="([^"]+)"/)?.[1];if(!logoPath)throw Error('Vulpi reference logo path is missing');
+const logoPath=logoSource.match(/<path\b[^>]*\bd="([^"]+)"/)?.[1];if(!logoPath)throw Error('vulcord reference logo path is missing');
 await fs.cp(path.join(root,'client/assets'),path.join(dist,'client/assets'),{recursive:true});
 const iconCatalog=JSON.parse(await fs.readFile(path.join(root,'client/assets/icons.json'),'utf8'));
 iconCatalog.discord=(await fs.readFile(path.join(root,'branding/assets/fox-mark.svg'),'utf8')).replace('<svg ','<svg aria-hidden="true" ');

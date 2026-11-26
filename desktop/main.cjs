@@ -8,14 +8,14 @@ const base=serverURL(process.env.BISCORD_DESKTOP_URL||config.url);
 const internal=url=>internalURL(url,base);
 function external(url){try{if(['https:','http:'].includes(new URL(url).protocol))shell.openExternal(url);}catch{}}
 function create(){
- window=new BrowserWindow({width:1280,height:800,minWidth:900,minHeight:600,title:'Vulpi',backgroundColor:'#232428',show:false,autoHideMenuBar:true,frame:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,backgroundThrottling:true,partition:'persist:biscord'}});
+ window=new BrowserWindow({width:1280,height:800,minWidth:900,minHeight:600,title:'vulcord',backgroundColor:'#232428',show:false,autoHideMenuBar:true,frame:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true,backgroundThrottling:true,partition:'persist:biscord'}});
  window.removeMenu();
  window.webContents.session.setDisplayMediaRequestHandler(async(request,callback)=>{try{if(new URL(request.securityOrigin).origin!==base.origin)return callback({});const sources=await desktopCapturer.getSources({types:['screen','window']});if(!sources.length)return callback({});const result=await dialog.showMessageBox(window,{message:'Escolha a tela ou janela para transmitir',buttons:[...sources.map(s=>s.name),'Cancelar'],cancelId:sources.length,noLink:true});callback(result.response<sources.length?{video:sources[result.response]}:{});}catch{callback({});}},{useSystemPicker:true});
  window.webContents.on('will-navigate',(event,url)=>{if(!internal(url)){event.preventDefault();external(url);}});
  window.webContents.setWindowOpenHandler(({url})=>{external(url);return {action:'deny'};});
  window.webContents.on('did-finish-load',()=>{window.webContents.insertCSS('.app-bar{-webkit-app-region:drag;padding-right:140px!important} .app-bar-actions{right:150px!important} .app-bar button,.app-bar a{-webkit-app-region:no-drag} .auth-home,.auth-back-home,a[href="/"]{display:none!important}');});
  window.webContents.on('render-process-gone',()=>{dialog.showMessageBox(window,{type:'error',message:'A interface foi interrompida.',buttons:['Recarregar','Fechar']}).then(({response})=>response===0?window.loadURL(new URL('/channels/@me',base).href):window.close());});
- window.webContents.on('did-fail-load',(_event,code,_description,_url,isMain)=>{if(isMain&&code!==-3){window.show();dialog.showMessageBox(window,{type:'error',message:'Não foi possível conectar ao servidor Vulpi.',detail:'Verifique sua conexão e se o servidor está ligado.',buttons:['Tentar novamente','Fechar']}).then(({response})=>response===0?window.loadURL(new URL('/channels/@me',base).href):window.close());}});
+ window.webContents.on('did-fail-load',(_event,code,_description,_url,isMain)=>{if(isMain&&code!==-3){window.show();dialog.showMessageBox(window,{type:'error',message:'Não foi possível conectar ao servidor vulcord.',detail:'Verifique sua conexão e se o servidor está ligado.',buttons:['Tentar novamente','Fechar']}).then(({response})=>response===0?window.loadURL(new URL('/channels/@me',base).href):window.close());}});
  window.once('ready-to-show',()=>window.show());
  window.loadURL(new URL('/channels/@me',base).href);
 }

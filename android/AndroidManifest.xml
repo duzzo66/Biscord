@@ -5,7 +5,7 @@
  <uses-permission android:name="android.permission.CAMERA"/>
  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
  <uses-feature android:name="android.hardware.camera" android:required="false"/>
- <application android:label="Vulpi" android:theme="@android:style/Theme.Material.NoActionBar" android:usesCleartextTraffic="false" android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/icon">
+ <application android:label="vulcord" android:theme="@android:style/Theme.Material.NoActionBar" android:usesCleartextTraffic="false" android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/icon">
   <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize" android:configChanges="keyboardHidden|orientation|screenSize">
    <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
   </activity>

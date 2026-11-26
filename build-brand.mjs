@@ -1,4 +1,4 @@
-// JavaScript / build-brand.mjs / Node.js 24 / persistent Vulpi branding build
+// JavaScript / build-brand.mjs / Node.js 24 / persistent vulcord branding build
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -11,11 +11,20 @@ await fs.cp(path.join(brand,'assets'),path.join(dist,'brand'),{recursive:true});
 await fs.copyFile(path.join(brand,'branding.js'),path.join(dist,'brand/branding.js'));
 const mark=await fs.readFile(path.join(brand,'assets/fox-mark.svg'),'utf8');
 await fs.writeFile(path.join(dist,'brand/fox-mark-white.svg'),mark.replace('fill="currentColor"','fill="#fff"'));
-const logo=`<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36"><g color="#fff" transform="translate(0 2)">${mark.replace(/<svg[^>]*>|<\/svg>/g,'')}</g><text x="41" y="27" font-family="Segoe UI,Arial,sans-serif" font-weight="800" font-size="27" letter-spacing="-.8" fill="#fff">Vulpi</text></svg>`;
-const wordmark=await fs.readFile(path.join(brand,'assets/vulpi-wordmark.svg'),'utf8');
-await fs.writeFile(path.join(dist,'brand/vulpi-wordmark.svg'),wordmark);
-await fs.writeFile(path.join(dist,'brand/vulpi-wordmark.png'),new Resvg(wordmark).render().asPng());
-await fs.writeFile(path.join(dist,'brand/vulpi-logo.svg'),logo);
+const logo=`<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36"><g color="#fff" transform="translate(0 2)">${mark.replace(/<svg[^>]*>|<\/svg>/g,'')}</g><text x="41" y="27" font-family="Segoe UI,Arial,sans-serif" font-weight="800" font-size="27" letter-spacing="-.8" fill="#fff">vulcord</text></svg>`;
+const wordmark=await fs.readFile(path.join(brand,'assets/vulcord-wordmark.svg'),'utf8');
+await fs.writeFile(path.join(dist,'brand/vulcord-wordmark.svg'),wordmark);
+await fs.writeFile(path.join(dist,'brand/vulcord-wordmark.png'),new Resvg(wordmark).render().asPng());
+await fs.writeFile(path.join(dist,'brand/vulcord-logo.svg'),logo);
+const socialFox=await fs.readFile(path.join(brand,'assets/fox.png'),'base64');
+const social=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><defs><linearGradient id="bg"><stop stop-color="#34226b"/><stop offset="1" stop-color="#5865f2"/></linearGradient></defs><rect width="1200" height="630" fill="url(#bg)"/><image href="data:image/png;base64,${socialFox}" x="65" y="85" width="460" height="460"/><text x="510" y="340" font-family="Segoe UI,Arial,sans-serif" font-weight="800" font-size="128" fill="#fff">vulcord</text></svg>`;
+await fs.writeFile(path.join(dist,'brand/social-card.png'),new Resvg(social).render().asPng());
+// Cached pages and old download links receive the current artwork too.
+for(const alias of ['vulpi','biscord']){
+ await fs.writeFile(path.join(dist,`brand/${alias}-logo.svg`),logo);
+ await fs.writeFile(path.join(dist,`brand/${alias}-wordmark.svg`),wordmark);
+ await fs.writeFile(path.join(dist,`brand/${alias}-wordmark.png`),new Resvg(wordmark).render().asPng());
+}
 await fs.writeFile(path.join(dist,'brand/favicon.svg'),mark.replace('<path ','<rect width="32" height="32" rx="8" fill="#5865f2"/><path ').replace('fill="currentColor"','fill="white"').replace('viewBox="0 0 32 32"','viewBox="-3 -3 38 38"'));
 for(const file of ['auth/assets/131c318dd45b7aa4.svg','auth/assets/bbbc3d376d38e7bc.svg'])await fs.writeFile(path.join(dist,file),logo);
 const foxData=await fs.readFile(path.join(brand,'assets/fox-party.png'),'base64');
@@ -37,5 +46,5 @@ for(const {file} of overrides){const target=path.join(dist,file);await fs.mkdir(
 let pages=0;
 async function walk(dir){for(const entry of await fs.readdir(dir,{withFileTypes:true})){if(['assets','brand','node_modules'].includes(entry.name))continue;const file=path.join(dir,entry.name);if(entry.isDirectory())await walk(file);else if(entry.name.endsWith('.html')){const before=await fs.readFile(file,'utf8');const after=brandHTML(before);if(after!==before)await fs.writeFile(file,after);pages++;}}}
 await walk(dist);
-await fs.writeFile(path.join(dist,'brand/manifest.json'),JSON.stringify({brand:'Vulpi',mascot:'Raposa',pages,logoCount,overrides},null,2));
-console.log(`Vulpi branding: ${pages} pages, ${logoCount+2} logos, ${overrides.length} mascot files`);
+await fs.writeFile(path.join(dist,'brand/manifest.json'),JSON.stringify({brand:'vulcord',mascot:'Raposa',pages,logoCount,overrides},null,2));
+console.log(`vulcord branding: ${pages} pages, ${logoCount+2} logos, ${overrides.length} mascot files`);

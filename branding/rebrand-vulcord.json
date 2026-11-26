@@ -1,0 +1,7 @@
+{
+  "brand": "vulcord",
+  "hero": "branding/fox-home-hero.png",
+  "method": "built-in image_gen edit",
+  "prompt": "Preserve the existing purple desktop/phone hero composition, fox mascots, interface, framing and transparent background. Replace the small application name Biscord at the top of the desktop display with exact lowercase vulcord in the same white typography and perspective. Replace any other Discord, Biscord or Vulpi brand lettering with vulcord. Do not add objects or redesign the scene.",
+  "nativeAssets": "SVG wordmarks and fox icon are exported from editable native sources. Existing mascot exports retain their dimensions and animation; role illustrations use the new name in every frame."
+}

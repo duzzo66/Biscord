@@ -1,8 +1,8 @@
 {
   "appId": "com.biscord.desktop",
-  "productName": "Vulpi",
+  "productName": "vulcord",
   "directories": {
-    "output": "desktop-release-vulpi"
+    "output": "desktop-release-vulcord"
   },
   "files": [
     "desktop/main.cjs",
@@ -19,9 +19,10 @@
     "target": [
       "portable"
     ],
-    "signAndEditExecutable": false
+    "icon": "branding/assets/vulcord.ico",
+    "signExecutable": false
   },
   "portable": {
-    "artifactName": "Vulpi-${version}-Windows.exe"
+    "artifactName": "vulcord-${version}-Windows.exe"
   }
 }

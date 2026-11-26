@@ -1,4 +1,4 @@
-/* CSS / client/scrollbars.css / Vulpi thin and auto scrollbar metrics */
+/* CSS / client/scrollbars.css / vulcord thin and auto scrollbar metrics */
 body{--scrollbar-thin-thumb:#5f606a;--scrollbar-auto-thumb:#666770}
 body[data-theme=ash]{--scrollbar-thin-thumb:#767780;--scrollbar-auto-thumb:#7d7e87}
 body.light{--scrollbar-thin-thumb:#8b8c94;--scrollbar-auto-thumb:#8f9097}

@@ -21,14 +21,14 @@ try{& (Join-Path $buildTools 'aapt.exe') add (Join-Path $buildDir 'unsigned.apk'
 & (Join-Path $buildTools 'zipalign.exe') -f 4 (Join-Path $buildDir 'unsigned.apk') (Join-Path $buildDir 'aligned.apk');CheckExit
 New-Item -ItemType Directory -Force -Path (Join-Path $projectRoot '.android-tools') | Out-Null
 $key=Join-Path $projectRoot '.android-tools/biscord-test.keystore'
-if(-not (Test-Path -LiteralPath $key)){& (Join-Path $javaRoot 'bin/keytool.exe') -genkeypair -keystore $key -storepass android -keypass android -alias biscord-test -keyalg RSA -keysize 2048 -validity 3650 -dname 'CN=Vulpi Test, O=Vulpi, C=BR';CheckExit}
+if(-not (Test-Path -LiteralPath $key)){& (Join-Path $javaRoot 'bin/keytool.exe') -genkeypair -keystore $key -storepass android -keypass android -alias biscord-test -keyalg RSA -keysize 2048 -validity 3650 -dname 'CN=vulcord Test, O=vulcord, C=BR';CheckExit}
 [xml]$manifest=Get-Content (Join-Path $PSScriptRoot 'AndroidManifest.xml')
 $version=$manifest.manifest.GetAttribute('versionName','http://schemas.android.com/apk/res/android')
-$apk=Join-Path $outDir "Vulpi-$version-Android.apk"
+$apk=Join-Path $outDir "vulcord-$version-Android.apk"
 & (Join-Path $buildTools 'apksigner.bat') sign --ks $key --ks-key-alias biscord-test --ks-pass pass:android --key-pass pass:android --out $apk (Join-Path $buildDir 'aligned.apk');CheckExit
 & (Join-Path $buildTools 'apksigner.bat') verify --verbose $apk;CheckExit
 & (Join-Path $buildTools 'aapt.exe') dump badging $apk;CheckExit
 Write-Output "APK gerado: $apk"
 $downloadDir=Join-Path $projectRoot 'dist/downloads'
 New-Item -ItemType Directory -Force -Path $downloadDir | Out-Null
-Copy-Item -LiteralPath $apk -Destination (Join-Path $downloadDir 'Vulpi-Android.apk') -Force
+Copy-Item -LiteralPath $apk -Destination (Join-Path $downloadDir 'vulcord-Android.apk') -Force

@@ -1,4 +1,4 @@
-/* CSS / loading.css / Chromium, Firefox, WebKit / Vulpi startup */
+/* CSS / loading.css / Chromium, Firefox, WebKit / vulcord startup */
 .biscord-loading{position:fixed;inset:0;z-index:2147483000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;background:#232428;color:#f2f3f5;opacity:1;transition:opacity .22s ease;isolation:isolate}
 .biscord-loading.is-ready{opacity:0;pointer-events:none}
 .biscord-loading-mark{width:76px;height:76px;display:block;object-fit:contain;will-change:transform,opacity;transform-origin:center;backface-visibility:visible}

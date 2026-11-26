@@ -1,4 +1,4 @@
-/* CSS / client/style.css / modern browsers / local Vulpi-style workspace */
+/* CSS / client/style.css / modern browsers / local vulcord-style workspace */
 .server-button[data-action="server"]{padding:0;isolation:isolate}.server-button[data-action="server"]>img{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;border-radius:inherit;pointer-events:none}
 @font-face{font-family:Client;src:url('__FONT__') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:Client;src:url('__FONT_MEDIUM__') format('woff2');font-weight:500;font-display:swap}@font-face{font-family:Client;src:url('__FONT_SEMI__') format('woff2');font-weight:600;font-display:swap}@font-face{font-family:Client;src:url('__FONT_BOLD__') format('woff2');font-weight:700 900;font-display:swap}
 :root{font-family:Client,'Segoe UI',sans-serif;font-size:16px;color:#dbdee1;background:#1e1f22;color-scheme:dark;--rail:#1e1f22;--side:#2b2d31;--surface:#313338;--field:#1e1f22;--hover:#35373c;--selected:#404249;--border:#3f4147;--muted:#949ba4;--text:#dbdee1;--heading:#f2f3f5;--brand:#5865f2}

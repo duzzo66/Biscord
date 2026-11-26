@@ -19,7 +19,7 @@
   const p=B.session?.preferences;
   if(data.message&&!old&&data.message.author!=='self'&&key.startsWith('dm:')&&p?.status!=='dnd'&&!p?.streamerMode){
    if(p.messageSounds)window.BiscordSounds?.play('message');
-   if(p.desktopNotifications&&document.hidden&&'Notification' in window&&Notification.permission==='granted')new Notification('Vulpi · '+(B.workspace.people.find(p=>p.id===data.peerId)?.name||'Nova mensagem'),{body:p.notificationPreview?data.message.text:'Voce recebeu uma nova mensagem.'});
+   if(p.desktopNotifications&&document.hidden&&'Notification' in window&&Notification.permission==='granted')new Notification('vulcord · '+(B.workspace.people.find(p=>p.id===data.peerId)?.name||'Nova mensagem'),{body:p.notificationPreview?data.message.text:'Voce recebeu uma nova mensagem.'});
   }
  };
  B.request=async(path,{method='GET',body,...options}={})=>{
@@ -79,5 +79,5 @@
  window.addEventListener('pagehide',()=>B.dispose());
  window.addEventListener('pageshow',event=>{if(event.persisted){stopped=false;connect();}});
  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){pull();B.realtime?.catchUp().catch(()=>{});if(activeKey)B.loadHistory(activeKey,{force:true}).catch(()=>{});}else B.flush().catch(()=>{});});
- B.ready=B.refresh().then(session=>{connect();return session;}).catch(error=>{if(error.status===401)location.replace('/login');else window.BiscordLoading?.fail('Nao foi possivel conectar ao Vulpi. Verifique sua conexao e tente novamente.');return null;});
+ B.ready=B.refresh().then(session=>{connect();return session;}).catch(error=>{if(error.status===401)location.replace('/login');else window.BiscordLoading?.fail('Nao foi possivel conectar ao vulcord. Verifique sua conexao e tente novamente.');return null;});
 })();

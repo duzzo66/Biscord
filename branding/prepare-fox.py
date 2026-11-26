@@ -76,7 +76,7 @@ def export(source, pose, animated=False, decoration=False, role=False):
             im.alpha_composite(tiny,(round(size[0]*.03),round(size[1]*.1)))
             draw=ImageDraw.Draw(im)
             font=ImageFont.truetype('C:/Windows/Fonts/segoeuib.ttf',max(12,round(size[0]*.13)))
-            draw.text((size[0]*.39,size[1]*.36),'Vulpi',font=font,fill='#f36bd5',stroke_width=0)
+            draw.text((size[0]*.39,size[1]*.36),'vulcord',font=font,fill='#f36bd5',stroke_width=0)
             return im
         if 'shadow' in source.lower():
             im=Image.new('RGBA',size)

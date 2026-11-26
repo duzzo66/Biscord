@@ -7,7 +7,7 @@
 .nav_brand:focus-visible{outline:2px solid #b3b9ff;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.nav_brand,.nav_brand_main-logo{transition:none!important}}
 /* Public pages: constrain media and preserve usable navigation on small screens. */
-@media(max-width:767px){html{overflow-x:clip}body{overflow-wrap:break-word}main img,main video,footer img{max-width:100%}.nav_brand:not(.is-burger){max-width:160px}footer{overflow:hidden}footer img[src*="vulpi-wordmark"]{display:block;width:100%;height:auto}input,textarea,select{font-size:16px}}
+@media(max-width:767px){html{overflow-x:clip}body{overflow-wrap:break-word}main img,main video,footer img{max-width:100%}.nav_brand:not(.is-burger){max-width:160px}footer{overflow:hidden}footer img[src*="vulcord-wordmark"]{display:block;width:100%;height:auto}input,textarea,select{font-size:16px}}
 /* Fox silhouettes need their own bounds; legacy Wumpus layers overlap the footer. */
 .wumpus-footer-home-contain.smaller.is_2025{position:absolute!important;inset:auto 0 0!important;height:clamp(170px,20vw,300px)!important;min-height:0!important;margin:0!important;overflow:hidden!important;pointer-events:none;display:flex!important;align-items:center!important;justify-content:flex-end!important;isolation:isolate}
 .wumpus-footer-home-contain.smaller.is_2025>img.wumpus-footer-home{position:absolute!important;inset:auto auto 0 50%!important;transform:translateX(-50%)!important;margin:0!important;width:auto!important;height:100%!important;max-width:44%!important;object-fit:contain!important;object-position:center bottom!important}

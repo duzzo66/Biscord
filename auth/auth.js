@@ -1,4 +1,4 @@
-// JavaScript / auth/auth.js / modern browsers / local Vulpi authentication screens
+// JavaScript / auth/auth.js / modern browsers / local vulcord authentication screens
 (()=>{
  const path=location.pathname.replace(/\/+$/,'');
  const resetting=path==='/reset-password';
@@ -7,7 +7,7 @@
  const titles={login:['Boas-vindas de volta!','Estamos muito animados em te ver novamente!'],register:['Criar uma conta',''],recovery:['Vamos recuperar seu acesso','Informe o e-mail associado à sua conta.']};
  for(const [name,form] of Object.entries(forms))form.hidden=name!==mode;
  document.querySelector('#page-title').textContent=titles[mode][0];document.querySelector('#page-subtitle').textContent=titles[mode][1];
- document.title=(mode==='register'?'Criar conta':mode==='recovery'?'Recuperar acesso':'Entrar')+' · Vulpi';document.querySelector('#auth-shell').classList.add(mode+'-mode');
+ document.title=(mode==='register'?'Criar conta':mode==='recovery'?'Recuperar acesso':'Entrar')+' · vulcord';document.querySelector('#auth-shell').classList.add(mode+'-mode');
  const eye='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>';
  const eyeOff='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m3 3 18 18M10.6 5.1A12 12 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3 3.7M6.2 6.2A19 19 0 0 0 2 12s3.5 7 10 7a13 13 0 0 0 5.8-1.5M10 10a3 3 0 0 0 4 4"/></svg>';
  document.querySelectorAll('[data-toggle]').forEach(button=>{button.innerHTML=eye;button.addEventListener('click',()=>{const input=document.getElementById(button.dataset.toggle),visible=input.type==='password';input.type=visible?'text':'password';button.setAttribute('aria-label',visible?'Ocultar senha':'Mostrar senha');button.setAttribute('aria-pressed',String(visible));button.innerHTML=visible?eyeOff:eye;});});
@@ -18,10 +18,10 @@
  function error(input,message){input.setAttribute('aria-invalid',String(Boolean(message)));const label=input.getAttribute('aria-describedby');if(label)document.getElementById(label).textContent=message;return !message;}
  function email(input){const value=input.value.trim(),validEmail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),validPhone=mode==='login'&&/^[a-z0-9_.]{2,32}$/i.test(value);return error(input,!value?(mode==='login'?'Informe seu e-mail ou nome de usuário.':'Informe seu e-mail.'):!validEmail&&!validPhone?'Digite um e-mail válido'+(mode==='login'?' ou nome de usuário.':'.'):'');}
  const dialog=document.querySelector('#preview-dialog');
- document.querySelector('#passkey-button').addEventListener('click',()=>{document.querySelector('#dialog-title').textContent='Acesso com passkey';document.querySelector('#dialog-copy').textContent='O acesso com passkey não está conectado nesta prévia local do Vulpi.';dialog.showModal();});
+ document.querySelector('#passkey-button').addEventListener('click',()=>{document.querySelector('#dialog-title').textContent='Acesso com passkey';document.querySelector('#dialog-copy').textContent='O acesso com passkey não está conectado nesta prévia local do vulcord.';dialog.showModal();});
  document.querySelector('#close-dialog').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close();}});
- if(resetting){forms.recovery.innerHTML='<label class="field"><span>Nova senha</span><input name="newPassword" type="password" required minlength="8" maxlength="256" autocomplete="new-password"></label><label class="field"><span>Código do autenticador (se ativado)</span><input name="code" autocomplete="one-time-code"></label><button class="primary-button" type="submit">Alterar senha</button>';document.querySelector('#page-title').textContent='Crie uma nova senha';document.querySelector('#page-subtitle').textContent='Atualize a senha da sua conta Vulpi.';}
+ if(resetting){forms.recovery.innerHTML='<label class="field"><span>Nova senha</span><input name="newPassword" type="password" required minlength="8" maxlength="256" autocomplete="new-password"></label><label class="field"><span>Código do autenticador (se ativado)</span><input name="code" autocomplete="one-time-code"></label><button class="primary-button" type="submit">Alterar senha</button>';document.querySelector('#page-title').textContent='Crie uma nova senha';document.querySelector('#page-subtitle').textContent='Atualize a senha da sua conta vulcord.';}
  for(const form of Object.values(forms)){
   const status=document.createElement('p');status.className='server-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');form.append(status);
   form.addEventListener('input',event=>{if(event.target.hasAttribute('aria-describedby')&&event.target.getAttribute('aria-invalid')==='true')error(event.target,'');});

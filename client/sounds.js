@@ -1,4 +1,4 @@
-// JavaScript / client/sounds.js / modern browsers / local original Vulpi audio
+// JavaScript / client/sounds.js / modern browsers / local original vulcord audio
 (()=>{
  const map={message:'message1',mute:'mute',unmute:'unmute',deafen:'deafen',undeafen:'undeafen',join:'user_join',leave:'user_leave',disconnect:'disconnect',calling:'call_calling',ringing:'call_ringing',cameraOn:'camera_on',cameraOff:'camera_off',success:'success',pushStart:'ptt_start',pushStop:'ptt_stop'};
  const tones=new Set(['message1','message2','message3','lofi_message1','bit_message1','bop_message1','asmr_message1']);
