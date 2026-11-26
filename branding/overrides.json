@@ -587,5 +587,23 @@
     "animated": true,
     "pose": "sit",
     "poster": "/brand/posters/c15cb23cb01bfcb2.png"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6abec3265ca23899daf402b3_Hero-mobile2%20(1).webp",
+    "size": [
+      672,
+      543
+    ],
+    "animated": false,
+    "pose": "branded-mobile-home-hero"
+  },
+  {
+    "file": "assets/cdn.prod.website-files.com/6257adef93867e50d84d30e2/6abec3265ca23899daf402b3_Hero-mobile2%20(1)-p-500.webp",
+    "size": [
+      500,
+      404
+    ],
+    "animated": false,
+    "pose": "branded-mobile-home-hero"
   }
 ]

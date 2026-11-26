@@ -3,6 +3,7 @@ import {load} from 'cheerio';
 export const brandText=text=>text.replace(/\b(?:discord|biscord|vulpi)\b/gi,'vulcord').replace(/\b(?:Wumpus|Clyde)\b/gi,'Raposa');
 export function brandHTML(html){
  const $=load(html,{decodeEntities:false});
+ $('img.home_image-hero.mobile_new,img[src*="Hero-mobile2"],img[srcset*="Hero-mobile2"]').each((_,node)=>{const el=$(node);el.attr('src','/brand/hero-mobile-vulcord-v2.webp').attr('srcset','/brand/hero-mobile-vulcord-v2-500.webp 500w, /brand/hero-mobile-vulcord-v2.webp 1344w').attr('alt','vulcord com raposas no chat do monitor');for(const key of ['data-src','data-srcset','data-lazy-src'])el.removeAttr(key);el.closest('picture').find('source').remove();});
  $('.nav_brand_main-logo').attr('src','/brand/vulcord-logo.svg').attr('alt','vulcord').removeAttr('srcset');
  $('*').contents().filter((_,node)=>node.type==='text').each((_,node)=>{
   if(!$(node).parents('script,style,code,pre,kbd,samp,textarea').length)node.data=brandText(node.data);

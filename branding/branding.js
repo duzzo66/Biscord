@@ -8,6 +8,8 @@
  const footerSelector='footer,[class*="footer"]';
  function refreshFooters(root){
   if(root.nodeType!==Node.ELEMENT_NODE&&root.nodeType!==Node.DOCUMENT_NODE)return;
+  const heroes=[...(root.nodeType===Node.ELEMENT_NODE&&root.matches('img.home_image-hero.mobile_new')?[root]:[]),...root.querySelectorAll('img.home_image-hero.mobile_new,img[src*="Hero-mobile2"],img[srcset*="Hero-mobile2"]')];
+  for(const img of heroes){const src='/brand/hero-mobile-vulcord-v2.webp',srcset='/brand/hero-mobile-vulcord-v2-500.webp 500w, /brand/hero-mobile-vulcord-v2.webp 1344w';if(img.getAttribute('src')!==src)img.setAttribute('src',src);if(img.getAttribute('srcset')!==srcset)img.setAttribute('srcset',srcset);for(const key of ['data-src','data-srcset','data-lazy-src'])if(img.hasAttribute(key))img.removeAttribute(key);img.closest('picture')?.querySelectorAll('source').forEach(source=>source.remove());}
   for(const img of root.querySelectorAll('.nav_brand_main-logo')){if(img.getAttribute('src')!=='/brand/vulcord-logo.svg')img.setAttribute('src','/brand/vulcord-logo.svg');if(img.hasAttribute('srcset'))img.removeAttribute('srcset');if(img.getAttribute('alt')!=='vulcord')img.setAttribute('alt','vulcord');}
   const footers=new Set(root.querySelectorAll(footerSelector));if(root.nodeType===Node.ELEMENT_NODE){const parent=root.closest(footerSelector);if(parent)footers.add(parent);}
   const set=(el,key,value)=>{if(el.getAttribute(key)!==value)el.setAttribute(key,value);};

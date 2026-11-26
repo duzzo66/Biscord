@@ -3,5 +3,11 @@
   "hero": "branding/fox-home-hero.png",
   "method": "built-in image_gen edit",
   "prompt": "Preserve the existing purple desktop/phone hero composition, fox mascots, interface, framing and transparent background. Replace the small application name Biscord at the top of the desktop display with exact lowercase vulcord in the same white typography and perspective. Replace any other Discord, Biscord or Vulpi brand lettering with vulcord. Do not add objects or redesign the scene.",
-  "nativeAssets": "SVG wordmarks and fox icon are exported from editable native sources. Existing mascot exports retain their dimensions and animation; role illustrations use the new name in every frame."
+  "nativeAssets": "SVG wordmarks and fox icon are exported from editable native sources. Existing mascot exports retain their dimensions and animation; role illustrations use the new name in every frame.",
+  "responsiveHero": {
+    "source": "branding/hero-mobile-vulcord.png",
+    "method": "built-in image_gen edit",
+    "prompt": "Edit the existing mobile monitor/phone hero. Use the existing orange fox as style reference. Replace both blue robot stickers INSIDE the monitor chat with clearly recognizable orange fox stickers, one waving and one smiling. Replace the freestanding robot mascots at the bottom with foxes, and the robot emblems on the monitor edge and note with fox face emblems. Set the monitor app name to lowercase vulcord. Preserve perspective, chat UI, phone, controller, right human character, purple colors, framing and transparency.",
+    "exports": ["branding/assets/hero-mobile-vulcord-v2.webp", "branding/assets/hero-mobile-vulcord-v2-500.webp"]
+  }
 }

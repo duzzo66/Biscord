@@ -4,6 +4,10 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {brandHTML} from './branding/brand-html.mjs';
 import {load} from 'cheerio';
+test('responsive monitor art always selects fox artwork rather than the old small-screen image',()=>{
+ const $=load(brandHTML('<html><head></head><body><picture><source srcset="old.webp"><img class="home_image-hero mobile_new" src="/assets/Hero-mobile2.webp" srcset="old-500.webp 500w, old.webp 672w" data-src="old.webp"></picture></body></html>'));
+ assert.equal($('img').attr('src'),'/brand/hero-mobile-vulcord-v2.webp');assert.match($('img').attr('srcset'),/hero-mobile-vulcord-v2-500\.webp 500w/);assert.doesNotMatch($('img').attr('srcset'),/old/);assert.equal($('source').length,0);assert.equal($('img').attr('data-src'),undefined);
+});
 test('the previous Vulpi brand is replaced throughout visible text and remains stable across rebuilds',()=>{
  const once=brandHTML('<html><head><title>Vulpi</title><meta name="description" content="VULPI chat"></head><body><h1>vulpi</h1><img alt="Vulpi" src="/old-image.png"><input placeholder="Entrar no Vulpi"></body></html>');
  const $=load(once);assert.equal($('title').text(),'vulcord');assert.equal($('h1').text(),'vulcord');assert.equal($('meta').attr('content'),'vulcord chat');assert.equal($('input').attr('placeholder'),'Entrar no vulcord');assert.equal($('img').attr('alt'),'vulcord');assert.equal(brandHTML(once),once);
