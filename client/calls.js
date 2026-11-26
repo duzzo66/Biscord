@@ -17,7 +17,7 @@ async function video(screen){if(!pc)return;if(videoTrack){await pc.getTransceive
 async function control(action){if(action==='end')return end();if(action==='accept'){await media();call.incoming=false;await panel(call.name);await peer();await post({type:'accept',id:call.id});}if(action==='mute'){const track=stream?.getAudioTracks()[0];if(track){track.enabled=!track.enabled;window.BiscordCallStage.toggle('mute',!track.enabled);await A.updatePreferences({muted:!track.enabled});}}if(action==='deafen'){const audio=document.querySelector('#bc-call-audio');audio.muted=!audio.muted;window.BiscordCallStage.toggle('deafen',audio.muted);await A.updatePreferences({deafened:audio.muted});}if(action==='screen'||action==='camera')await video(action==='screen');}
 document.addEventListener('click',async e=>{const trigger=e.target.closest('[data-action="call"]');if(trigger){e.preventDefault();e.stopImmediatePropagation();const target=location.pathname.split('/')[3];const person=A.workspace?.people?.find(p=>p.id===target);if(person)await start(target,person.name,trigger.getAttribute('aria-label')?.includes('vídeo'));}},true);
 document.addEventListener('click',e=>{if(e.target.closest('#bc-call'))document.querySelector('#bc-call-audio')?.play().catch(()=>{});});
-window.addEventListener('beforeunload',()=>{stream?.getTracks().forEach(t=>t.stop());videoTrack?.stop();pc?.close();});
-A.ready.then(session=>{if(!session)return;events=new EventSource('/api/events');events.addEventListener('rtc',e=>receive(JSON.parse(e.data)));});
+window.addEventListener('beforeunload',()=>{events?.();stream?.getTracks().forEach(t=>t.stop());videoTrack?.stop();pc?.close();});
+A.ready.then(session=>{if(!session)return;events=A.on('rtc',receive);});
 window.BiscordCalls={start,end,get active(){return call;}};
 })();

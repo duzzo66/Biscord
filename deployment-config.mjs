@@ -32,7 +32,7 @@ export function vercelConfig(routeMap, apiOrigin = '') {
   }
   if (rewrites.length > 2000) throw Error('Numero de rotas excede o limite deste pacote.');
   const config = {
-    version:2,framework:null,buildCommand:'',outputDirectory:'public',
+    version:2,framework:null,buildCommand:'',outputDirectory:'public',...(!origin?{regions:['gru1']}:{}),
     functions:{
       ...(!origin ? {'api/index.mjs':{maxDuration:60,includeFiles:'{client/assets/**/catalog.json,certs/**}'}} : {}),
       'api/media.mjs':{includeFiles:'media-map.json'}

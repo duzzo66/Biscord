@@ -3,7 +3,7 @@ import fs from 'node:fs';import path from 'node:path';
 import {externalApiOrigin,vercelConfig} from './deployment-config.mjs';
 const apiOrigin=externalApiOrigin(process.env.BISCORD_API_ORIGIN||'');
 const out=apiOrigin?'.vercel-stage-local':'.vercel-stage';fs.mkdirSync(out,{recursive:true});const copy=(a,b)=>{fs.mkdirSync(path.dirname(b),{recursive:true});fs.copyFileSync(a,b);};
-if(!apiOrigin)for(const f of ['server-voice.mjs','backend.mjs','database.mjs','server-memberships.mjs','cloud-realtime.mjs','boost-policy.mjs','badge-policy.mjs'])copy(f,out+'/'+f);
+if(!apiOrigin)for(const f of ['server-voice.mjs','backend.mjs','database.mjs','server-memberships.mjs','cloud-realtime.mjs','boost-policy.mjs','badge-policy.mjs','message-history.mjs','realtime-auth.mjs','performance-metrics.mjs'])copy(f,out+'/'+f);
 if(!apiOrigin){fs.cpSync('api',out+'/api',{recursive:true});fs.cpSync('certs',out+'/certs',{recursive:true});}
 else copy('api/media.mjs',out+'/api/media.mjs');
 if(!apiOrigin)for(const f of ['client/assets/themes/catalog.json','client/assets/badges/catalog.json','client/assets/collectibles/catalog.json'])copy(f,out+'/'+f);

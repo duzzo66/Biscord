@@ -1,5 +1,6 @@
 // JavaScript / build-client.mjs / Node.js 22+ / local workspace build
 import fs from 'node:fs/promises';
+import {build as bundle} from 'esbuild';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.dirname(fileURLToPath(import.meta.url)),dist=path.join(root,'dist');
@@ -26,6 +27,7 @@ for(const file of ['server-boosts.js','server-boosts.css','server-settings.js','
 let routes={};try{routes=JSON.parse(await fs.readFile(path.join(dist,'route-map.json'),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
 for(const route of ['/app','/channels','/channels/@me'])routes[route]='client/index.html';
 await fs.writeFile(path.join(dist,'route-map.json'),JSON.stringify(routes,null,2));
+await bundle({entryPoints:[path.join(root,'client/realtime-source.js')],outfile:path.join(dist,'client/realtime.js'),bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true});
 console.log('Workspace: /channels/@me');
 
 await import('./build-polish.mjs');

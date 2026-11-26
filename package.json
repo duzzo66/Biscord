@@ -24,9 +24,11 @@
     "acorn": "^8.19.0",
     "cheerio": "^1.2.0",
     "electron": "^45.5.0",
-    "electron-builder": "^26.18.0"
+    "electron-builder": "^26.18.0",
+    "esbuild": "^0.28.2"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.119.2",
     "nodemailer": "^10.6.1",
     "pg": "^8.23.1",
     "qrcode": "^1.5.4"

@@ -4,6 +4,7 @@ import {AsyncLocalStorage} from 'node:async_hooks';
 import fs from 'node:fs';
 import path from 'node:path';
 import pg from 'pg';
+import {measureQuery,notePoolState} from './performance-metrics.mjs';
 
 export function postgresQuery(sql){
  let index=0;
@@ -22,7 +23,7 @@ export function openDatabase({dataDir,databaseUrl='',projectRef='',sslRootCert='
   const db=new DatabaseSync(path.join(dataDir,'biscord.sqlite'));
   db.exec('PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON; PRAGMA busy_timeout=5000;');
   let lock=null;
-  async function access(fn){while(lock&&context.getStore()!==lock)await lock.done;return fn();}
+  async function access(fn){while(lock&&context.getStore()!==lock)await lock.done;return measureQuery(fn);}
   return {kind:'sqlite',ready:Promise.resolve(),
    exec:sql=>access(()=>db.exec(sql)),
    prepare(sql){const statement=db.prepare(sql);return Object.fromEntries(['get','all','run'].map(method=>[method,(...values)=>access(()=>statement[method](...values))]));},
@@ -40,17 +41,17 @@ export function openDatabase({dataDir,databaseUrl='',projectRef='',sslRootCert='
  const tls=!local?{rejectUnauthorized:true,...(sslRootCert?{ca:fs.readFileSync(sslRootCert,'utf8')}:{})}:undefined;
  for(const key of ['sslmode','sslcert','sslkey','sslrootcert'])url.searchParams.delete(key);
  const types=new pg.TypeOverrides();types.setTypeParser(20,value=>{const n=Number(value);if(!Number.isSafeInteger(n))throw Error('Integer outside safe range');return n;});
- const pool=new pg.Pool({connectionString:url.toString(),ssl:tls,max:1,connectionTimeoutMillis:15000,idleTimeoutMillis:1000,types});
+ const pool=new pg.Pool({connectionString:url.toString(),ssl:tls,max:Math.max(1,Math.min(5,Math.trunc(Number(process.env.BISCORD_DB_POOL_MAX)||2))),connectionTimeoutMillis:15000,idleTimeoutMillis:30000,allowExitOnIdle:true,types});
  pool.on('error',error=>console.error('PostgreSQL connection error:',error.code||error.name));
  const ready=pool.query('CREATE SCHEMA IF NOT EXISTS biscord; REVOKE ALL ON SCHEMA biscord FROM PUBLIC;');
  ready.catch(()=>{});
  
- async function query(sql,values=[]){await ready;const client=context.getStore();if(client)return client.query(schemaQuery(postgresQuery(sql)),values);const connection=await pool.connect();try{return await connection.query(schemaQuery(postgresQuery(sql)),values);}finally{connection.release();}}
+ async function query(sql,values=[]){return measureQuery(async()=>{await ready;const client=context.getStore();if(client){notePoolState(pool);return client.query(schemaQuery(postgresQuery(sql)),values);}const acquisition=pool.connect();notePoolState(pool);const connection=await acquisition;notePoolState(pool);try{return await connection.query(schemaQuery(postgresQuery(sql)),values);}finally{connection.release();}});}
  return {kind:'postgres',ready,
   exec:sql=>query(sql.replace(/\bINTEGER\b/g,'BIGINT')),
   prepare(sql){return {async get(...values){return (await query(sql,values)).rows[0];},async all(...values){return (await query(sql,values)).rows;},async run(...values){return {changes:(await query(sql,values)).rowCount};}};},
   async hasColumn(table,column){return !!(await query('SELECT 1 FROM information_schema.columns WHERE table_schema=? AND table_name=? AND column_name=?',['biscord',table,column])).rows.length;},
-  async transaction(fn){await ready;const client=await pool.connect();try{await client.query('BEGIN');const result=await context.run(client,fn);await client.query('COMMIT');return result;}catch(error){await client.query('ROLLBACK');throw error;}finally{client.release();}},
+  async transaction(fn){await ready;const client=await pool.connect();try{await measureQuery(()=>client.query('BEGIN'));const result=await context.run(client,fn);await measureQuery(()=>client.query('COMMIT'));return result;}catch(error){await measureQuery(()=>client.query('ROLLBACK'));throw error;}finally{client.release();}},
   close(){return pool.end();}
  };
 }
